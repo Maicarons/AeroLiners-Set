@@ -1,0 +1,25 @@
+version: 2
+
+updates:
+  # 文档工具链（vitepress 及其传递依赖 vite / esbuild 等）
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    # 已知：vitepress 1.6.4 锁 vite ^5.4.14，high 级 vite 漏洞仅在 vite 6+ 修复，
+    # 已在 package.json 用 overrides 把 vite 顶到 ^6、esbuild 顶到 ^0.25。
+    # 此处 weekly 扫描可让 vite/esbuild 在 6.x / 0.25.x 内持续打补丁。
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  # GitHub Actions 自身版本（checkout / setup-python 等）
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "ci"
+      include: "scope"
