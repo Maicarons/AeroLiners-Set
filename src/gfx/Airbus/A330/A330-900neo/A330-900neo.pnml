@@ -594,7 +594,7 @@ item (FEAT_AIRCRAFT, Airbus_A330_900neo)
     passenger_capacity: 300;
     mail_capacity: 30;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2600;
+    range: 2427;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -627,7 +627,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A330_900neo)
   {
     property
-    { range: 2600; }
+    { range: 2427; }
   }
 }
 
@@ -636,6 +636,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A330_900neo)
   {
     property
-    { range: 3900; }
+    { range: 3640; }
   }
 }

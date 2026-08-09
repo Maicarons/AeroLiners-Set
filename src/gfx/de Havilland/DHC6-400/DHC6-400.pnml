@@ -1,0 +1,255 @@
+// de Havilland DHC-6-400 Twin Otter
+// 占位机型：图形复用 donor Bombardier_Dash_8_400Q 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define DEHAVILLAND_DHC6_400_sprite_layout_template(name)                  \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 44, 21, -22, -11, ANIM]                                           \
+  [ 50, 1, 41, 20, -21, -10, ANIM]                                           \
+  [ 95, 1, 48, 22, -24, -11, ANIM]                                           \
+  [150, 1, 40, 30, -20, -15, ANIM]                                           \
+  [195, 1, 44, 36, -22, -18, ANIM]                                           \
+  [245, 1, 40, 30, -20, -15, ANIM]                                           \
+  [290, 1, 48, 22, -24, -11, ANIM]                                           \
+  [345, 1, 41, 20, -21, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 44, 21, -22, -11, ANIM]                                          \
+  [ 50, 40, 41, 20, -21, -10, ANIM]                                          \
+  [ 95, 40, 48, 23, -24, -12, ANIM]                                          \
+  [150, 40, 40, 31, -20, -16, ANIM]                                          \
+  [195, 40, 44, 36, -22, -18, ANIM]                                          \
+  [245, 40, 40, 31, -20, -16, ANIM]                                          \
+  [290, 40, 48, 23, -24, -12, ANIM]                                          \
+  [345, 40, 41, 20, -21, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 44, 33, -22, -17, ANIM]                                          \
+  [ 50, 80, 42, 28, -21, -14, ANIM]                                          \
+  [ 95, 80, 50, 23, -24, -11, ANIM]                                          \
+  [150, 80, 39, 17, -20, -9 , ANIM]                                          \
+  [195, 80, 44, 19, -22, -10, ANIM]                                          \
+  [245, 80, 39, 17, -20, -9 , ANIM]                                          \
+  [290, 80, 50, 23, -25, -12, ANIM]                                          \
+  [345, 80, 42, 28, -21, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 115, 44, 21, -22, -11, ANIM]                                         \
+  [ 50, 115, 41, 20, -21, -10, ANIM]                                         \
+  [ 95, 115, 48, 23, -24, -12, ANIM]                                         \
+  [150, 115, 40, 31, -20, -16, ANIM]                                         \
+  [195, 115, 44, 36, -22, -18, ANIM]                                         \
+  [245, 115, 40, 31, -20, -16, ANIM]                                         \
+  [290, 115, 48, 23, -24, -12, ANIM]                                         \
+  [345, 115, 41, 20, -21, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 155, 44, 25, -22, -13, ANIM]                                         \
+  [ 50, 155, 42, 23, -21, -12, ANIM]                                         \
+  [ 95, 155, 49, 23, -25, -12, ANIM]                                         \
+  [150, 155, 42, 26, -21, -13, ANIM]                                         \
+  [195, 155, 44, 31, -22, -16, ANIM]                                         \
+  [245, 155, 42, 26, -21, -13, ANIM]                                         \
+  [290, 155, 49, 23, -25, -12, ANIM]                                         \
+  [345, 155, 42, 23, -21, -12, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Bombardier_Dash_8_400Q 灰阶图）
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/(0)Greyscale.png"
+purchase_sprite(DEHAVILLAND_DHC6_400, 290, 1, 48, 22, -24, -11)
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirBaltic.png"
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_AirBaltic)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirBerlin.png"
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_AirBerlin)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirNiugini.png"
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_AirNiugini)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AustrianArrows.png"
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_AustrianArrows)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Brussels.png"
+DEHAVILLAND_DHC6_400_sprite_layout_template(DEHAVILLAND_DHC6_400_Brussels)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_Greyscale, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_Greyscale_Climbing;
+  18: DEHAVILLAND_DHC6_400_Greyscale_Flight;
+  21: DEHAVILLAND_DHC6_400_Greyscale_Landing;
+  22: DEHAVILLAND_DHC6_400_Greyscale_Touchdown;
+      DEHAVILLAND_DHC6_400_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_AirBaltic, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_AirBaltic_Climbing;
+  18: DEHAVILLAND_DHC6_400_AirBaltic_Flight;
+  21: DEHAVILLAND_DHC6_400_AirBaltic_Landing;
+  22: DEHAVILLAND_DHC6_400_AirBaltic_Touchdown;
+      DEHAVILLAND_DHC6_400_AirBaltic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_AirBerlin, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_AirBerlin_Climbing;
+  18: DEHAVILLAND_DHC6_400_AirBerlin_Flight;
+  21: DEHAVILLAND_DHC6_400_AirBerlin_Landing;
+  22: DEHAVILLAND_DHC6_400_AirBerlin_Touchdown;
+      DEHAVILLAND_DHC6_400_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_AirNiugini, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_AirNiugini_Climbing;
+  18: DEHAVILLAND_DHC6_400_AirNiugini_Flight;
+  21: DEHAVILLAND_DHC6_400_AirNiugini_Landing;
+  22: DEHAVILLAND_DHC6_400_AirNiugini_Touchdown;
+      DEHAVILLAND_DHC6_400_AirNiugini_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_AustrianArrows, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_AustrianArrows_Climbing;
+  18: DEHAVILLAND_DHC6_400_AustrianArrows_Flight;
+  21: DEHAVILLAND_DHC6_400_AustrianArrows_Landing;
+  22: DEHAVILLAND_DHC6_400_AustrianArrows_Touchdown;
+      DEHAVILLAND_DHC6_400_AustrianArrows_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_Brussels, flight_state())
+{
+  15: DEHAVILLAND_DHC6_400_Brussels_Climbing;
+  18: DEHAVILLAND_DHC6_400_Brussels_Flight;
+  21: DEHAVILLAND_DHC6_400_Brussels_Landing;
+  22: DEHAVILLAND_DHC6_400_Brussels_Touchdown;
+      DEHAVILLAND_DHC6_400_Brussels_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_sprites, cargo_subtype)
+{
+  1: DEHAVILLAND_DHC6_400_AirBaltic;
+  2: DEHAVILLAND_DHC6_400_AirBerlin;
+  3: DEHAVILLAND_DHC6_400_AirNiugini;
+  4: DEHAVILLAND_DHC6_400_AustrianArrows;
+  5: DEHAVILLAND_DHC6_400_Brussels;
+     DEHAVILLAND_DHC6_400_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_running_cost_factor, flight_state())
+{
+  plane_RC(35)
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(122); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(183); // airplane climbing after take-off
+      18: return plane_speed_kmh(337); // heading for tower contact point
+  16..20: return plane_speed_kmh(162); // in flight
+  21..22: return plane_speed_kmh(114); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(101);
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_DEHAVILLAND_DHC6_400);
+  1: string(STR_VLIV_AIR_BALTIC);
+  2: string(STR_VLIV_AIR_BERLIN);
+  3: string(STR_VLIV_AIR_NIUGINI);
+  4: string(STR_VLIV_AUSTRIAN_ARROWS);
+  5: string(STR_VLIV_BRUSSELS_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_DHC6_400_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 19;
+  2: return 19;
+  3: return 19;
+  4: return 19;
+  5: return 19;
+     return 19;
+}
+
+item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
+{
+  property
+  {
+    name: string(STR_AIRV_DEHAVILLAND_DHC6_400);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1986), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(2000,2016);
+    retire_early: get_retire_early(2000,2016);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 29;
+    passenger_capacity: 19;
+    mail_capacity: 2;
+    acceleration: 27;
+    range: 236;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: DEHAVILLAND_DHC6_400_sprites;
+    purchase: DEHAVILLAND_DHC6_400_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: DEHAVILLAND_DHC6_400_cargo_subtype_text;
+    passenger_capacity: DEHAVILLAND_DHC6_400_cargo_subtype_capacity;
+    speed: DEHAVILLAND_DHC6_400_speed;
+    running_cost_factor: DEHAVILLAND_DHC6_400_running_cost_factor;
+    sound_effect: DEHAVILLAND_DHC6_400_sound_effect;
+
+    cost_factor: 22;
+    purchase_running_cost_factor: 35;
+    purchase_speed: plane_speed_kmh(337);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
+  {
+    property
+    { range: 236; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
+  {
+    property
+    { range: 353; }
+  }
+}

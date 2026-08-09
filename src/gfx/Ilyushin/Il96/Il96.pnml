@@ -1,0 +1,255 @@
+// Ilyushin Il-96
+// 占位机型：图形复用 donor Airbus_A330_300 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define ILYUSHIN_IL96_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 66, 32, -33, -16, ANIM]                                           \
+  [ 75, 1, 59, 30, -30, -15, ANIM]                                           \
+  [140, 1, 69, 34, -35, -17, ANIM]                                           \
+  [215, 1, 59, 40, -30, -20, ANIM]                                           \
+  [280, 1, 66, 44, -33, -22, ANIM]                                           \
+  [350, 1, 59, 40, -30, -20, ANIM]                                           \
+  [415, 1, 69, 34, -35, -17, ANIM]                                           \
+  [490, 1, 59, 30, -30, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 66, 32, -33, -16, ANIM]                                          \
+  [ 75, 50, 59, 30, -30, -15, ANIM]                                          \
+  [140, 50, 69, 34, -35, -17, ANIM]                                          \
+  [215, 50, 59, 42, -30, -21, ANIM]                                          \
+  [280, 50, 66, 45, -33, -23, ANIM]                                          \
+  [350, 50, 59, 42, -30, -21, ANIM]                                          \
+  [415, 50, 69, 34, -35, -17, ANIM]                                          \
+  [490, 50, 59, 30, -30, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 66, 49, -33, -25, ANIM]                                         \
+  [ 75, 100, 57, 45, -29, -23, ANIM]                                         \
+  [140, 100, 68, 34, -32, -17, ANIM]                                         \
+  [215, 100, 57, 29, -29, -15, ANIM]                                         \
+  [280, 100, 64, 19, -32, -10, ANIM]                                         \
+  [350, 100, 57, 29, -29, -15, ANIM]                                         \
+  [415, 100, 68, 34, -34, -17, ANIM]                                         \
+  [490, 100, 57, 45, -29, -23, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 155, 66, 32, -33, -16, ANIM]                                         \
+  [ 75, 155, 59, 30, -30, -15, ANIM]                                         \
+  [140, 155, 69, 34, -35, -17, ANIM]                                         \
+  [215, 155, 58, 42, -29, -21, ANIM]                                         \
+  [280, 155, 66, 41, -33, -21, ANIM]                                         \
+  [350, 155, 59, 42, -30, -21, ANIM]                                         \
+  [415, 155, 69, 34, -35, -17, ANIM]                                         \
+  [490, 155, 58, 30, -29, -18, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 205, 66, 37, -33, -21, ANIM]                                         \
+  [ 75, 205, 58, 36, -29, -18, ANIM]                                         \
+  [140, 205, 70, 34, -35, -17, ANIM]                                         \
+  [215, 205, 57, 36, -29, -18, ANIM]                                         \
+  [280, 205, 66, 31, -33, -16, ANIM]                                         \
+  [350, 205, 57, 36, -29, -18, ANIM]                                         \
+  [415, 205, 70, 34, -35, -17, ANIM]                                         \
+  [490, 205, 58, 36, -29, -18, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Airbus_A330_300 灰阶图）
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/(0)Greyscale.png"
+purchase_sprite(ILYUSHIN_IL96, 415, 1, 69, 34, -35, -17)
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/AirCanada.png"
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_AirCanada)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/AirEuropa.png"
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_AirEuropa)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/American.png"
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_American)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Asiana.png"
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_Asiana)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/CatheyPacific.png"
+ILYUSHIN_IL96_sprite_layout_template(ILYUSHIN_IL96_CatheyPacific)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_Greyscale, flight_state())
+{
+  15: ILYUSHIN_IL96_Greyscale_Climbing;
+  18: ILYUSHIN_IL96_Greyscale_Flight;
+  21: ILYUSHIN_IL96_Greyscale_Landing;
+  22: ILYUSHIN_IL96_Greyscale_Touchdown;
+      ILYUSHIN_IL96_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_AirCanada, flight_state())
+{
+  15: ILYUSHIN_IL96_AirCanada_Climbing;
+  18: ILYUSHIN_IL96_AirCanada_Flight;
+  21: ILYUSHIN_IL96_AirCanada_Landing;
+  22: ILYUSHIN_IL96_AirCanada_Touchdown;
+      ILYUSHIN_IL96_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_AirEuropa, flight_state())
+{
+  15: ILYUSHIN_IL96_AirEuropa_Climbing;
+  18: ILYUSHIN_IL96_AirEuropa_Flight;
+  21: ILYUSHIN_IL96_AirEuropa_Landing;
+  22: ILYUSHIN_IL96_AirEuropa_Touchdown;
+      ILYUSHIN_IL96_AirEuropa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_American, flight_state())
+{
+  15: ILYUSHIN_IL96_American_Climbing;
+  18: ILYUSHIN_IL96_American_Flight;
+  21: ILYUSHIN_IL96_American_Landing;
+  22: ILYUSHIN_IL96_American_Touchdown;
+      ILYUSHIN_IL96_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_Asiana, flight_state())
+{
+  15: ILYUSHIN_IL96_Asiana_Climbing;
+  18: ILYUSHIN_IL96_Asiana_Flight;
+  21: ILYUSHIN_IL96_Asiana_Landing;
+  22: ILYUSHIN_IL96_Asiana_Touchdown;
+      ILYUSHIN_IL96_Asiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_CatheyPacific, flight_state())
+{
+  15: ILYUSHIN_IL96_CatheyPacific_Climbing;
+  18: ILYUSHIN_IL96_CatheyPacific_Flight;
+  21: ILYUSHIN_IL96_CatheyPacific_Landing;
+  22: ILYUSHIN_IL96_CatheyPacific_Touchdown;
+      ILYUSHIN_IL96_CatheyPacific_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_sprites, cargo_subtype)
+{
+  1: ILYUSHIN_IL96_AirCanada;
+  2: ILYUSHIN_IL96_AirEuropa;
+  3: ILYUSHIN_IL96_American;
+  4: ILYUSHIN_IL96_Asiana;
+  5: ILYUSHIN_IL96_CatheyPacific;
+     ILYUSHIN_IL96_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_running_cost_factor, flight_state())
+{
+  plane_RC(166)
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(483); // airplane climbing after take-off
+      18: return plane_speed_kmh(926); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ILYUSHIN_IL96);
+  1: string(STR_VLIV_AIR_CANADA);
+  2: string(STR_VLIV_AIR_EUROPA);
+  3: string(STR_VLIV_AMERICAN_AIRLINES);
+  4: string(STR_VLIV_ASIANA_AIRLINES);
+  5: string(STR_VLIV_CATHAY_PACIFIC);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ILYUSHIN_IL96_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 280;
+  2: return 280;
+  3: return 280;
+  4: return 280;
+  5: return 280;
+     return 280;
+}
+
+item (FEAT_AIRCRAFT, ILYUSHIN_IL96)
+{
+  property
+  {
+    name: string(STR_AIRV_ILYUSHIN_IL96);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1992), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1994,2050);
+    retire_early: get_retire_early(1994,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 43;
+    passenger_capacity: 280;
+    mail_capacity: 28;
+    acceleration: 27;
+    range: 2000;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
+  }
+  graphics {
+    default: ILYUSHIN_IL96_sprites;
+    purchase: ILYUSHIN_IL96_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: ILYUSHIN_IL96_cargo_subtype_text;
+    passenger_capacity: ILYUSHIN_IL96_cargo_subtype_capacity;
+    speed: ILYUSHIN_IL96_speed;
+    running_cost_factor: ILYUSHIN_IL96_running_cost_factor;
+    sound_effect: ILYUSHIN_IL96_sound_effect;
+
+    cost_factor: 187;
+    purchase_running_cost_factor: 166;
+    purchase_speed: plane_speed_kmh(926);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, ILYUSHIN_IL96)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, ILYUSHIN_IL96)
+  {
+    property
+    { range: 2000; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, ILYUSHIN_IL96)
+  {
+    property
+    { range: 3000; }
+  }
+}

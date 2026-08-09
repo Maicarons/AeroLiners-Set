@@ -1,0 +1,255 @@
+// Fokker F28
+// 占位机型：图形复用 donor Fokker_F100 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define FOKKER_F28_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 36, 21, -18, -11, ANIM]                                           \
+  [ 40, 1, 39, 18, -20, -9 , ANIM]                                           \
+  [ 85, 1, 48, 20, -24, -10, ANIM]                                           \
+  [140, 1, 39, 27, -20, -14, ANIM]                                           \
+  [185, 1, 36, 32, -18, -16, ANIM]                                           \
+  [230, 1, 39, 27, -20, -14, ANIM]                                           \
+  [275, 1, 48, 20, -24, -10, ANIM]                                           \
+  [330, 1, 39, 18, -20, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 36, 21, -18, -11, ANIM]                                          \
+  [ 40, 35, 39, 18, -20, -9 , ANIM]                                          \
+  [ 85, 35, 48, 20, -24, -10, ANIM]                                          \
+  [140, 35, 39, 27, -20, -14, ANIM]                                          \
+  [185, 35, 36, 32, -18, -16, ANIM]                                          \
+  [230, 35, 39, 27, -20, -14, ANIM]                                          \
+  [275, 35, 48, 20, -24, -10, ANIM]                                          \
+  [330, 35, 39, 18, -20, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 36, 31, -18, -16, ANIM]                                          \
+  [ 40, 70, 39, 27, -20, -14, ANIM]                                          \
+  [ 85, 70, 48, 19, -24, -10, ANIM]                                          \
+  [140, 70, 39, 17, -20, -9 , ANIM]                                          \
+  [185, 70, 34, 18, -17, -9 , ANIM]                                          \
+  [230, 70, 39, 17, -20, -9 , ANIM]                                          \
+  [275, 70, 48, 19, -24, -10, ANIM]                                          \
+  [330, 70, 39, 27, -20, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 36, 21, -18, -11, ANIM]                                         \
+  [ 40, 105, 39, 18, -20, -9 , ANIM]                                         \
+  [ 85, 105, 48, 20, -24, -10, ANIM]                                         \
+  [140, 105, 39, 27, -20, -14, ANIM]                                         \
+  [185, 105, 36, 32, -18, -16, ANIM]                                         \
+  [230, 105, 39, 27, -20, -14, ANIM]                                         \
+  [275, 105, 44, 20, -22, -10, ANIM]                                         \
+  [330, 105, 39, 18, -20, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 36, 26, -18, -13, ANIM]                                         \
+  [ 40, 140, 39, 22, -20, -11, ANIM]                                         \
+  [ 85, 140, 49, 18, -25, -9 , ANIM]                                         \
+  [140, 140, 39, 22, -20, -11, ANIM]                                         \
+  [185, 140, 36, 25, -18, -13, ANIM]                                         \
+  [230, 140, 39, 22, -20, -11, ANIM]                                         \
+  [275, 140, 49, 18, -25, -9 , ANIM]                                         \
+  [330, 140, 39, 22, -20, -11, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Fokker_F100 灰阶图）
+#define IMAGEFILE  "src/gfx/Fokker/F100/(0)Greyscale.png"
+purchase_sprite(FOKKER_F28, 275, 1, 48, 20, -24, -10)
+FOKKER_F28_sprite_layout_template(FOKKER_F28_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F100/AirBerlin.png"
+FOKKER_F28_sprite_layout_template(FOKKER_F28_AirBerlin)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F100/AirDolomiti.png"
+FOKKER_F28_sprite_layout_template(FOKKER_F28_AirDolomiti)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F100/AirInter.png"
+FOKKER_F28_sprite_layout_template(FOKKER_F28_AirInter)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F100/AirNiugini.png"
+FOKKER_F28_sprite_layout_template(FOKKER_F28_AirNiugini)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F100/Alliance.png"
+FOKKER_F28_sprite_layout_template(FOKKER_F28_Alliance)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_Greyscale, flight_state())
+{
+  15: FOKKER_F28_Greyscale_Climbing;
+  18: FOKKER_F28_Greyscale_Flight;
+  21: FOKKER_F28_Greyscale_Landing;
+  22: FOKKER_F28_Greyscale_Touchdown;
+      FOKKER_F28_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_AirBerlin, flight_state())
+{
+  15: FOKKER_F28_AirBerlin_Climbing;
+  18: FOKKER_F28_AirBerlin_Flight;
+  21: FOKKER_F28_AirBerlin_Landing;
+  22: FOKKER_F28_AirBerlin_Touchdown;
+      FOKKER_F28_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_AirDolomiti, flight_state())
+{
+  15: FOKKER_F28_AirDolomiti_Climbing;
+  18: FOKKER_F28_AirDolomiti_Flight;
+  21: FOKKER_F28_AirDolomiti_Landing;
+  22: FOKKER_F28_AirDolomiti_Touchdown;
+      FOKKER_F28_AirDolomiti_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_AirInter, flight_state())
+{
+  15: FOKKER_F28_AirInter_Climbing;
+  18: FOKKER_F28_AirInter_Flight;
+  21: FOKKER_F28_AirInter_Landing;
+  22: FOKKER_F28_AirInter_Touchdown;
+      FOKKER_F28_AirInter_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_AirNiugini, flight_state())
+{
+  15: FOKKER_F28_AirNiugini_Climbing;
+  18: FOKKER_F28_AirNiugini_Flight;
+  21: FOKKER_F28_AirNiugini_Landing;
+  22: FOKKER_F28_AirNiugini_Touchdown;
+      FOKKER_F28_AirNiugini_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_Alliance, flight_state())
+{
+  15: FOKKER_F28_Alliance_Climbing;
+  18: FOKKER_F28_Alliance_Flight;
+  21: FOKKER_F28_Alliance_Landing;
+  22: FOKKER_F28_Alliance_Touchdown;
+      FOKKER_F28_Alliance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_sprites, cargo_subtype)
+{
+  1: FOKKER_F28_AirBerlin;
+  2: FOKKER_F28_AirDolomiti;
+  3: FOKKER_F28_AirInter;
+  4: FOKKER_F28_AirNiugini;
+  5: FOKKER_F28_Alliance;
+     FOKKER_F28_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_running_cost_factor, flight_state())
+{
+  plane_RC(61)
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(234); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(366); // airplane climbing after take-off
+      18: return plane_speed_kmh(820); // heading for tower contact point
+  16..20: return plane_speed_kmh(414); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(195);
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_FOKKER_F28);
+  1: string(STR_VLIV_AIR_BERLIN);
+  2: string(STR_VLIV_AIR_DOLOMITI);
+  3: string(STR_VLIV_AIR_INTER);
+  4: string(STR_VLIV_AIR_NIUGINI);
+  5: string(STR_VLIV_ALLIANCE_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, FOKKER_F28_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 75;
+  2: return 75;
+  3: return 75;
+  4: return 75;
+  5: return 75;
+     return 75;
+}
+
+item (FEAT_AIRCRAFT, FOKKER_F28)
+{
+  property
+  {
+    name: string(STR_AIRV_FOKKER_F28);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1969), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1986,1997);
+    retire_early: get_retire_early(1986,1997);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 19;
+    passenger_capacity: 75;
+    mail_capacity: 8;
+    acceleration: 27;
+    range: 364;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: FOKKER_F28_sprites;
+    purchase: FOKKER_F28_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: FOKKER_F28_cargo_subtype_text;
+    passenger_capacity: FOKKER_F28_cargo_subtype_capacity;
+    speed: FOKKER_F28_speed;
+    running_cost_factor: FOKKER_F28_running_cost_factor;
+    sound_effect: FOKKER_F28_sound_effect;
+
+    cost_factor: 27;
+    purchase_running_cost_factor: 61;
+    purchase_speed: plane_speed_kmh(820);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, FOKKER_F28)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, FOKKER_F28)
+  {
+    property
+    { range: 364; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, FOKKER_F28)
+  {
+    property
+    { range: 546; }
+  }
+}

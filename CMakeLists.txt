@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(AeroLinersSet VERSION 1.0 HOMEPAGE_URL https://github.com/Maicarons/AeroLiners-Set)
+project(AeroLinersSet VERSION 1.1 HOMEPAGE_URL https://github.com/Maicarons/AeroLiners-Set)
 #Project variables
 set(PROJECT_SHORT_NAME "AERO")
 set(PROJECT_SCRIPT_DIR ${PROJECT_SOURCE_DIR}/scripts)

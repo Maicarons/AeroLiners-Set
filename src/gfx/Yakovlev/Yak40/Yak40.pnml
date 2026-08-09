@@ -1,0 +1,266 @@
+// Yakovlev Yak-40
+// 占位机型：图形复用 donor Boeing_727_200 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define YAKOVLEV_YAK40_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  3, 3, 38, 25, -19, -13, ANIM]                                           \
+  [ 50, 3, 43, 23, -22, -12, ANIM]                                           \
+  [100, 3, 55, 21, -28, -11, ANIM]                                           \
+  [160, 3, 43, 29, -22, -15, ANIM]                                           \
+  [210, 3, 38, 35, -19, -18, ANIM]                                           \
+  [250, 3, 43, 29, -22, -15, ANIM]                                           \
+  [300, 3, 55, 21, -28, -11, ANIM]                                           \
+  [360, 3, 43, 23, -22, -12, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  3, 40, 38, 25, -19, -13, ANIM]                                          \
+  [ 50, 40, 43, 23, -22, -12, ANIM]                                          \
+  [100, 40, 55, 21, -28, -11, ANIM]                                          \
+  [160, 40, 43, 29, -22, -15, ANIM]                                          \
+  [210, 40, 38, 34, -19, -17, ANIM]                                          \
+  [250, 40, 43, 29, -22, -15, ANIM]                                          \
+  [300, 40, 55, 21, -28, -11, ANIM]                                          \
+  [360, 40, 43, 23, -22, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  3, 80, 38, 34, -19, -17, ANIM]                                          \
+  [ 50, 80, 43, 31, -22, -16, ANIM]                                          \
+  [100, 80, 54, 23, -27, -12, ANIM]                                          \
+  [160, 80, 43, 19, -22, -10, ANIM]                                          \
+  [210, 80, 38, 19, -19, -10, ANIM]                                          \
+  [250, 80, 43, 19, -22, -10, ANIM]                                          \
+  [300, 80, 54, 23, -27, -12, ANIM]                                          \
+  [360, 80, 43, 31, -22, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  3, 120, 38, 25, -19, -13, ANIM]                                         \
+  [ 50, 120, 43, 23, -22, -12, ANIM]                                         \
+  [100, 120, 55, 21, -28, -11, ANIM]                                         \
+  [160, 120, 43, 29, -22, -15, ANIM]                                         \
+  [210, 120, 38, 35, -19, -18, ANIM]                                         \
+  [250, 120, 43, 29, -22, -15, ANIM]                                         \
+  [300, 120, 55, 21, -28, -11, ANIM]                                         \
+  [360, 120, 43, 23, -22, -12, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  3, 160, 38, 31, -19, -16, ANIM]                                         \
+  [ 50, 160, 44, 27, -22, -14, ANIM]                                         \
+  [100, 160, 55, 20, -28, -10, ANIM]                                         \
+  [160, 160, 42, 23, -21, -12, ANIM]                                         \
+  [210, 160, 38, 27, -19, -14, ANIM]                                         \
+  [250, 160, 42, 24, -20, -12, ANIM]                                         \
+  [300, 160, 55, 20, -28, -10, ANIM]                                         \
+  [360, 160, 44, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  3, 200, 38, 27, -19, -14, ANIM]                                         \
+  [ 50, 200, 43, 23, -22, -12, ANIM]                                         \
+  [100, 200, 55, 21, -28, -11, ANIM]                                         \
+  [160, 200, 43, 30, -22, -15, ANIM]                                         \
+  [210, 200, 38, 35, -19, -18, ANIM]                                         \
+  [250, 200, 43, 30, -22, -15, ANIM]                                         \
+  [300, 200, 55, 21, -28, -11, ANIM]                                         \
+  [360, 200, 43, 23, -22, -12, ANIM]                                         \
+}                                                                            \
+ 
+
+// 灰阶基底（占位复用 Boeing_727_200 灰阶图）
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/(0)Greyscale.png"
+purchase_sprite(YAKOVLEV_YAK40, 300, 3, 55, 21, -28, -11)
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Aerolineas.png"
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_Aerolineas)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirAlgerie.png"
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_AirAlgerie)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirCanada.png"
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_AirCanada)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirFlorida.png"
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_AirFlorida)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirFrance.png"
+YAKOVLEV_YAK40_sprite_layout_template(YAKOVLEV_YAK40_AirFrance)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_Greyscale, flight_state())
+{
+  15: YAKOVLEV_YAK40_Greyscale_Climbing;
+  18: YAKOVLEV_YAK40_Greyscale_Flight;
+  21: YAKOVLEV_YAK40_Greyscale_Landing;
+  22: YAKOVLEV_YAK40_Greyscale_Touchdown;
+      YAKOVLEV_YAK40_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_Aerolineas, flight_state())
+{
+  15: YAKOVLEV_YAK40_Aerolineas_Climbing;
+  18: YAKOVLEV_YAK40_Aerolineas_Flight;
+  21: YAKOVLEV_YAK40_Aerolineas_Landing;
+  22: YAKOVLEV_YAK40_Aerolineas_Touchdown;
+      YAKOVLEV_YAK40_Aerolineas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_AirAlgerie, flight_state())
+{
+  15: YAKOVLEV_YAK40_AirAlgerie_Climbing;
+  18: YAKOVLEV_YAK40_AirAlgerie_Flight;
+  21: YAKOVLEV_YAK40_AirAlgerie_Landing;
+  22: YAKOVLEV_YAK40_AirAlgerie_Touchdown;
+      YAKOVLEV_YAK40_AirAlgerie_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_AirCanada, flight_state())
+{
+  15: YAKOVLEV_YAK40_AirCanada_Climbing;
+  18: YAKOVLEV_YAK40_AirCanada_Flight;
+  21: YAKOVLEV_YAK40_AirCanada_Landing;
+  22: YAKOVLEV_YAK40_AirCanada_Touchdown;
+      YAKOVLEV_YAK40_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_AirFlorida, flight_state())
+{
+  15: YAKOVLEV_YAK40_AirFlorida_Climbing;
+  18: YAKOVLEV_YAK40_AirFlorida_Flight;
+  21: YAKOVLEV_YAK40_AirFlorida_Landing;
+  22: YAKOVLEV_YAK40_AirFlorida_Touchdown;
+      YAKOVLEV_YAK40_AirFlorida_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_AirFrance, flight_state())
+{
+  15: YAKOVLEV_YAK40_AirFrance_Climbing;
+  18: YAKOVLEV_YAK40_AirFrance_Flight;
+  21: YAKOVLEV_YAK40_AirFrance_Landing;
+  22: YAKOVLEV_YAK40_AirFrance_Touchdown;
+      YAKOVLEV_YAK40_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_sprites, cargo_subtype)
+{
+  1: YAKOVLEV_YAK40_Aerolineas;
+  2: YAKOVLEV_YAK40_AirAlgerie;
+  3: YAKOVLEV_YAK40_AirCanada;
+  4: YAKOVLEV_YAK40_AirFlorida;
+  5: YAKOVLEV_YAK40_AirFrance;
+     YAKOVLEV_YAK40_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_running_cost_factor, flight_state())
+{
+  plane_RC(97)
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(145); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(258); // airplane climbing after take-off
+      18: return plane_speed_kmh(500); // heading for tower contact point
+  16..20: return plane_speed_kmh(230); // in flight
+  21..22: return plane_speed_kmh(121); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(101);
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_YAKOVLEV_YAK40);
+  1: string(STR_VLIV_AEROLINEAS_ARGENTINAS);
+  2: string(STR_VLIV_AIR_ALGERIE);
+  3: string(STR_VLIV_AIR_CANADA);
+  4: string(STR_VLIV_AIR_FLORIDA);
+  5: string(STR_VLIV_AIR_FRANCE);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, YAKOVLEV_YAK40_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 32;
+  2: return 32;
+  3: return 32;
+  4: return 32;
+  5: return 32;
+     return 32;
+}
+
+item (FEAT_AIRCRAFT, YAKOVLEV_YAK40)
+{
+  property
+  {
+    name: string(STR_AIRV_YAKOVLEV_YAK40);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1968), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1967,1984);
+    retire_early: get_retire_early(1967,1984);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 32;
+    mail_capacity: 4;
+    acceleration: 27;
+    range: 455;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: YAKOVLEV_YAK40_sprites;
+    purchase: YAKOVLEV_YAK40_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: YAKOVLEV_YAK40_cargo_subtype_text;
+    passenger_capacity: YAKOVLEV_YAK40_cargo_subtype_capacity;
+    speed: YAKOVLEV_YAK40_speed;
+    running_cost_factor: YAKOVLEV_YAK40_running_cost_factor;
+    sound_effect: YAKOVLEV_YAK40_sound_effect;
+
+    cost_factor: 20;
+    purchase_running_cost_factor: 97;
+    purchase_speed: plane_speed_kmh(500);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, YAKOVLEV_YAK40)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, YAKOVLEV_YAK40)
+  {
+    property
+    { range: 455; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, YAKOVLEV_YAK40)
+  {
+    property
+    { range: 682; }
+  }
+}

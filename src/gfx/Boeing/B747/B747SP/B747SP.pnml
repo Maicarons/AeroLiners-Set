@@ -1,0 +1,255 @@
+// Boeing 747SP
+// 占位机型：图形复用 donor Boeing_747_200 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define BOEING_747SP_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 60, 32, -30, -16, ANIM]                                           \
+  [ 70, 1, 57, 31, -29, -15, ANIM]                                           \
+  [135, 1, 69, 30, -35, -15, ANIM]                                           \
+  [210, 1, 57, 42, -29, -21, ANIM]                                           \
+  [270, 1, 60, 43, -30, -22, ANIM]                                           \
+  [340, 1, 57, 42, -29, -21, ANIM]                                           \
+  [405, 1, 69, 31, -35, -15, ANIM]                                           \
+  [480, 1, 57, 31, -29, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 60, 32, -30, -16, ANIM]                                          \
+  [ 70, 50, 57, 31, -29, -15, ANIM]                                          \
+  [135, 50, 69, 30, -35, -15, ANIM]                                          \
+  [210, 50, 57, 43, -29, -22, ANIM]                                          \
+  [270, 50, 60, 45, -30, -23, ANIM]                                          \
+  [340, 50, 57, 43, -29, -22, ANIM]                                          \
+  [405, 50, 69, 31, -35, -15, ANIM]                                          \
+  [480, 50, 57, 31, -29, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 60, 49, -30, -25, ANIM]                                         \
+  [ 70, 100, 56, 44, -28, -22, ANIM]                                         \
+  [135, 100, 70, 33, -35, -17, ANIM]                                         \
+  [210, 100, 55, 29, -28, -15, ANIM]                                         \
+  [270, 100, 59, 26, -30, -13, ANIM]                                         \
+  [340, 100, 56, 29, -28, -15, ANIM]                                         \
+  [405, 100, 70, 33, -35, -17, ANIM]                                         \
+  [480, 100, 56, 44, -28, -22, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 160, 60, 32, -30, -16, ANIM]                                         \
+  [ 70, 160, 57, 31, -29, -16, ANIM]                                         \
+  [135, 160, 69, 30, -35, -15, ANIM]                                         \
+  [210, 160, 57, 43, -29, -22, ANIM]                                         \
+  [270, 160, 60, 45, -30, -23, ANIM]                                         \
+  [340, 160, 57, 43, -29, -22, ANIM]                                         \
+  [405, 160, 69, 31, -35, -16, ANIM]                                         \
+  [480, 160, 57, 31, -29, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 210, 60, 41, -30, -21, ANIM]                                         \
+  [ 70, 210, 57, 37, -29, -19, ANIM]                                         \
+  [135, 210, 71, 31, -36, -16, ANIM]                                         \
+  [210, 210, 56, 35, -28, -18, ANIM]                                         \
+  [270, 210, 60, 38, -30, -18, ANIM]                                         \
+  [340, 210, 56, 35, -28, -28, ANIM]                                         \
+  [405, 210, 71, 31, -36, -16, ANIM]                                         \
+  [480, 210, 57, 37, -29, -19, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Boeing_747_200 灰阶图）
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/(0)Greyscale.png"
+purchase_sprite(BOEING_747SP, 405, 1, 69, 31, -35, -15)
+BOEING_747SP_sprite_layout_template(BOEING_747SP_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/AirFrance.png"
+BOEING_747SP_sprite_layout_template(BOEING_747SP_AirFrance)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/AirPlusComet.png"
+BOEING_747SP_sprite_layout_template(BOEING_747SP_AirPlusComet)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/Alitalia.png"
+BOEING_747SP_sprite_layout_template(BOEING_747SP_Alitalia)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/ANZ.png"
+BOEING_747SP_sprite_layout_template(BOEING_747SP_ANZ)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200/BritishAirways.png"
+BOEING_747SP_sprite_layout_template(BOEING_747SP_BritishAirways)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_Greyscale, flight_state())
+{
+  15: BOEING_747SP_Greyscale_Climbing;
+  18: BOEING_747SP_Greyscale_Flight;
+  21: BOEING_747SP_Greyscale_Landing;
+  22: BOEING_747SP_Greyscale_Touchdown;
+      BOEING_747SP_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_AirFrance, flight_state())
+{
+  15: BOEING_747SP_AirFrance_Climbing;
+  18: BOEING_747SP_AirFrance_Flight;
+  21: BOEING_747SP_AirFrance_Landing;
+  22: BOEING_747SP_AirFrance_Touchdown;
+      BOEING_747SP_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_AirPlusComet, flight_state())
+{
+  15: BOEING_747SP_AirPlusComet_Climbing;
+  18: BOEING_747SP_AirPlusComet_Flight;
+  21: BOEING_747SP_AirPlusComet_Landing;
+  22: BOEING_747SP_AirPlusComet_Touchdown;
+      BOEING_747SP_AirPlusComet_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_Alitalia, flight_state())
+{
+  15: BOEING_747SP_Alitalia_Climbing;
+  18: BOEING_747SP_Alitalia_Flight;
+  21: BOEING_747SP_Alitalia_Landing;
+  22: BOEING_747SP_Alitalia_Touchdown;
+      BOEING_747SP_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_ANZ, flight_state())
+{
+  15: BOEING_747SP_ANZ_Climbing;
+  18: BOEING_747SP_ANZ_Flight;
+  21: BOEING_747SP_ANZ_Landing;
+  22: BOEING_747SP_ANZ_Touchdown;
+      BOEING_747SP_ANZ_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_BritishAirways, flight_state())
+{
+  15: BOEING_747SP_BritishAirways_Climbing;
+  18: BOEING_747SP_BritishAirways_Flight;
+  21: BOEING_747SP_BritishAirways_Landing;
+  22: BOEING_747SP_BritishAirways_Touchdown;
+      BOEING_747SP_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_sprites, cargo_subtype)
+{
+  1: BOEING_747SP_AirFrance;
+  2: BOEING_747SP_AirPlusComet;
+  3: BOEING_747SP_Alitalia;
+  4: BOEING_747SP_ANZ;
+  5: BOEING_747SP_BritishAirways;
+     BOEING_747SP_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_running_cost_factor, flight_state())
+{
+  plane_RC(285)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(289); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(435); // airplane climbing after take-off
+      18: return plane_speed_kmh(967); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING_747SP);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_AIR_PLUS_COMET);
+  3: string(STR_VLIV_ALITALIA);
+  4: string(STR_VLIV_AIR_NEW_ZEALAND);
+  5: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 320;
+  2: return 320;
+  3: return 320;
+  4: return 320;
+  5: return 320;
+     return 320;
+}
+
+item (FEAT_AIRCRAFT, BOEING_747SP)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_747SP);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1976), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1971,1990);
+    retire_early: get_retire_early(1971,1990);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 34;
+    passenger_capacity: 320;
+    mail_capacity: 32;
+    acceleration: 27;
+    range: 2236;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
+  }
+  graphics {
+    default: BOEING_747SP_sprites;
+    purchase: BOEING_747SP_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BOEING_747SP_cargo_subtype_text;
+    passenger_capacity: BOEING_747SP_cargo_subtype_capacity;
+    speed: BOEING_747SP_speed;
+    running_cost_factor: BOEING_747SP_running_cost_factor;
+    sound_effect: BOEING_747SP_sound_effect;
+
+    cost_factor: 265;
+    purchase_running_cost_factor: 285;
+    purchase_speed: plane_speed_kmh(967);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BOEING_747SP)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BOEING_747SP)
+  {
+    property
+    { range: 2236; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BOEING_747SP)
+  {
+    property
+    { range: 3354; }
+  }
+}

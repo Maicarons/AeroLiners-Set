@@ -661,3 +661,121 @@ STR_VLIV_XL_AIRWAYS                                             : XL Airways
 STR_VLIV_YAKUTIA_AIRLINES                                       : Yakutia Airlines
 STR_VLIV_YAMAL                                                  : Yamal Airlines
 STR_VLIV_YEMENIA                                                : Yemenia
+STR_AIRV_AIRBUS_A321XLR                                      :Airbus A321XLR
+STR_VLIV_AIRBUS_A321XLR                                     :Generic Livery
+STR_AIRV_EMBRAER_E190_E2                                     :Embraer E190-E2
+STR_VLIV_EMBRAER_E190_E2                                    :Generic Livery
+STR_AIRV_AIRBUS_A220_100                                     :Airbus A220-100
+STR_VLIV_AIRBUS_A220_100                                    :Generic Livery
+STR_AIRV_ATR_72_600                                          :ATR 72-600
+STR_VLIV_ATR_72_600                                         :Generic Livery
+STR_AIRV_ATR_42_600                                          :ATR 42-600
+STR_VLIV_ATR_42_600                                         :Generic Livery
+STR_AIRV_BOEING_737MAX7                                      :Boeing 737 MAX 7
+STR_VLIV_BOEING_737MAX7                                     :Generic Livery
+STR_AIRV_AIRBUS_A330_800NEO                                  :Airbus A330-800neo
+STR_VLIV_AIRBUS_A330_800NEO                                 :Generic Livery
+STR_AIRV_SUKHOI_SSJ100                                       :Sukhoi Superjet 100
+STR_VLIV_SUKHOI_SSJ100                                      :Generic Livery
+STR_AIRV_IRKUT_MC21                                          :Irkut MC-21
+STR_VLIV_IRKUT_MC21                                         :Generic Livery
+STR_AIRV_COMAC_C929                                          :COMAC C929
+STR_VLIV_COMAC_C929                                         :Generic Livery
+STR_AIRV_EMBRAER_E175_E2                                     :Embraer E175-E2
+STR_VLIV_EMBRAER_E175_E2                                    :Generic Livery
+STR_AIRV_BOEING_757_300                                      :Boeing 757-300
+STR_VLIV_BOEING_757_300                                     :Generic Livery
+STR_AIRV_BOEING_777_8                                        :Boeing 777-8
+STR_VLIV_BOEING_777_8                                       :Generic Livery
+STR_AIRV_ANTONOV_AN148                                       :Antonov An-148
+STR_VLIV_ANTONOV_AN148                                      :Generic Livery
+STR_AIRV_ANTONOV_AN158                                       :Antonov An-158
+STR_VLIV_ANTONOV_AN158                                      :Generic Livery
+STR_AIRV_TUPOLEV_TU204                                       :Tupolev Tu-204
+STR_VLIV_TUPOLEV_TU204                                      :Generic Livery
+STR_AIRV_TUPOLEV_TU214                                       :Tupolev Tu-214
+STR_VLIV_TUPOLEV_TU214                                      :Generic Livery
+STR_AIRV_ILYUSHIN_IL96                                       :Ilyushin Il-96
+STR_VLIV_ILYUSHIN_IL96                                      :Generic Livery
+STR_AIRV_ILYUSHIN_IL114                                      :Ilyushin Il-114
+STR_VLIV_ILYUSHIN_IL114                                     :Generic Livery
+STR_AIRV_YAKOVLEV_YAK40                                      :Yakovlev Yak-40
+STR_VLIV_YAKOVLEV_YAK40                                     :Generic Livery
+STR_AIRV_YAKOVLEV_YAK42                                      :Yakovlev Yak-42
+STR_VLIV_YAKOVLEV_YAK42                                     :Generic Livery
+STR_AIRV_DOUGLAS_DC3                                         :Douglas DC-3
+STR_VLIV_DOUGLAS_DC3                                        :Generic Livery
+STR_AIRV_DOUGLAS_DC6                                         :Douglas DC-6
+STR_VLIV_DOUGLAS_DC6                                        :Generic Livery
+STR_AIRV_DOUGLAS_DC7                                         :Douglas DC-7
+STR_VLIV_DOUGLAS_DC7                                        :Generic Livery
+STR_AIRV_LOCKHEED_L188                                       :Lockheed L-188 Electra
+STR_VLIV_LOCKHEED_L188                                      :Generic Livery
+STR_AIRV_LOCKHEED_L1011                                      :Lockheed L-1011 TriStar
+STR_VLIV_LOCKHEED_L1011                                     :Generic Livery
+STR_AIRV_DEHAVILLAND_COMET                                   :de Havilland Comet
+STR_VLIV_DEHAVILLAND_COMET                                  :Generic Livery
+STR_AIRV_VICKERS_VISCOUNT                                    :Vickers Viscount
+STR_VLIV_VICKERS_VISCOUNT                                   :Generic Livery
+STR_AIRV_VICKERS_VC10                                        :Vickers VC10
+STR_VLIV_VICKERS_VC10                                       :Generic Livery
+STR_AIRV_FOKKER_F27                                          :Fokker F27
+STR_VLIV_FOKKER_F27                                         :Generic Livery
+STR_AIRV_FOKKER_F28                                          :Fokker F28
+STR_VLIV_FOKKER_F28                                         :Generic Livery
+STR_AIRV_CONVAIR_880                                         :Convair 880
+STR_VLIV_CONVAIR_880                                        :Generic Livery
+STR_AIRV_CONVAIR_990                                         :Convair 990
+STR_VLIV_CONVAIR_990                                        :Generic Livery
+STR_AIRV_HS_TRIDENT                                          :Hawker Siddeley Trident
+STR_VLIV_HS_TRIDENT                                         :Generic Livery
+STR_AIRV_BOEING_747SP                                        :Boeing 747SP
+STR_VLIV_BOEING_747SP                                       :Generic Livery
+STR_AIRV_ILYUSHIN_IL18                                       :Ilyushin Il-18
+STR_VLIV_ILYUSHIN_IL18                                      :Generic Livery
+STR_AIRV_CESSNA_208                                          :Cessna 208 Caravan
+STR_VLIV_CESSNA_208                                         :Generic Livery
+STR_AIRV_CESSNA_208B                                         :Cessna 208B Grand Caravan
+STR_VLIV_CESSNA_208B                                        :Generic Livery
+STR_AIRV_CESSNA_402                                          :Cessna 402
+STR_VLIV_CESSNA_402                                         :Generic Livery
+STR_AIRV_CESSNA_404                                          :Cessna 404 Titan
+STR_VLIV_CESSNA_404                                         :Generic Livery
+STR_AIRV_CESSNA_414                                          :Cessna 414 Chancellor
+STR_VLIV_CESSNA_414                                         :Generic Livery
+STR_AIRV_CESSNA_421                                          :Cessna 421 Golden Eagle
+STR_VLIV_CESSNA_421                                         :Generic Livery
+STR_AIRV_AIRBUS_A321LR                                       :Airbus A321LR
+STR_VLIV_AIRBUS_A321LR                                      :Generic Livery
+STR_AIRV_ANTONOV_AN140                                       :Antonov An-140
+STR_VLIV_ANTONOV_AN140                                      :Generic Livery
+STR_AIRV_AVIC_MA60                                           :AVIC MA-60
+STR_VLIV_AVIC_MA60                                          :Generic Livery
+STR_AIRV_AVIC_MA600                                          :AVIC MA-600
+STR_VLIV_AVIC_MA600                                         :Generic Livery
+STR_AIRV_AVIC_Y7_200                                         :AVIC Y-7-200
+STR_VLIV_AVIC_Y7_200                                        :Generic Livery
+STR_AIRV_BRITTEN_NORMAN_BN2B                                 :Britten-Norman BN-2B Islander
+STR_VLIV_BRITTEN_NORMAN_BN2B                                :Generic Livery
+STR_AIRV_BRITTEN_NORMAN_BN2T                                 :Britten-Norman BN-2T Turbine Islander
+STR_VLIV_BRITTEN_NORMAN_BN2T                                :Generic Livery
+STR_AIRV_CESSNA_408                                          :Cessna 408 SkyCourier
+STR_VLIV_CESSNA_408                                         :Generic Livery
+STR_AIRV_DEHAVILLAND_DHC6_400                                :de Havilland DHC-6-400 Twin Otter
+STR_VLIV_DEHAVILLAND_DHC6_400                               :Generic Livery
+STR_AIRV_EMBRAER_ERJ135                                      :Embraer ERJ-135
+STR_VLIV_EMBRAER_ERJ135                                     :Generic Livery
+STR_AIRV_EMBRAER_ERJ140                                      :Embraer ERJ-140
+STR_VLIV_EMBRAER_ERJ140                                     :Generic Livery
+STR_AIRV_GENERAL_ATOMICS_DO228                               :General Atomics DO 228
+STR_VLIV_GENERAL_ATOMICS_DO228                              :Generic Livery
+STR_AIRV_LET_L410                                            :LET L-410
+STR_VLIV_LET_L410                                           :Generic Livery
+STR_AIRV_PILATUS_PC12                                        :Pilatus PC-12
+STR_VLIV_PILATUS_PC12                                       :Generic Livery
+STR_AIRV_PILATUS_PC24                                        :Pilatus PC-24
+STR_VLIV_PILATUS_PC24                                       :Generic Livery
+STR_AIRV_PZL_AN28                                            :PZL/Antonov AN-28 Skytruck
+STR_VLIV_PZL_AN28                                           :Generic Livery
+STR_AIRV_RAYTHEON_BEECH1900D                                 :Raytheon Beech 1900D Airliner
+STR_VLIV_RAYTHEON_BEECH1900D                                :Generic Livery

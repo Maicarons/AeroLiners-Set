@@ -418,29 +418,29 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX10_cargo_subtype_text, cargo_subtype)
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX10_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 230; // Aeromexico
-  2: return 230; // Air China
-  3: return 230; // Air Europa
-  4: return 230; // American Airlines
-  5: return 230; // Belavia
-  6: return 230; // China Eastern
-  7: return 230; // Corendon
-  8: return 230; // Enter Air
-  9: return 230; // Etiopian
- 10: return 230; // Fiji
- 11: return 230; // Flydubai
- 12: return 230; // Flyr
- 13: return 230; // Icelandair
- 14: return 230; // LOT
- 15: return 230; // Mauritania
- 16: return 230; // Norwegian
- 17: return 230; // RoyalAirMaroc
- 18: return 230; // Ryanair
- 19: return 230; // Smart Wings
- 20: return 230; // Sunwing
- 21: return 230; // TUI
- 22: return 230; // Turkish
-     return 230;
+  1: return 195; // Aeromexico
+  2: return 195; // Air China
+  3: return 195; // Air Europa
+  4: return 195; // American Airlines
+  5: return 195; // Belavia
+  6: return 195; // China Eastern
+  7: return 195; // Corendon
+  8: return 195; // Enter Air
+  9: return 195; // Etiopian
+ 10: return 195; // Fiji
+ 11: return 195; // Flydubai
+ 12: return 195; // Flyr
+ 13: return 195; // Icelandair
+ 14: return 195; // LOT
+ 15: return 195; // Mauritania
+ 16: return 195; // Norwegian
+ 17: return 195; // RoyalAirMaroc
+ 18: return 195; // Ryanair
+ 19: return 195; // Smart Wings
+ 20: return 195; // Sunwing
+ 21: return 195; // TUI
+ 22: return 195; // Turkish
+     return 195;
 }
 
 item (FEAT_AIRCRAFT, Boeing_737_MAX10)
@@ -449,9 +449,9 @@ item (FEAT_AIRCRAFT, Boeing_737_MAX10)
   {
     name: string(STR_AIRV_BOEING_737_MAX10);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(2021), 5, 1);
+    introduction_date: date(get_plane_year(2027), 5, 1);
     vehicle_life: 30;
-    model_life: get_model_life(2021,2272);
+    model_life: get_model_life(2027,2272);
     retire_early: get_retire_early(2021,2272);
 
     sprite_id: SPRITE_ID_NEW_AIRCRAFT;
@@ -460,10 +460,10 @@ item (FEAT_AIRCRAFT, Boeing_737_MAX10)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 230;
-    mail_capacity: 23;
+    passenger_capacity: 195;
+    mail_capacity: 20;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1300;
+    range: 1044;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -496,7 +496,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_737_MAX10)
   {
     property
-    { range: 1300; }
+    { range: 1044; }
   }
 }
 
@@ -505,6 +505,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_737_MAX10)
   {
     property
-    { range: 1950; }
+    { range: 1566; }
   }
 }

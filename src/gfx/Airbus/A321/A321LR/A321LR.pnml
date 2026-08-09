@@ -1,0 +1,255 @@
+// Airbus A321LR
+// 占位机型：图形复用 donor Airbus_A321_200 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define AIRBUS_A321LR_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 25, -23, -13, ANIM]                                           \
+  [ 50, 0, 42, 22, -21, -11, ANIM]                                           \
+  [100, 0, 50, 23, -25, -12, ANIM]                                           \
+  [160, 0, 41, 31, -21, -16, ANIM]                                           \
+  [210, 0, 45, 35, -23, -18, ANIM]                                           \
+  [260, 0, 41, 31, -21, -16, ANIM]                                           \
+  [310, 0, 50, 23, -25, -12, ANIM]                                           \
+  [370, 0, 42, 22, -21, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 40, 45, 25, -23, -13, ANIM]                                          \
+  [ 50, 40, 42, 22, -21, -11, ANIM]                                          \
+  [100, 40, 50, 23, -25, -12, ANIM]                                          \
+  [160, 40, 41, 31, -21, -16, ANIM]                                          \
+  [210, 40, 45, 35, -23, -18, ANIM]                                          \
+  [260, 40, 41, 31, -21, -16, ANIM]                                          \
+  [310, 40, 50, 23, -25, -12, ANIM]                                          \
+  [370, 40, 42, 21, -21, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 80, 44, 39, -22, -19, ANIM]                                          \
+  [ 50, 80, 41, 33, -21, -17, ANIM]                                          \
+  [100, 80, 53, 23, -27, -12, ANIM]                                          \
+  [160, 80, 39, 21, -20, -12, ANIM]                                          \
+  [210, 80, 42, 16, -21, -8 , ANIM]                                          \
+  [260, 80, 39, 21, -20, -12, ANIM]                                          \
+  [310, 80, 53, 22, -27, -12, ANIM]                                          \
+  [370, 80, 41, 33, -21, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 130, 44, 25, -22, -13, ANIM]                                         \
+  [ 50, 130, 42, 22, -21, -11, ANIM]                                         \
+  [100, 130, 50, 22, -25, -11, ANIM]                                         \
+  [160, 130, 41, 31, -21, -16, ANIM]                                         \
+  [210, 130, 44, 30, -22, -15, ANIM]                                         \
+  [260, 130, 41, 31, -21, -16, ANIM]                                         \
+  [310, 130, 50, 22, -25, -11, ANIM]                                         \
+  [370, 130, 42, 22, -21, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 170, 44, 32, -22, -16, ANIM]                                         \
+  [ 50, 170, 42, 27, -21, -14, ANIM]                                         \
+  [100, 170, 51, 22, -26, -11, ANIM]                                         \
+  [160, 170, 39, 27, -20, -14, ANIM]                                         \
+  [210, 170, 42, 24, -21, -12, ANIM]                                         \
+  [260, 170, 39, 27, -20, -14, ANIM]                                         \
+  [310, 170, 51, 22, -26, -11, ANIM]                                         \
+  [370, 170, 42, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Airbus_A321_200 灰阶图）
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/(0)Greyscale.png"
+purchase_sprite(AIRBUS_A321LR, 310, 0, 50, 23, -25, -12)
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AerLingus.png"
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_AerLingus)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirAstana.png"
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_AirAstana)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirBerlin.png"
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_AirBerlin)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirCanada.png"
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_AirCanada)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirFrance.png"
+AIRBUS_A321LR_sprite_layout_template(AIRBUS_A321LR_AirFrance)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_Greyscale, flight_state())
+{
+  15: AIRBUS_A321LR_Greyscale_Climbing;
+  18: AIRBUS_A321LR_Greyscale_Flight;
+  21: AIRBUS_A321LR_Greyscale_Landing;
+  22: AIRBUS_A321LR_Greyscale_Touchdown;
+      AIRBUS_A321LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_AerLingus, flight_state())
+{
+  15: AIRBUS_A321LR_AerLingus_Climbing;
+  18: AIRBUS_A321LR_AerLingus_Flight;
+  21: AIRBUS_A321LR_AerLingus_Landing;
+  22: AIRBUS_A321LR_AerLingus_Touchdown;
+      AIRBUS_A321LR_AerLingus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_AirAstana, flight_state())
+{
+  15: AIRBUS_A321LR_AirAstana_Climbing;
+  18: AIRBUS_A321LR_AirAstana_Flight;
+  21: AIRBUS_A321LR_AirAstana_Landing;
+  22: AIRBUS_A321LR_AirAstana_Touchdown;
+      AIRBUS_A321LR_AirAstana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_AirBerlin, flight_state())
+{
+  15: AIRBUS_A321LR_AirBerlin_Climbing;
+  18: AIRBUS_A321LR_AirBerlin_Flight;
+  21: AIRBUS_A321LR_AirBerlin_Landing;
+  22: AIRBUS_A321LR_AirBerlin_Touchdown;
+      AIRBUS_A321LR_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_AirCanada, flight_state())
+{
+  15: AIRBUS_A321LR_AirCanada_Climbing;
+  18: AIRBUS_A321LR_AirCanada_Flight;
+  21: AIRBUS_A321LR_AirCanada_Landing;
+  22: AIRBUS_A321LR_AirCanada_Touchdown;
+      AIRBUS_A321LR_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_AirFrance, flight_state())
+{
+  15: AIRBUS_A321LR_AirFrance_Climbing;
+  18: AIRBUS_A321LR_AirFrance_Flight;
+  21: AIRBUS_A321LR_AirFrance_Landing;
+  22: AIRBUS_A321LR_AirFrance_Touchdown;
+      AIRBUS_A321LR_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_sprites, cargo_subtype)
+{
+  1: AIRBUS_A321LR_AerLingus;
+  2: AIRBUS_A321LR_AirAstana;
+  3: AIRBUS_A321LR_AirBerlin;
+  4: AIRBUS_A321LR_AirCanada;
+  5: AIRBUS_A321LR_AirFrance;
+     AIRBUS_A321LR_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_running_cost_factor, flight_state())
+{
+  plane_RC(87)
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(236); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(333); // airplane climbing after take-off
+      18: return plane_speed_kmh(830); // heading for tower contact point
+  16..20: return plane_speed_kmh(430); // in flight
+  21..22: return plane_speed_kmh(214); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(185);
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS_A321LR);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_AIR_ASTANA);
+  3: string(STR_VLIV_AIR_BERLIN_NEW);
+  4: string(STR_VLIV_AIR_CANADA);
+  5: string(STR_VLIV_AIR_FRANCE);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A321LR_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 206;
+  2: return 206;
+  3: return 206;
+  4: return 206;
+  5: return 206;
+     return 206;
+}
+
+item (FEAT_AIRCRAFT, AIRBUS_A321LR)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A321LR);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2018), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1996,2050);
+    retire_early: get_retire_early(1996,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 32;
+    passenger_capacity: 206;
+    mail_capacity: 21;
+    acceleration: 27;
+    range: 1345;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: AIRBUS_A321LR_sprites;
+    purchase: AIRBUS_A321LR_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: AIRBUS_A321LR_cargo_subtype_text;
+    passenger_capacity: AIRBUS_A321LR_cargo_subtype_capacity;
+    speed: AIRBUS_A321LR_speed;
+    running_cost_factor: AIRBUS_A321LR_running_cost_factor;
+    sound_effect: AIRBUS_A321LR_sound_effect;
+
+    cost_factor: 84;
+    purchase_running_cost_factor: 87;
+    purchase_speed: plane_speed_kmh(830);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A321LR)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A321LR)
+  {
+    property
+    { range: 1345; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A321LR)
+  {
+    property
+    { range: 2014; }
+  }
+}

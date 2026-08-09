@@ -662,3 +662,121 @@ STR_VLIV_XL_AIRWAYS                                             :法国特大航
 STR_VLIV_YAKUTIA_AIRLINES                                       :俄罗斯雅库特航空
 STR_VLIV_YAMAL                                                  :亚马尔航空
 STR_VLIV_YEMENIA                                                :也门航空
+STR_AIRV_AIRBUS_A321XLR                                      :空客 A321XLR
+STR_VLIV_AIRBUS_A321XLR                                     :通用涂装
+STR_AIRV_EMBRAER_E190_E2                                     :巴航工 E190-E2
+STR_VLIV_EMBRAER_E190_E2                                    :通用涂装
+STR_AIRV_AIRBUS_A220_100                                     :空客 A220-100
+STR_VLIV_AIRBUS_A220_100                                    :通用涂装
+STR_AIRV_ATR_72_600                                          :ATR 72-600
+STR_VLIV_ATR_72_600                                         :通用涂装
+STR_AIRV_ATR_42_600                                          :ATR 42-600
+STR_VLIV_ATR_42_600                                         :通用涂装
+STR_AIRV_BOEING_737MAX7                                      :波音 737 MAX 7
+STR_VLIV_BOEING_737MAX7                                     :通用涂装
+STR_AIRV_AIRBUS_A330_800NEO                                  :空客 A330-800neo
+STR_VLIV_AIRBUS_A330_800NEO                                 :通用涂装
+STR_AIRV_SUKHOI_SSJ100                                       :苏霍伊 Superjet 100
+STR_VLIV_SUKHOI_SSJ100                                      :通用涂装
+STR_AIRV_IRKUT_MC21                                          :伊尔库特 MC-21
+STR_VLIV_IRKUT_MC21                                         :通用涂装
+STR_AIRV_COMAC_C929                                          :中国商飞 C929
+STR_VLIV_COMAC_C929                                         :通用涂装
+STR_AIRV_EMBRAER_E175_E2                                     :巴航工 E175-E2
+STR_VLIV_EMBRAER_E175_E2                                    :通用涂装
+STR_AIRV_BOEING_757_300                                      :波音 757-300
+STR_VLIV_BOEING_757_300                                     :通用涂装
+STR_AIRV_BOEING_777_8                                        :波音 777-8
+STR_VLIV_BOEING_777_8                                       :通用涂装
+STR_AIRV_ANTONOV_AN148                                       :安东诺夫 安-148
+STR_VLIV_ANTONOV_AN148                                      :通用涂装
+STR_AIRV_ANTONOV_AN158                                       :安东诺夫 安-158
+STR_VLIV_ANTONOV_AN158                                      :通用涂装
+STR_AIRV_TUPOLEV_TU204                                       :图波列夫 图-204
+STR_VLIV_TUPOLEV_TU204                                      :通用涂装
+STR_AIRV_TUPOLEV_TU214                                       :图波列夫 图-214
+STR_VLIV_TUPOLEV_TU214                                      :通用涂装
+STR_AIRV_ILYUSHIN_IL96                                       :伊尔-96
+STR_VLIV_ILYUSHIN_IL96                                      :通用涂装
+STR_AIRV_ILYUSHIN_IL114                                      :伊尔-114
+STR_VLIV_ILYUSHIN_IL114                                     :通用涂装
+STR_AIRV_YAKOVLEV_YAK40                                      :雅克夫列夫 Yak-40
+STR_VLIV_YAKOVLEV_YAK40                                     :通用涂装
+STR_AIRV_YAKOVLEV_YAK42                                      :雅克夫列夫 Yak-42
+STR_VLIV_YAKOVLEV_YAK42                                     :通用涂装
+STR_AIRV_DOUGLAS_DC3                                         :道格拉斯 DC-3
+STR_VLIV_DOUGLAS_DC3                                        :通用涂装
+STR_AIRV_DOUGLAS_DC6                                         :道格拉斯 DC-6
+STR_VLIV_DOUGLAS_DC6                                        :通用涂装
+STR_AIRV_DOUGLAS_DC7                                         :道格拉斯 DC-7
+STR_VLIV_DOUGLAS_DC7                                        :通用涂装
+STR_AIRV_LOCKHEED_L188                                       :洛克希德 L-188 伊莱克特拉
+STR_VLIV_LOCKHEED_L188                                      :通用涂装
+STR_AIRV_LOCKHEED_L1011                                      :洛克希德 L-1011 三星
+STR_VLIV_LOCKHEED_L1011                                     :通用涂装
+STR_AIRV_DEHAVILLAND_COMET                                   :德哈维兰 彗星
+STR_VLIV_DEHAVILLAND_COMET                                  :通用涂装
+STR_AIRV_VICKERS_VISCOUNT                                    :维克斯 子爵
+STR_VLIV_VICKERS_VISCOUNT                                   :通用涂装
+STR_AIRV_VICKERS_VC10                                        :维克斯 VC10
+STR_VLIV_VICKERS_VC10                                       :通用涂装
+STR_AIRV_FOKKER_F27                                          :福克 F27
+STR_VLIV_FOKKER_F27                                         :通用涂装
+STR_AIRV_FOKKER_F28                                          :福克 F28
+STR_VLIV_FOKKER_F28                                         :通用涂装
+STR_AIRV_CONVAIR_880                                         :康维尔 880
+STR_VLIV_CONVAIR_880                                        :通用涂装
+STR_AIRV_CONVAIR_990                                         :康维尔 990
+STR_VLIV_CONVAIR_990                                        :通用涂装
+STR_AIRV_HS_TRIDENT                                          :霍克·西德利 三叉戟
+STR_VLIV_HS_TRIDENT                                         :通用涂装
+STR_AIRV_BOEING_747SP                                        :波音 747SP
+STR_VLIV_BOEING_747SP                                       :通用涂装
+STR_AIRV_ILYUSHIN_IL18                                       :伊尔-18
+STR_VLIV_ILYUSHIN_IL18                                      :通用涂装
+STR_AIRV_CESSNA_208                                          :塞斯纳 208 凯旋
+STR_VLIV_CESSNA_208                                         :通用涂装
+STR_AIRV_CESSNA_208B                                         :塞斯纳 208B 大凯旋
+STR_VLIV_CESSNA_208B                                        :通用涂装
+STR_AIRV_CESSNA_402                                          :塞斯纳 402
+STR_VLIV_CESSNA_402                                         :通用涂装
+STR_AIRV_CESSNA_404                                          :塞斯纳 404 泰坦
+STR_VLIV_CESSNA_404                                         :通用涂装
+STR_AIRV_CESSNA_414                                          :塞斯纳 414 校长
+STR_VLIV_CESSNA_414                                         :通用涂装
+STR_AIRV_CESSNA_421                                          :塞斯纳 421 金鹰
+STR_VLIV_CESSNA_421                                         :通用涂装
+STR_AIRV_AIRBUS_A321LR                                       :空客 A321LR
+STR_VLIV_AIRBUS_A321LR                                      :通用涂装
+STR_AIRV_ANTONOV_AN140                                       :安东诺夫 安-140
+STR_VLIV_ANTONOV_AN140                                      :通用涂装
+STR_AIRV_AVIC_MA60                                           :中航工业 MA-60
+STR_VLIV_AVIC_MA60                                          :通用涂装
+STR_AIRV_AVIC_MA600                                          :中航工业 MA-600
+STR_VLIV_AVIC_MA600                                         :通用涂装
+STR_AIRV_AVIC_Y7_200                                         :中航工业 运-7-200
+STR_VLIV_AVIC_Y7_200                                        :通用涂装
+STR_AIRV_BRITTEN_NORMAN_BN2B                                 :布里顿-诺曼 BN-2B 岛民
+STR_VLIV_BRITTEN_NORMAN_BN2B                                :通用涂装
+STR_AIRV_BRITTEN_NORMAN_BN2T                                 :布里顿-诺曼 BN-2T 涡桨岛民
+STR_VLIV_BRITTEN_NORMAN_BN2T                                :通用涂装
+STR_AIRV_CESSNA_408                                          :塞斯纳 408 SkyCourier
+STR_VLIV_CESSNA_408                                         :通用涂装
+STR_AIRV_DEHAVILLAND_DHC6_400                                :德哈维兰 DHC-6-400 双水獭
+STR_VLIV_DEHAVILLAND_DHC6_400                               :通用涂装
+STR_AIRV_EMBRAER_ERJ135                                      :巴航工 ERJ-135
+STR_VLIV_EMBRAER_ERJ135                                     :通用涂装
+STR_AIRV_EMBRAER_ERJ140                                      :巴航工 ERJ-140
+STR_VLIV_EMBRAER_ERJ140                                     :通用涂装
+STR_AIRV_GENERAL_ATOMICS_DO228                               :通用原子 DO 228
+STR_VLIV_GENERAL_ATOMICS_DO228                              :通用涂装
+STR_AIRV_LET_L410                                            :列特 L-410
+STR_VLIV_LET_L410                                           :通用涂装
+STR_AIRV_PILATUS_PC12                                        :皮拉图斯 PC-12
+STR_VLIV_PILATUS_PC12                                       :通用涂装
+STR_AIRV_PILATUS_PC24                                        :皮拉图斯 PC-24
+STR_VLIV_PILATUS_PC24                                       :通用涂装
+STR_AIRV_PZL_AN28                                            :安东诺夫 AN-28 空中卡车
+STR_VLIV_PZL_AN28                                           :通用涂装
+STR_AIRV_RAYTHEON_BEECH1900D                                 :雷神 1900D 空运者
+STR_VLIV_RAYTHEON_BEECH1900D                                :通用涂装

@@ -358,25 +358,25 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_10_cargo_subtype_text, cargo_subtype)
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_787_10_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 330; // Air Europa
-  2: return 330; // Air France
-  3: return 330; // Air New Zealand
-  4: return 330; // American
-  5: return 330; // British Airways
-  6: return 330; // EgyptAir
-  7: return 330; // El Al
-  8: return 330; // JAL
-  9: return 330; // KLM
- 10: return 330; // LAN
- 11: return 330; // Neos 
- 12: return 330; // Qantas
- 13: return 330; // RoyalAirMaroc
- 14: return 330; // TUI
- 15: return 330; // Turkish
- 16: return 330; // United
- 17: return 330; // Vietnam
- 18: return 330; // Virgin Atlantic
-     return 330;
+  1: return 318; // Air Europa
+  2: return 318; // Air France
+  3: return 318; // Air New Zealand
+  4: return 318; // American
+  5: return 318; // British Airways
+  6: return 318; // EgyptAir
+  7: return 318; // El Al
+  8: return 318; // JAL
+  9: return 318; // KLM
+ 10: return 318; // LAN
+ 11: return 318; // Neos 
+ 12: return 318; // Qantas
+ 13: return 318; // RoyalAirMaroc
+ 14: return 318; // TUI
+ 15: return 318; // Turkish
+ 16: return 318; // United
+ 17: return 318; // Vietnam
+ 18: return 318; // Virgin Atlantic
+     return 318;
 }
 
 item (FEAT_AIRCRAFT, Boeing_787_10)
@@ -396,10 +396,10 @@ item (FEAT_AIRCRAFT, Boeing_787_10)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 42;
-    passenger_capacity: 330;
-    mail_capacity: 33;
+    passenger_capacity: 318;
+    mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2400;
+    range: 2165;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -432,7 +432,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_787_10)
   {
     property
-    { range: 2400; }
+    { range: 2165; }
   }
 }
 
@@ -441,6 +441,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_787_10)
   {
     property
-    { range: 3600; }
+    { range: 3248; }
   }
 }

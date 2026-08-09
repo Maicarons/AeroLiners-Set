@@ -1,0 +1,255 @@
+// Antonov An-148
+// 占位机型：图形复用 donor Embraer_E190STD 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define ANTONOV_AN148_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 37, 22, -19, -11, ANIM]                                           \
+  [ 47, 1, 35, 18, -18, -9 , ANIM]                                           \
+  [ 87, 1, 45, 21, -23, -11, ANIM]                                           \
+  [137, 2, 34, 23, -17, -12, ANIM]                                           \
+  [175, 2, 33, 29, -17, -15, ANIM]                                           \
+  [215, 2, 34, 23, -17, -12, ANIM]                                           \
+  [255, 1, 45, 21, -23, -11, ANIM]                                           \
+  [305, 1, 35, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 37, 22, -19, -11, ANIM]                                          \
+  [ 47, 35, 35, 18, -18, -9 , ANIM]                                          \
+  [ 87, 35, 45, 21, -23, -11, ANIM]                                          \
+  [137, 36, 34, 24, -17, -12, ANIM]                                          \
+  [175, 36, 33, 29, -17, -15, ANIM]                                          \
+  [215, 36, 34, 24, -17, -12, ANIM]                                          \
+  [255, 35, 45, 21, -23, -11, ANIM]                                          \
+  [305, 35, 35, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 39, 30, -20, -15, ANIM]                                          \
+  [ 48, 70, 34, 26, -17, -13, ANIM]                                          \
+  [ 87, 70, 45, 20, -23, -10, ANIM]                                          \
+  [136, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [175, 71, 35, 14, -18, -7 , ANIM]                                          \
+  [215, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [255, 70, 45, 20, -23, -10, ANIM]                                          \
+  [305, 70, 34, 26, -17, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 37, 22, -19, -11, ANIM]                                         \
+  [ 47, 105, 35, 18, -18, -9 , ANIM]                                         \
+  [ 87, 105, 45, 21, -23, -11, ANIM]                                         \
+  [137, 106, 34, 24, -16, -12, ANIM]                                         \
+  [175, 106, 33, 29, -16, -15, ANIM]                                         \
+  [215, 106, 34, 24, -16, -12, ANIM]                                         \
+  [255, 105, 45, 21, -23, -11, ANIM]                                         \
+  [305, 105, 35, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 39, 24, -20, -12, ANIM]                                         \
+  [ 48, 140, 34, 21, -17, -11, ANIM]                                         \
+  [ 87, 140, 43, 23, -22, -12, ANIM]                                         \
+  [136, 140, 35, 21, -18, -11, ANIM]                                         \
+  [175, 141, 33, 21, -16, -11, ANIM]                                         \
+  [215, 140, 35, 21, -18, -11, ANIM]                                         \
+  [255, 140, 43, 23, -22, -12, ANIM]                                         \
+  [305, 140, 34, 21, -17, -11, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Embraer_E190STD 灰阶图）
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/(0)Greyscale.png"
+purchase_sprite(ANTONOV_AN148, 255, 1, 45, 21, -23, -11)
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/Alitalia.png"
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_Alitalia)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/BACityflyer.png"
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_BACityflyer)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/BulgariaAir.png"
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_BulgariaAir)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/HOP.png"
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_HOP)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/KLMCityhopper.png"
+ANTONOV_AN148_sprite_layout_template(ANTONOV_AN148_KLMCityhopper)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_Greyscale, flight_state())
+{
+  15: ANTONOV_AN148_Greyscale_Climbing;
+  18: ANTONOV_AN148_Greyscale_Flight;
+  21: ANTONOV_AN148_Greyscale_Landing;
+  22: ANTONOV_AN148_Greyscale_Touchdown;
+      ANTONOV_AN148_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_Alitalia, flight_state())
+{
+  15: ANTONOV_AN148_Alitalia_Climbing;
+  18: ANTONOV_AN148_Alitalia_Flight;
+  21: ANTONOV_AN148_Alitalia_Landing;
+  22: ANTONOV_AN148_Alitalia_Touchdown;
+      ANTONOV_AN148_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_BACityflyer, flight_state())
+{
+  15: ANTONOV_AN148_BACityflyer_Climbing;
+  18: ANTONOV_AN148_BACityflyer_Flight;
+  21: ANTONOV_AN148_BACityflyer_Landing;
+  22: ANTONOV_AN148_BACityflyer_Touchdown;
+      ANTONOV_AN148_BACityflyer_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_BulgariaAir, flight_state())
+{
+  15: ANTONOV_AN148_BulgariaAir_Climbing;
+  18: ANTONOV_AN148_BulgariaAir_Flight;
+  21: ANTONOV_AN148_BulgariaAir_Landing;
+  22: ANTONOV_AN148_BulgariaAir_Touchdown;
+      ANTONOV_AN148_BulgariaAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_HOP, flight_state())
+{
+  15: ANTONOV_AN148_HOP_Climbing;
+  18: ANTONOV_AN148_HOP_Flight;
+  21: ANTONOV_AN148_HOP_Landing;
+  22: ANTONOV_AN148_HOP_Touchdown;
+      ANTONOV_AN148_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_KLMCityhopper, flight_state())
+{
+  15: ANTONOV_AN148_KLMCityhopper_Climbing;
+  18: ANTONOV_AN148_KLMCityhopper_Flight;
+  21: ANTONOV_AN148_KLMCityhopper_Landing;
+  22: ANTONOV_AN148_KLMCityhopper_Touchdown;
+      ANTONOV_AN148_KLMCityhopper_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_sprites, cargo_subtype)
+{
+  1: ANTONOV_AN148_Alitalia;
+  2: ANTONOV_AN148_BACityflyer;
+  3: ANTONOV_AN148_BulgariaAir;
+  4: ANTONOV_AN148_HOP;
+  5: ANTONOV_AN148_KLMCityhopper;
+     ANTONOV_AN148_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_running_cost_factor, flight_state())
+{
+  plane_RC(29)
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(226); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(384); // airplane climbing after take-off
+      18: return plane_speed_kmh(830); // heading for tower contact point
+  16..20: return plane_speed_kmh(400); // in flight
+  21..22: return plane_speed_kmh(256); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(188);
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ANTONOV_AN148);
+  1: string(STR_VLIV_ALITALIA);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  3: string(STR_VLIV_BULGARIA_AIR);
+  4: string(STR_VLIV_HOP);
+  5: string(STR_VLIV_KLM_CITYHOPPER);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN148_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 80;
+  2: return 80;
+  3: return 80;
+  4: return 80;
+  5: return 80;
+     return 80;
+}
+
+item (FEAT_AIRCRAFT, ANTONOV_AN148)
+{
+  property
+  {
+    name: string(STR_AIRV_ANTONOV_AN148);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2009), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2004,2259);
+    retire_early: get_retire_early(2004,2259);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 19;
+    passenger_capacity: 80;
+    mail_capacity: 8;
+    acceleration: 27;
+    range: 564;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: ANTONOV_AN148_sprites;
+    purchase: ANTONOV_AN148_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: ANTONOV_AN148_cargo_subtype_text;
+    passenger_capacity: ANTONOV_AN148_cargo_subtype_capacity;
+    speed: ANTONOV_AN148_speed;
+    running_cost_factor: ANTONOV_AN148_running_cost_factor;
+    sound_effect: ANTONOV_AN148_sound_effect;
+
+    cost_factor: 50;
+    purchase_running_cost_factor: 29;
+    purchase_speed: plane_speed_kmh(830);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, ANTONOV_AN148)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, ANTONOV_AN148)
+  {
+    property
+    { range: 564; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, ANTONOV_AN148)
+  {
+    property
+    { range: 846; }
+  }
+}

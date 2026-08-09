@@ -167,6 +167,124 @@
 #include "src/gfx/Boeing/B777/B777X/B777X.pnml"
 #include "src/gfx/Embraer/E195/E195_E2/E195_E2.pnml"
 
+#include "src/gfx/Airbus/A321/A321XLR/A321XLR.pnml"
+
+#include "src/gfx/Embraer/E190/E190-E2/E190-E2.pnml"
+
+#include "src/gfx/Airbus/A220/A220-100/A220-100.pnml"
+
+#include "src/gfx/ATR/ATR72/72-600/72-600.pnml"
+
+#include "src/gfx/ATR/ATR42/42-600/42-600.pnml"
+
+#include "src/gfx/Boeing/B737/B737MAX7/B737MAX7.pnml"
+
+#include "src/gfx/Airbus/A330/A330-800neo/A330-800neo.pnml"
+
+#include "src/gfx/Sukhoi/SSJ100/SSJ100.pnml"
+
+#include "src/gfx/Irkut/MC21/MC21.pnml"
+
+#include "src/gfx/COMAC/C929/C929.pnml"
+
+#include "src/gfx/Embraer/E175/E175-E2/E175-E2.pnml"
+
+#include "src/gfx/Boeing/B757/B757-300/B757-300.pnml"
+
+#include "src/gfx/Boeing/B777/B777-8/B777-8.pnml"
+
+#include "src/gfx/Antonov/An148/An148.pnml"
+
+#include "src/gfx/Antonov/An158/An158.pnml"
+
+#include "src/gfx/Tupolev/Tu204/Tu204.pnml"
+
+#include "src/gfx/Tupolev/Tu214/Tu214.pnml"
+
+#include "src/gfx/Ilyushin/Il96/Il96.pnml"
+
+#include "src/gfx/Ilyushin/Il114/Il114.pnml"
+
+#include "src/gfx/Yakovlev/Yak40/Yak40.pnml"
+
+#include "src/gfx/Yakovlev/Yak42/Yak42.pnml"
+
+#include "src/gfx/McDonnell_Douglas/DC3/DC3.pnml"
+
+#include "src/gfx/McDonnell_Douglas/DC6/DC6.pnml"
+
+#include "src/gfx/McDonnell_Douglas/DC7/DC7.pnml"
+
+#include "src/gfx/Lockheed/L188/L188.pnml"
+
+#include "src/gfx/Lockheed/L1011/L1011.pnml"
+
+#include "src/gfx/de Havilland/Comet/Comet.pnml"
+
+#include "src/gfx/Vickers/Viscount/Viscount.pnml"
+
+#include "src/gfx/Vickers/VC10/VC10.pnml"
+
+#include "src/gfx/Fokker/F27/F27.pnml"
+
+#include "src/gfx/Fokker/F28/F28.pnml"
+
+#include "src/gfx/Convair/880/880.pnml"
+
+#include "src/gfx/Convair/990/990.pnml"
+
+#include "src/gfx/Hawker_Siddeley/Trident/Trident.pnml"
+
+#include "src/gfx/Boeing/B747/B747SP/B747SP.pnml"
+
+#include "src/gfx/Ilyushin/Il18/Il18.pnml"
+
+#include "src/gfx/Cessna/208/208/208.pnml"
+
+#include "src/gfx/Cessna/208B/208B/208B.pnml"
+
+#include "src/gfx/Cessna/402/402/402.pnml"
+
+#include "src/gfx/Cessna/404/404/404.pnml"
+
+#include "src/gfx/Cessna/414/414/414.pnml"
+
+#include "src/gfx/Cessna/421/421/421.pnml"
+
+#include "src/gfx/Airbus/A321/A321LR/A321LR.pnml"
+
+#include "src/gfx/Antonov/An140/An140.pnml"
+
+#include "src/gfx/AVIC/MA60/MA60.pnml"
+
+#include "src/gfx/AVIC/MA600/MA600.pnml"
+
+#include "src/gfx/AVIC/Y7-200/Y7-200.pnml"
+
+#include "src/gfx/Britten-Norman/BN-2B/BN-2B.pnml"
+
+#include "src/gfx/Britten-Norman/BN-2T/BN-2T.pnml"
+
+#include "src/gfx/Cessna/408/408/408.pnml"
+
+#include "src/gfx/de Havilland/DHC6-400/DHC6-400.pnml"
+
+#include "src/gfx/Embraer/ERJ135/ERJ135/ERJ135.pnml"
+
+#include "src/gfx/Embraer/ERJ140/ERJ140/ERJ140.pnml"
+
+#include "src/gfx/General Atomics/DO228/DO228.pnml"
+
+#include "src/gfx/LET/L410/L410.pnml"
+
+#include "src/gfx/Pilatus/PC12/PC12.pnml"
+
+#include "src/gfx/Pilatus/PC24/PC24.pnml"
+
+#include "src/gfx/PZL/AN28/AN28.pnml"
+
+#include "src/gfx/Raytheon/Beech1900D/Beech1900D.pnml"
+
 // Sort order
 #include "src/sort_order.pnml"
 

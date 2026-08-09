@@ -1,0 +1,255 @@
+// Vickers VC10
+// 占位机型：图形复用 donor Ilyushin_62 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define VICKERS_VC10_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 54, 29, -27, -15, ANIM]                                           \
+  [ 60, 1, 51, 27, -26, -14, ANIM]                                           \
+  [120, 1, 61, 28, -31, -14, ANIM]                                           \
+  [190, 1, 51, 37, -26, -19, ANIM]                                           \
+  [250, 1, 54, 42, -27, -21, ANIM]                                           \
+  [310, 1, 51, 37, -26, -19, ANIM]                                           \
+  [370, 1, 61, 28, -31, -14, ANIM]                                           \
+  [440, 1, 51, 27, -26, -14 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 54, 29, -26, -15, ANIM]                                          \
+  [ 60, 50, 51, 27, -26, -14, ANIM]                                          \
+  [120, 50, 61, 28, -31, -14, ANIM]                                          \
+  [190, 50, 51, 38, -26, -18, ANIM]                                          \
+  [250, 50, 54, 42, -27, -21, ANIM]                                          \
+  [310, 50, 51, 38, -26, -18, ANIM]                                          \
+  [370, 50, 61, 28, -31, -14, ANIM]                                          \
+  [440, 50, 51, 27, -26, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 54, 44, -27, -22, ANIM]                                         \
+  [ 60, 100, 49, 41, -25, -21, ANIM]                                         \
+  [120, 100, 61, 28, -31, -14, ANIM]                                         \
+  [190, 100, 46, 25, -23, -13, ANIM]                                         \
+  [250, 100, 52, 23, -26, -12, ANIM]                                         \
+  [310, 100, 46, 25, -23, -13, ANIM]                                         \
+  [370, 100, 61, 28, -31, -14, ANIM]                                         \
+  [440, 100, 49, 41, -25, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 150, 54, 29, -27, -15, ANIM]                                         \
+  [ 60, 150, 51, 27, -26, -14, ANIM]                                         \
+  [120, 150, 61, 28, -31, -14, ANIM]                                         \
+  [190, 150, 51, 38, -26, -19, ANIM]                                         \
+  [250, 150, 54, 42, -27, -21, ANIM]                                         \
+  [310, 150, 51, 38, -26, -19, ANIM]                                         \
+  [370, 150, 61, 28, -31, -14, ANIM]                                         \
+  [440, 150, 51, 27, -26, -14, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 200, 54, 38, -27, -19, ANIM]                                         \
+  [ 60, 200, 52, 34, -26, -17, ANIM]                                         \
+  [120, 200, 61, 28, -31, -14, ANIM]                                         \
+  [190, 200, 52, 31, -26, -16, ANIM]                                         \
+  [250, 200, 54, 31, -27, -16, ANIM]                                         \
+  [310, 200, 52, 31, -26, -16, ANIM]                                         \
+  [370, 200, 61, 28, -31, -14, ANIM]                                         \
+  [440, 200, 54, 34, -27, -17, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Ilyushin_62 灰阶图）
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/(0)Greyscale.png"
+purchase_sprite(VICKERS_VC10, 370, 6, 59, 21, -30, -11)
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/AeroflotOld.png"
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_AeroflotOld)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/AirUkraine.png"
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_AirUkraine)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/CSA.png"
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_CSA)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/Cubana.png"
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_Cubana)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Ilyushin/Il62/Interflug.png"
+VICKERS_VC10_sprite_layout_template(VICKERS_VC10_Interflug)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_Greyscale, flight_state())
+{
+  15: VICKERS_VC10_Greyscale_Climbing;
+  18: VICKERS_VC10_Greyscale_Flight;
+  21: VICKERS_VC10_Greyscale_Landing;
+  22: VICKERS_VC10_Greyscale_Touchdown;
+      VICKERS_VC10_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_AeroflotOld, flight_state())
+{
+  15: VICKERS_VC10_AeroflotOld_Climbing;
+  18: VICKERS_VC10_AeroflotOld_Flight;
+  21: VICKERS_VC10_AeroflotOld_Landing;
+  22: VICKERS_VC10_AeroflotOld_Touchdown;
+      VICKERS_VC10_AeroflotOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_AirUkraine, flight_state())
+{
+  15: VICKERS_VC10_AirUkraine_Climbing;
+  18: VICKERS_VC10_AirUkraine_Flight;
+  21: VICKERS_VC10_AirUkraine_Landing;
+  22: VICKERS_VC10_AirUkraine_Touchdown;
+      VICKERS_VC10_AirUkraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_CSA, flight_state())
+{
+  15: VICKERS_VC10_CSA_Climbing;
+  18: VICKERS_VC10_CSA_Flight;
+  21: VICKERS_VC10_CSA_Landing;
+  22: VICKERS_VC10_CSA_Touchdown;
+      VICKERS_VC10_CSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_Cubana, flight_state())
+{
+  15: VICKERS_VC10_Cubana_Climbing;
+  18: VICKERS_VC10_Cubana_Flight;
+  21: VICKERS_VC10_Cubana_Landing;
+  22: VICKERS_VC10_Cubana_Touchdown;
+      VICKERS_VC10_Cubana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_Interflug, flight_state())
+{
+  15: VICKERS_VC10_Interflug_Climbing;
+  18: VICKERS_VC10_Interflug_Flight;
+  21: VICKERS_VC10_Interflug_Landing;
+  22: VICKERS_VC10_Interflug_Touchdown;
+      VICKERS_VC10_Interflug_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_sprites, cargo_subtype)
+{
+  1: VICKERS_VC10_AeroflotOld;
+  2: VICKERS_VC10_AirUkraine;
+  3: VICKERS_VC10_CSA;
+  4: VICKERS_VC10_Cubana;
+  5: VICKERS_VC10_Interflug;
+     VICKERS_VC10_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_running_cost_factor, flight_state())
+{
+  plane_RC(42)
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(394); // airplane climbing after take-off
+      18: return plane_speed_kmh(822); // heading for tower contact point
+  16..20: return plane_speed_kmh(370); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_VICKERS_VC10);
+  1: string(STR_VLIV_AEROFLOT_OLD);
+  2: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+  3: string(STR_VLIV_CZECH_AIRLINES);
+  4: string(STR_VLIV_CUBANA_DE_AVIACION);
+  5: string(STR_VLIV_INTERFLUG);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 145;
+  2: return 145;
+  3: return 145;
+  4: return 145;
+  5: return 145;
+     return 145;
+}
+
+item (FEAT_AIRCRAFT, VICKERS_VC10)
+{
+  property
+  {
+    name: string(STR_AIRV_VICKERS_VC10);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1962), 1, 1);
+    vehicle_life: 15;
+    model_life: get_model_life(1967,1995);
+    retire_early: get_retire_early(1967,1995);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 145;
+    mail_capacity: 15;
+    acceleration: 27;
+    range: 1800;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
+  }
+  graphics {
+    default: VICKERS_VC10_sprites;
+    purchase: VICKERS_VC10_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: VICKERS_VC10_cargo_subtype_text;
+    passenger_capacity: VICKERS_VC10_cargo_subtype_capacity;
+    speed: VICKERS_VC10_speed;
+    running_cost_factor: VICKERS_VC10_running_cost_factor;
+    sound_effect: VICKERS_VC10_sound_effect;
+
+    cost_factor: 169;
+    purchase_running_cost_factor: 42;
+    purchase_speed: plane_speed_kmh(822);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, VICKERS_VC10)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, VICKERS_VC10)
+  {
+    property
+    { range: 1800; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, VICKERS_VC10)
+  {
+    property
+    { range: 2700; }
+  }
+}

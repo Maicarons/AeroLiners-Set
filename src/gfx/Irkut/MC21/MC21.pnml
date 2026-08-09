@@ -1,0 +1,255 @@
+// Irkut MC-21
+// 占位机型：图形复用 donor Airbus_A320_200 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define IRKUT_MC21_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 23, -22, -10, ANIM]                                           \
+  [ 50, 0, 40, 21, -24, -9 , ANIM]                                           \
+  [100, 0, 48, 23, -26, -12, ANIM]                                           \
+  [160, 0, 39, 30, -25, -20, ANIM]                                           \
+  [210, 0, 45, 33, -22, -21, ANIM]                                           \
+  [260, 0, 39, 30, -14, -20, ANIM]                                           \
+  [310, 0, 48, 23, -22, -11, ANIM]                                           \
+  [370, 0, 40, 21, -16, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 35, 45, 23, -22, -10, ANIM]                                          \
+  [ 50, 35, 40, 21, -24, -9 , ANIM]                                          \
+  [100, 35, 48, 23, -26, -12, ANIM]                                          \
+  [160, 35, 39, 30, -25, -20, ANIM]                                          \
+  [210, 35, 45, 33, -22, -21, ANIM]                                          \
+  [260, 35, 39, 30, -14, -20, ANIM]                                          \
+  [310, 35, 48, 23, -22, -11, ANIM]                                          \
+  [370, 35, 40, 21, -16, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 70, 44, 36, -22, -18, ANIM]                                          \
+  [ 50, 70, 39, 31, -20, -16, ANIM]                                          \
+  [100, 70, 50, 22, -25, -11, ANIM]                                          \
+  [160, 70, 37, 21, -19, -11, ANIM]                                          \
+  [210, 70, 42, 15, -21, -8 , ANIM]                                          \
+  [260, 70, 37, 21, -19, -11, ANIM]                                          \
+  [310, 70, 50, 22, -25, -11, ANIM]                                          \
+  [370, 70, 39, 31, -40, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 120, 44, 23, -22, -12, ANIM]                                         \
+  [ 50, 120, 40, 21, -20, -11, ANIM]                                         \
+  [100, 120, 48, 22, -24, -11, ANIM]                                         \
+  [160, 120, 39, 30, -20, -15, ANIM]                                         \
+  [210, 120, 44, 28, -11, -14, ANIM]                                         \
+  [260, 120, 39, 30, -20, -15, ANIM]                                         \
+  [310, 120, 48, 22, -24, -11, ANIM]                                         \
+  [370, 120, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 160, 44, 29, -22, -15, ANIM]                                         \
+  [ 50, 160, 40, 25, -20, -13, ANIM]                                         \
+  [100, 160, 49, 22, -25, -11, ANIM]                                         \
+  [160, 160, 38, 26, -19, -13, ANIM]                                         \
+  [210, 160, 42, 22, -21, -11, ANIM]                                         \
+  [260, 160, 38, 26, -19, -13, ANIM]                                         \
+  [310, 160, 49, 22, -25, -11, ANIM]                                         \
+  [370, 160, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Airbus_A320_200 灰阶图）
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/(0)Greyscale.png"
+purchase_sprite(IRKUT_MC21, 310, 0, 48, 23, -24, -12)
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/Aegan.png"
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_Aegan)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/AerLingus.png"
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_AerLingus)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/Aeroflot.png"
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_Aeroflot)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/AirArabia.png"
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_AirArabia)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/AirAsia.png"
+IRKUT_MC21_sprite_layout_template(IRKUT_MC21_AirAsia)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_Greyscale, flight_state())
+{
+  15: IRKUT_MC21_Greyscale_Climbing;
+  18: IRKUT_MC21_Greyscale_Flight;
+  21: IRKUT_MC21_Greyscale_Landing;
+  22: IRKUT_MC21_Greyscale_Touchdown;
+      IRKUT_MC21_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_Aegan, flight_state())
+{
+  15: IRKUT_MC21_Aegan_Climbing;
+  18: IRKUT_MC21_Aegan_Flight;
+  21: IRKUT_MC21_Aegan_Landing;
+  22: IRKUT_MC21_Aegan_Touchdown;
+      IRKUT_MC21_Aegan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_AerLingus, flight_state())
+{
+  15: IRKUT_MC21_AerLingus_Climbing;
+  18: IRKUT_MC21_AerLingus_Flight;
+  21: IRKUT_MC21_AerLingus_Landing;
+  22: IRKUT_MC21_AerLingus_Touchdown;
+      IRKUT_MC21_AerLingus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_Aeroflot, flight_state())
+{
+  15: IRKUT_MC21_Aeroflot_Climbing;
+  18: IRKUT_MC21_Aeroflot_Flight;
+  21: IRKUT_MC21_Aeroflot_Landing;
+  22: IRKUT_MC21_Aeroflot_Touchdown;
+      IRKUT_MC21_Aeroflot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_AirArabia, flight_state())
+{
+  15: IRKUT_MC21_AirArabia_Climbing;
+  18: IRKUT_MC21_AirArabia_Flight;
+  21: IRKUT_MC21_AirArabia_Landing;
+  22: IRKUT_MC21_AirArabia_Touchdown;
+      IRKUT_MC21_AirArabia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_AirAsia, flight_state())
+{
+  15: IRKUT_MC21_AirAsia_Climbing;
+  18: IRKUT_MC21_AirAsia_Flight;
+  21: IRKUT_MC21_AirAsia_Landing;
+  22: IRKUT_MC21_AirAsia_Touchdown;
+      IRKUT_MC21_AirAsia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_sprites, cargo_subtype)
+{
+  1: IRKUT_MC21_Aegan;
+  2: IRKUT_MC21_AerLingus;
+  3: IRKUT_MC21_Aeroflot;
+  4: IRKUT_MC21_AirArabia;
+  5: IRKUT_MC21_AirAsia;
+     IRKUT_MC21_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_running_cost_factor, flight_state())
+{
+  plane_RC(77)
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_IRKUT_MC21);
+  1: string(STR_VLIV_AEGEAN_AIRLINES);
+  2: string(STR_VLIV_AER_LINGUS);
+  3: string(STR_VLIV_AEROFLOT);
+  4: string(STR_VLIV_AIR_ARABIA);
+  5: string(STR_VLIV_AIR_ASIA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 180;
+  2: return 180;
+  3: return 180;
+  4: return 180;
+  5: return 180;
+     return 180;
+}
+
+item (FEAT_AIRCRAFT, IRKUT_MC21)
+{
+  property
+  {
+    name: string(STR_AIRV_IRKUT_MC21);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2024), 1, 1);
+    vehicle_life: 18;
+    model_life: get_model_life(1989,2050);
+    retire_early: get_retire_early(1989,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 180;
+    mail_capacity: 18;
+    acceleration: 27;
+    range: 1091;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: IRKUT_MC21_sprites;
+    purchase: IRKUT_MC21_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: IRKUT_MC21_cargo_subtype_text;
+    passenger_capacity: IRKUT_MC21_cargo_subtype_capacity;
+    speed: IRKUT_MC21_speed;
+    running_cost_factor: IRKUT_MC21_running_cost_factor;
+    sound_effect: IRKUT_MC21_sound_effect;
+
+    cost_factor: 73;
+    purchase_running_cost_factor: 77;
+    purchase_speed: plane_speed_kmh(902);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, IRKUT_MC21)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, IRKUT_MC21)
+  {
+    property
+    { range: 1091; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, IRKUT_MC21)
+  {
+    property
+    { range: 1642; }
+  }
+}

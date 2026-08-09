@@ -211,7 +211,7 @@ item (FEAT_AIRCRAFT, COMAC_C909)
     passenger_capacity: 90;
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 600;
+    range: 673;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -245,7 +245,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, COMAC_C909)
   {
     property
-    { range: 600; }
+    { range: 673; }
   }
 }
 
@@ -254,6 +254,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, COMAC_C909)
   {
     property
-    { range: 900; }
+    { range: 1010; }
   }
 }

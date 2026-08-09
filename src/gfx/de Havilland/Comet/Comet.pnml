@@ -1,0 +1,255 @@
+// de Havilland Comet
+// 占位机型：图形复用 donor BAC_1_11_500 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define DEHAVILLAND_COMET_sprite_layout_template(name)                            \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 40, 19, -20, -9 , ANIM]                                           \
+  [ 45, 1, 36, 19, -18, -9 , ANIM]                                           \
+  [ 85, 1, 44, 20, -22, -10, ANIM]                                           \
+  [135, 1, 35, 26, -18, -13, ANIM]                                           \
+  [175, 1, 40, 30, -20, -15, ANIM]                                           \
+  [220, 1, 35, 26, -18, -13, ANIM]                                           \
+  [260, 1, 44, 20, -22, -10, ANIM]                                           \
+  [310, 1, 36, 19, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 40, 19, -20, -9 , ANIM]                                          \
+  [ 45, 35, 36, 19, -18, -9 , ANIM]                                          \
+  [ 85, 35, 44, 20, -22, -10, ANIM]                                          \
+  [135, 35, 35, 26, -18, -13, ANIM]                                          \
+  [175, 35, 40, 30, -20, -15, ANIM]                                          \
+  [220, 35, 35, 26, -18, -13, ANIM]                                          \
+  [260, 35, 44, 20, -22, -10, ANIM]                                          \
+  [310, 35, 36, 19, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 40, 29, -20, -14, ANIM]                                          \
+  [ 45, 70, 36, 25, -18, -12, ANIM]                                          \
+  [ 85, 70, 46, 20, -23, -10, ANIM]                                          \
+  [135, 70, 35, 17, -18, -9 , ANIM]                                          \
+  [175, 70, 36, 17, -18, -9 , ANIM]                                          \
+  [220, 70, 35, 17, -18, -9 , ANIM]                                          \
+  [260, 70, 46, 20, -23, -10, ANIM]                                          \
+  [310, 70, 36, 25, -18, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 40, 19, -20, -9 , ANIM]                                         \
+  [ 45, 100, 36, 19, -18, -9 , ANIM]                                         \
+  [ 85, 100, 44, 20, -22, -10, ANIM]                                         \
+  [135, 100, 35, 26, -18, -13, ANIM]                                         \
+  [175, 100, 40, 30, -20, -15, ANIM]                                         \
+  [220, 100, 35, 26, -18, -13, ANIM]                                         \
+  [260, 100, 44, 20, -22, -10, ANIM]                                         \
+  [310, 100, 36, 19, -18, -9 , ANIM]          			              					 \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 40, 24, -20, -12, ANIM]                                         \
+  [ 45, 135, 36, 23, -18, -12, ANIM]                                         \
+  [ 85, 135, 48, 20, -24, -10, ANIM]                                         \
+  [135, 135, 37, 21, -19, -11, ANIM]                                         \
+  [175, 135, 40, 24, -20, -12, ANIM]                                         \
+  [220, 135, 37, 21, -16, -10, ANIM]                                         \
+  [260, 135, 45, 20, -23, -10, ANIM]                                         \
+  [310, 135, 36, 22, -18, -11, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 BAC_1_11_500 灰阶图）
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/(0)Greyscale.png"
+purchase_sprite(DEHAVILLAND_COMET, 260, 1, 44, 20, -22, -10)
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Adria.png"
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_Adria)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BavariaGermanair.png"
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_BavariaGermanair)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishAirways.png"
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_BritishAirways)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishCaledonian.png"
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_BritishCaledonian)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Cyprus.png"
+DEHAVILLAND_COMET_sprite_layout_template(DEHAVILLAND_COMET_Cyprus)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_Greyscale, flight_state())
+{
+  15: DEHAVILLAND_COMET_Greyscale_Climbing;
+  18: DEHAVILLAND_COMET_Greyscale_Flight;
+  21: DEHAVILLAND_COMET_Greyscale_Landing;
+  22: DEHAVILLAND_COMET_Greyscale_Touchdown;
+      DEHAVILLAND_COMET_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_Adria, flight_state())
+{
+  15: DEHAVILLAND_COMET_Adria_Climbing;
+  18: DEHAVILLAND_COMET_Adria_Flight;
+  21: DEHAVILLAND_COMET_Adria_Landing;
+  22: DEHAVILLAND_COMET_Adria_Touchdown;
+      DEHAVILLAND_COMET_Adria_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_BavariaGermanair, flight_state())
+{
+  15: DEHAVILLAND_COMET_BavariaGermanair_Climbing;
+  18: DEHAVILLAND_COMET_BavariaGermanair_Flight;
+  21: DEHAVILLAND_COMET_BavariaGermanair_Landing;
+  22: DEHAVILLAND_COMET_BavariaGermanair_Touchdown;
+      DEHAVILLAND_COMET_BavariaGermanair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_BritishAirways, flight_state())
+{
+  15: DEHAVILLAND_COMET_BritishAirways_Climbing;
+  18: DEHAVILLAND_COMET_BritishAirways_Flight;
+  21: DEHAVILLAND_COMET_BritishAirways_Landing;
+  22: DEHAVILLAND_COMET_BritishAirways_Touchdown;
+      DEHAVILLAND_COMET_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_BritishCaledonian, flight_state())
+{
+  15: DEHAVILLAND_COMET_BritishCaledonian_Climbing;
+  18: DEHAVILLAND_COMET_BritishCaledonian_Flight;
+  21: DEHAVILLAND_COMET_BritishCaledonian_Landing;
+  22: DEHAVILLAND_COMET_BritishCaledonian_Touchdown;
+      DEHAVILLAND_COMET_BritishCaledonian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_Cyprus, flight_state())
+{
+  15: DEHAVILLAND_COMET_Cyprus_Climbing;
+  18: DEHAVILLAND_COMET_Cyprus_Flight;
+  21: DEHAVILLAND_COMET_Cyprus_Landing;
+  22: DEHAVILLAND_COMET_Cyprus_Touchdown;
+      DEHAVILLAND_COMET_Cyprus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_sprites, cargo_subtype)
+{
+  1: DEHAVILLAND_COMET_Adria;
+  2: DEHAVILLAND_COMET_BavariaGermanair;
+  3: DEHAVILLAND_COMET_BritishAirways;
+  4: DEHAVILLAND_COMET_BritishCaledonian;
+  5: DEHAVILLAND_COMET_Cyprus;
+     DEHAVILLAND_COMET_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_running_cost_factor, flight_state())
+{
+  plane_RC(53)
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(205); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(294); // airplane climbing after take-off
+      18: return plane_speed_kmh(740); // heading for tower contact point
+  16..20: return plane_speed_kmh(384); // in flight
+  21..22: return plane_speed_kmh(191); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(171);
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_DEHAVILLAND_COMET);
+  1: string(STR_VLIV_ADRIA_AIRWAYS);
+  2: string(STR_VLIV_BAVARIA_GERMANAIR);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  4: string(STR_VLIV_BRITISH_CALEDONIAN);
+  5: string(STR_VLIV_CYPRUS_AIRWAYS);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 90;
+  2: return 90;
+  3: return 90;
+  4: return 90;
+  5: return 90;
+     return 90;
+}
+
+item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
+{
+  property
+  {
+    name: string(STR_AIRV_DEHAVILLAND_COMET);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1952), 1, 1);
+    vehicle_life: 12;
+    model_life: get_model_life(1967,1989);
+    retire_early: get_retire_early(1967,1989);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 90;
+    mail_capacity: 7;
+    acceleration: 27;
+    range: 1345;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: DEHAVILLAND_COMET_sprites;
+    purchase: DEHAVILLAND_COMET_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: DEHAVILLAND_COMET_cargo_subtype_text;
+    passenger_capacity: DEHAVILLAND_COMET_cargo_subtype_capacity;
+    speed: DEHAVILLAND_COMET_speed;
+    running_cost_factor: DEHAVILLAND_COMET_running_cost_factor;
+    sound_effect: DEHAVILLAND_COMET_sound_effect;
+
+    cost_factor: 37;
+    purchase_running_cost_factor: 53;
+    purchase_speed: plane_speed_kmh(740);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
+  {
+    property
+    { range: 1207; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
+  {
+    property
+    { range: 1811; }
+  }
+}

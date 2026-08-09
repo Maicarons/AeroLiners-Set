@@ -252,17 +252,17 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E195_E2_cargo_subtype_text, cargo_subtype)
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E195_E2_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 146; // Air Dolomiti
-  2: return 146; // Air Europa
-  3: return 146; // Air Europa Old
-  4: return 146; // Austrian
-  5: return 146; // Belavia
-  6: return 146; // Flybe
-  7: return 146; // GreatDane
-  8: return 146; // LOT
-  9: return 146; // Lufthansa
- 10: return 146; // Montenegro
-     return 146;
+  1: return 132; // Air Dolomiti
+  2: return 132; // Air Europa
+  3: return 132; // Air Europa Old
+  4: return 132; // Austrian
+  5: return 132; // Belavia
+  6: return 132; // Flybe
+  7: return 132; // GreatDane
+  8: return 132; // LOT
+  9: return 132; // Lufthansa
+ 10: return 132; // Montenegro
+     return 132;
 }
 
 item (FEAT_AIRCRAFT, Embraer_E195_E2)
@@ -282,10 +282,10 @@ item (FEAT_AIRCRAFT, Embraer_E195_E2)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 18;
-    passenger_capacity: 146;
-    mail_capacity: 15;
+    passenger_capacity: 132;
+    mail_capacity: 13;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1050;
+    range: 873;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -319,7 +319,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Embraer_E195_E2)
   {
     property
-    { range: 1050; }
+    { range: 873; }
   }
 }
 
@@ -328,6 +328,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Embraer_E195_E2)
   {
     property
-    { range: 1575; }
+    { range: 1310; }
   }
 }

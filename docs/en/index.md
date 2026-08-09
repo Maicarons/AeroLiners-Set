@@ -15,11 +15,11 @@ hero:
 
 features:
   - title: Real airliners + real liveries
-    details: 157 real-world airliner and freighter models, each with authentic airline liveries you can browse in the gallery.
+    details: 216 real-world airliner and freighter models, each with authentic airline liveries you can browse in the gallery.
     icon: ✈️
     link: /aircraft/
   - title: Fleet gallery
-    details: All 157 models and 1957 livery previews, extracted from source and grouped by manufacturer.
+    details: All 216 models and 1957 livery previews, extracted from source and grouped by manufacturer.
     icon: 🖼️
     link: /aircraft/
   - title: Multilingual

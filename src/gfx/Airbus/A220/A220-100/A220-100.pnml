@@ -1,0 +1,255 @@
+// Airbus A220-100
+// 占位机型：图形复用 donor Airbus_A320neo 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define AIRBUS_A220_100_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 23, -22, -10, ANIM]                                           \
+  [ 50, 0, 40, 21, -24, -9 , ANIM]                                           \
+  [100, 0, 48, 23, -26, -12, ANIM]                                           \
+  [160, 0, 39, 30, -25, -20, ANIM]                                           \
+  [210, 0, 45, 33, -22, -21, ANIM]                                           \
+  [260, 0, 39, 30, -14, -20, ANIM]                                           \
+  [310, 0, 48, 23, -22, -11, ANIM]                                           \
+  [370, 0, 40, 21, -16, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 35, 45, 23, -22, -10, ANIM]                                          \
+  [ 50, 35, 40, 21, -24, -9 , ANIM]                                          \
+  [100, 35, 48, 23, -26, -12, ANIM]                                          \
+  [160, 35, 39, 30, -25, -20, ANIM]                                          \
+  [210, 35, 45, 33, -22, -21, ANIM]                                          \
+  [260, 35, 39, 30, -14, -20, ANIM]                                          \
+  [310, 35, 48, 23, -22, -11, ANIM]                                          \
+  [370, 35, 40, 21, -16, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 70, 44, 36, -22, -18, ANIM]                                          \
+  [ 50, 70, 39, 31, -20, -16, ANIM]                                          \
+  [100, 70, 50, 22, -25, -11, ANIM]                                          \
+  [160, 70, 37, 21, -19, -11, ANIM]                                          \
+  [210, 70, 42, 15, -21, -8 , ANIM]                                          \
+  [260, 70, 37, 21, -19, -11, ANIM]                                          \
+  [310, 70, 50, 22, -25, -11, ANIM]                                          \
+  [370, 70, 39, 31, -40, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 120, 44, 23, -22, -12, ANIM]                                         \
+  [ 50, 120, 40, 21, -20, -11, ANIM]                                         \
+  [100, 120, 48, 22, -24, -11, ANIM]                                         \
+  [160, 120, 39, 30, -20, -15, ANIM]                                         \
+  [210, 120, 44, 28, -11, -14, ANIM]                                         \
+  [260, 120, 39, 30, -20, -15, ANIM]                                         \
+  [310, 120, 48, 22, -24, -11, ANIM]                                         \
+  [370, 120, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 160, 44, 29, -22, -15, ANIM]                                         \
+  [ 50, 160, 40, 25, -20, -13, ANIM]                                         \
+  [100, 160, 49, 22, -25, -11, ANIM]                                         \
+  [160, 160, 38, 26, -19, -13, ANIM]                                         \
+  [210, 160, 42, 22, -21, -11, ANIM]                                         \
+  [260, 160, 38, 26, -19, -13, ANIM]                                         \
+  [310, 160, 49, 22, -25, -11, ANIM]                                         \
+  [370, 160, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Airbus_A320neo 灰阶图）
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/(0)Greyscale.png"
+purchase_sprite(AIRBUS_A220_100, 310, 0, 48, 23, -24, -12)
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Aegean.png"
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_Aegean)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AirCairo.png"
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_AirCairo)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AirMalta.png"
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_AirMalta)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AtlanticAirways.png"
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_AtlanticAirways)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Austrian.png"
+AIRBUS_A220_100_sprite_layout_template(AIRBUS_A220_100_Austrian)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_Greyscale, flight_state())
+{
+  15: AIRBUS_A220_100_Greyscale_Climbing;
+  18: AIRBUS_A220_100_Greyscale_Flight;
+  21: AIRBUS_A220_100_Greyscale_Landing;
+  22: AIRBUS_A220_100_Greyscale_Touchdown;
+      AIRBUS_A220_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_Aegean, flight_state())
+{
+  15: AIRBUS_A220_100_Aegean_Climbing;
+  18: AIRBUS_A220_100_Aegean_Flight;
+  21: AIRBUS_A220_100_Aegean_Landing;
+  22: AIRBUS_A220_100_Aegean_Touchdown;
+      AIRBUS_A220_100_Aegean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_AirCairo, flight_state())
+{
+  15: AIRBUS_A220_100_AirCairo_Climbing;
+  18: AIRBUS_A220_100_AirCairo_Flight;
+  21: AIRBUS_A220_100_AirCairo_Landing;
+  22: AIRBUS_A220_100_AirCairo_Touchdown;
+      AIRBUS_A220_100_AirCairo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_AirMalta, flight_state())
+{
+  15: AIRBUS_A220_100_AirMalta_Climbing;
+  18: AIRBUS_A220_100_AirMalta_Flight;
+  21: AIRBUS_A220_100_AirMalta_Landing;
+  22: AIRBUS_A220_100_AirMalta_Touchdown;
+      AIRBUS_A220_100_AirMalta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_AtlanticAirways, flight_state())
+{
+  15: AIRBUS_A220_100_AtlanticAirways_Climbing;
+  18: AIRBUS_A220_100_AtlanticAirways_Flight;
+  21: AIRBUS_A220_100_AtlanticAirways_Landing;
+  22: AIRBUS_A220_100_AtlanticAirways_Touchdown;
+      AIRBUS_A220_100_AtlanticAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_Austrian, flight_state())
+{
+  15: AIRBUS_A220_100_Austrian_Climbing;
+  18: AIRBUS_A220_100_Austrian_Flight;
+  21: AIRBUS_A220_100_Austrian_Landing;
+  22: AIRBUS_A220_100_Austrian_Touchdown;
+      AIRBUS_A220_100_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_sprites, cargo_subtype)
+{
+  1: AIRBUS_A220_100_Aegean;
+  2: AIRBUS_A220_100_AirCairo;
+  3: AIRBUS_A220_100_AirMalta;
+  4: AIRBUS_A220_100_AtlanticAirways;
+  5: AIRBUS_A220_100_Austrian;
+     AIRBUS_A220_100_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_running_cost_factor, flight_state())
+{
+  plane_RC(73)
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(256); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(360); // airplane climbing after take-off
+      18: return plane_speed_kmh(829); // heading for tower contact point
+  16..20: return plane_speed_kmh(465); // in flight
+  21..22: return plane_speed_kmh(243); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(200);
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS_A220_100);
+  1: string(STR_VLIV_AEGEAN_AIRLINES);
+  2: string(STR_VLIV_AIR_CAIRO);
+  3: string(STR_VLIV_AIR_MALTA);
+  4: string(STR_VLIV_ATLANTIC_AIRWAYS);
+  5: string(STR_VLIV_AUSTRIAN_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, AIRBUS_A220_100_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 120;
+  2: return 120;
+  3: return 120;
+  4: return 120;
+  5: return 120;
+     return 120;
+}
+
+item (FEAT_AIRCRAFT, AIRBUS_A220_100)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A220_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2016), 1, 1);
+    vehicle_life: 26;
+    model_life: get_model_life(2016,2050);
+    retire_early: get_retire_early(2016,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 120;
+    mail_capacity: 12;
+    acceleration: 27;
+    range: 1145;
+    sound_effect: SOUND_TAKEOFF_JET;
+  }
+  graphics {
+    default: AIRBUS_A220_100_sprites;
+    purchase: AIRBUS_A220_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: AIRBUS_A220_100_cargo_subtype_text;
+    passenger_capacity: AIRBUS_A220_100_cargo_subtype_capacity;
+    speed: AIRBUS_A220_100_speed;
+    running_cost_factor: AIRBUS_A220_100_running_cost_factor;
+    sound_effect: AIRBUS_A220_100_sound_effect;
+
+    cost_factor: 80;
+    purchase_running_cost_factor: 71;
+    purchase_speed: plane_speed_kmh(829);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A220_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A220_100)
+  {
+    property
+    { range: 1145; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, AIRBUS_A220_100)
+  {
+    property
+    { range: 1720; }
+  }
+}

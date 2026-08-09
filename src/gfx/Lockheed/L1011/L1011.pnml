@@ -1,0 +1,255 @@
+// Lockheed L-1011 TriStar
+// 占位机型：图形复用 donor Douglas_DC10_30 的精灵表；待真实像素图完成后替换本目录 PNG 即可，逻辑无需改动。
+
+#define LOCKHEED_L1011_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 54, 29, -27, -15, ANIM]                                           \
+  [ 60, 1, 51, 27, -26, -14, ANIM]                                           \
+  [120, 1, 61, 28, -31, -14, ANIM]                                           \
+  [190, 1, 51, 37, -26, -19, ANIM]                                           \
+  [250, 1, 54, 42, -27, -21, ANIM]                                           \
+  [310, 1, 51, 37, -26, -19, ANIM]                                           \
+  [370, 1, 61, 28, -31, -14, ANIM]                                           \
+  [440, 1, 51, 27, -26, -14, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 54, 29, -27, -15, ANIM]                                          \
+  [ 60, 50, 51, 27, -26, -14, ANIM]                                          \
+  [120, 50, 61, 28, -31, -14, ANIM]                                          \
+  [190, 50, 51, 37, -26, -19, ANIM]                                          \
+  [250, 50, 54, 42, -27, -21, ANIM]                                          \
+  [310, 50, 51, 37, -26, -19, ANIM]                                          \
+  [370, 50, 61, 28, -31, -14, ANIM]                                          \
+  [440, 50, 51, 27, -26, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 54, 44, -27, -22, ANIM]                                         \
+  [ 60, 100, 49, 41, -25, -21, ANIM]                                         \
+  [120, 100, 61, 29, -31, -15, ANIM]                                         \
+  [190, 100, 46, 25, -23, -13, ANIM]                                         \
+  [250, 100, 52, 23, -26, -12, ANIM]                                         \
+  [310, 100, 46, 25, -23, -13, ANIM]                                         \
+  [370, 100, 61, 28, -31, -15, ANIM]                                         \
+  [440, 100, 49, 41, -25, -21, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 150, 54, 29, -27, -15, ANIM]                                         \
+  [ 60, 150, 51, 27, -26, -14, ANIM]                                         \
+  [120, 150, 61, 28, -31, -14, ANIM]                                         \
+  [190, 150, 51, 37, -26, -19, ANIM]                                         \
+  [250, 150, 54, 42, -27, -21, ANIM]                                         \
+  [310, 150, 51, 37, -26, -19, ANIM]                                         \
+  [370, 150, 61, 28, -31, -14, ANIM]                                         \
+  [440, 150, 51, 27, -26, -14, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 200, 54, 38, -27, -19, ANIM]                                         \
+  [ 60, 200, 52, 34, -26, -17, ANIM]                                         \
+  [120, 200, 62, 27, -31, -14, ANIM]                                         \
+  [190, 200, 52, 31, -26, -16, ANIM]                                         \
+  [250, 200, 54, 31, -27, -16, ANIM]                                         \
+  [310, 200, 52, 31, -26, -16, ANIM]                                         \
+  [370, 200, 61, 27, -31, -14, ANIM]                                         \
+  [440, 200, 52, 34, -26, -17, ANIM]                                         \
+}                                                                            \
+
+
+// 灰阶基底（占位复用 Douglas_DC10_30 灰阶图）
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/(0)Greyscale.png"
+purchase_sprite(LOCKHEED_L1011, 370, 1, 61, 28, -31, -14)
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/AirAfrique.png"
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_AirAfrique)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/AirFrance.png"
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_AirFrance)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/Alitalia.png"
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_Alitalia)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/American.png"
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_American)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC10/DC10-30/Biman.png"
+LOCKHEED_L1011_sprite_layout_template(LOCKHEED_L1011_Biman)
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_Greyscale, flight_state())
+{
+  15: LOCKHEED_L1011_Greyscale_Climbing;
+  18: LOCKHEED_L1011_Greyscale_Flight;
+  21: LOCKHEED_L1011_Greyscale_Landing;
+  22: LOCKHEED_L1011_Greyscale_Touchdown;
+      LOCKHEED_L1011_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_AirAfrique, flight_state())
+{
+  15: LOCKHEED_L1011_AirAfrique_Climbing;
+  18: LOCKHEED_L1011_AirAfrique_Flight;
+  21: LOCKHEED_L1011_AirAfrique_Landing;
+  22: LOCKHEED_L1011_AirAfrique_Touchdown;
+      LOCKHEED_L1011_AirAfrique_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_AirFrance, flight_state())
+{
+  15: LOCKHEED_L1011_AirFrance_Climbing;
+  18: LOCKHEED_L1011_AirFrance_Flight;
+  21: LOCKHEED_L1011_AirFrance_Landing;
+  22: LOCKHEED_L1011_AirFrance_Touchdown;
+      LOCKHEED_L1011_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_Alitalia, flight_state())
+{
+  15: LOCKHEED_L1011_Alitalia_Climbing;
+  18: LOCKHEED_L1011_Alitalia_Flight;
+  21: LOCKHEED_L1011_Alitalia_Landing;
+  22: LOCKHEED_L1011_Alitalia_Touchdown;
+      LOCKHEED_L1011_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_American, flight_state())
+{
+  15: LOCKHEED_L1011_American_Climbing;
+  18: LOCKHEED_L1011_American_Flight;
+  21: LOCKHEED_L1011_American_Landing;
+  22: LOCKHEED_L1011_American_Touchdown;
+      LOCKHEED_L1011_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_Biman, flight_state())
+{
+  15: LOCKHEED_L1011_Biman_Climbing;
+  18: LOCKHEED_L1011_Biman_Flight;
+  21: LOCKHEED_L1011_Biman_Landing;
+  22: LOCKHEED_L1011_Biman_Touchdown;
+      LOCKHEED_L1011_Biman_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_sprites, cargo_subtype)
+{
+  1: LOCKHEED_L1011_AirAfrique;
+  2: LOCKHEED_L1011_AirFrance;
+  3: LOCKHEED_L1011_Alitalia;
+  4: LOCKHEED_L1011_American;
+  5: LOCKHEED_L1011_Biman;
+     LOCKHEED_L1011_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_running_cost_factor, flight_state())
+{
+  plane_RC(196)
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(346); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(523); // airplane climbing after take-off
+      18: return plane_speed_kmh(983); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_LOCKHEED_L1011);
+  1: string(STR_VLIV_AIR_AFRIQUE);
+  2: string(STR_VLIV_AIR_FRANCE);
+  3: string(STR_VLIV_ALITALIA);
+  4: string(STR_VLIV_AMERICAN_AIRLINES);
+  5: string(STR_VLIV_BIMAN_BANGLADESH_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, LOCKHEED_L1011_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 256;
+  2: return 256;
+  3: return 256;
+  4: return 256;
+  5: return 256;
+     return 256;
+}
+
+item (FEAT_AIRCRAFT, LOCKHEED_L1011)
+{
+  property
+  {
+    name: string(STR_AIRV_LOCKHEED_L1011);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1972), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1973,1988);
+    retire_early: get_retire_early(1973,1988);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 49;
+    passenger_capacity: 256;
+    mail_capacity: 26;
+    acceleration: 27;
+    range: 1799;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
+  }
+  graphics {
+    default: LOCKHEED_L1011_sprites;
+    purchase: LOCKHEED_L1011_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: LOCKHEED_L1011_cargo_subtype_text;
+    passenger_capacity: LOCKHEED_L1011_cargo_subtype_capacity;
+    speed: LOCKHEED_L1011_speed;
+    running_cost_factor: LOCKHEED_L1011_running_cost_factor;
+    sound_effect: LOCKHEED_L1011_sound_effect;
+
+    cost_factor: 155;
+    purchase_running_cost_factor: 196;
+    purchase_speed: plane_speed_kmh(983);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, LOCKHEED_L1011)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, LOCKHEED_L1011)
+  {
+    property
+    { range: 1799; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, LOCKHEED_L1011)
+  {
+    property
+    { range: 2703; }
+  }
+}

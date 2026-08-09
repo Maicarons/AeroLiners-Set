@@ -616,9 +616,9 @@ item (FEAT_AIRCRAFT, Boeing_777X)
   {
     name: string(STR_AIRV_BOEING_777X);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(2020), 1, 25);
+    introduction_date: date(get_plane_year(2027), 1, 25);
     vehicle_life: 30;
-    model_life: get_model_life(2020,2050);
+    model_life: get_model_life(2027,2050);
     retire_early: get_retire_early(2020,2050);
 
     sprite_id: SPRITE_ID_NEW_AIRCRAFT;
@@ -630,7 +630,7 @@ item (FEAT_AIRCRAFT, Boeing_777X)
     passenger_capacity: 426;
     mail_capacity: 43;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 3400;
+    range: 2560;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -664,7 +664,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_777X)
   {
     property
-    { range: 3400; }
+    { range: 2560; }
   }
 }
 
@@ -673,6 +673,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_777X)
   {
     property
-    { range: 5100; }
+    { range: 3840; }
   }
 }
