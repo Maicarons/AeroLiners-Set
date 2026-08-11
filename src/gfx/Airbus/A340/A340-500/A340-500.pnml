@@ -126,7 +126,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A340_500_speed, flight_state())
 {
   12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(483); // airplane climbing after take-off
-      18: return plane_speed_kmh(918); // heading for tower contact point
+      18: return plane_speed_kmh(871); // heading for tower contact point
   16..20: return plane_speed_kmh(443); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -176,7 +176,7 @@ item (FEAT_AIRCRAFT, Airbus_A340_500)
     passenger_capacity: 313;
     mail_capacity: 38;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 3000;
+    range: 3031;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -192,7 +192,7 @@ item (FEAT_AIRCRAFT, Airbus_A340_500)
 
     cost_factor: 200; 
     purchase_running_cost_factor: 201;
-    purchase_speed: plane_speed_kmh(902); 
+    purchase_speed: plane_speed_kmh(871); 
   }
 }
 
@@ -210,7 +210,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A340_500)
   {
     property
-    { range: 3000; }
+    { range: 3031; }
   }
 }
 
@@ -219,6 +219,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A340_500)
   {
     property
-    { range: 4500; }
+    { range: 4546; }
   }
 }

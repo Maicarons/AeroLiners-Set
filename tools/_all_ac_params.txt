@@ -1,0 +1,278 @@
+总计 216 款
+
+
+### ATR (ATR)
+- ATR_42_300                   | ATR 42-300 / ATR 42-300             | 年1982 | 座48 | 巡航484km/h | 航程1468km (r=267) | 价系数11
+- ATR_42_300F                  | ATR 42-300F / ATR 42-300F            | 年1982 | 座0 | 巡航495km/h | 航程2316km (r=421) | 价系数12
+- ATR_42_500                   | ATR 42-500 / ATR 42-500             | 年1993 | 座48 | 巡航556km/h | 航程1348km (r=245) | 价系数14
+- ATR_42_600                   | ATR 42-600 / ATR 42-600             | 年2010 | 座48 | 巡航535km/h | 航程1348km (r=245) | 价系数14
+- ATR_72_200                   | ATR 72-200 / ATR 72-200             | 年1986 | 座66 | 巡航515km/h | 航程1595km (r=290) | 价系数16
+- ATR_72_200F                  | ATR 72-200F / ATR 72-200F            | 年1989 | 座0 | 巡航517km/h | 航程1595km (r=290) | 价系数19
+- ATR_72_500                   | ATR 72-500 / ATR 72-500             | 年1995 | 座74 | 巡航510km/h | 航程1430km (r=260) | 价系数18
+- ATR_72_600                   | ATR 72-600 / ATR 72-600             | 年2009 | 座72 | 巡航510km/h | 航程1402km (r=255) | 价系数18
+
+### 中航工业 (AVIC)
+- AVIC_MA60                    | 中航工业 MA-60 / AVIC MA-60             | 年1998 | 座60 | 巡航430km/h | 航程1600km (r=291) | 价系数14
+- AVIC_MA600                   | 中航工业 MA-600 / AVIC MA-600            | 年2008 | 座60 | 巡航430km/h | 航程1430km (r=260) | 价系数18
+- AVIC_Y7_200                  | 中航工业 运-7-200 / AVIC Y-7-200           | 年1982 | 座7 | 巡航423km/h | 航程908km (r=165) | 价系数14
+
+### 空中客车 (Airbus)
+- AIRBUS_A220_100              | 空客 A220-100 / Airbus A220-100        | 年2014 | 座116 | 巡航870km/h | 航程6298km (r=1145) | 价系数80
+- AIRBUS_A321LR                | 空客 A321LR / Airbus A321LR          | 年2016 | 座206 | 巡航833km/h | 航程7408km (r=1347) | 价系数84
+- AIRBUS_A321XLR               | 空客 A321XLR / Airbus A321XLR         | 年2022 | 座206 | 巡航833km/h | 航程8701km (r=1582) | 价系数73
+- AIRBUS_A330_800NEO           | 空客 A330-800neo / Airbus A330-800neo     | 年2018 | 座220 | 巡航871km/h | 航程14998km (r=2727) | 价系数187
+- Airbus_A220_300              | 空客 A220-300 / Airbus A220-300        | 年2014 | 座141 | 巡航870km/h | 航程6572km (r=1195) | 价系数92
+- Airbus_A300_600F             | 空客 A300-600F / Airbus A300-600F       | 年1992 | 座0 | 巡航833km/h | 航程7502km (r=1364) | 价系数122
+- Airbus_A300_600R             | 空客 A300-600R / Airbus A300-600R       | 年1986 | 座247 | 巡航833km/h | 航程7502km (r=1364) | 价系数122
+- Airbus_A310_200              | 空客 A310-200 / Airbus A310-200        | 年1981 | 座195 | 巡航870km/h | 航程6501km (r=1182) | 价系数134
+- Airbus_A310_200F             | 空客 A310-200F / Airbus A310-200F       | 年1982 | 座0 | 巡航871km/h | 航程5951km (r=1082) | 价系数134
+- Airbus_A310_300              | 空客 A310-300 / Airbus A310-300        | 年1984 | 座220 | 巡航870km/h | 航程9542km (r=1735) | 价系数137
+- Airbus_A310_300F             | 空客 A310-300F / Airbus A310-300F       | 年1984 | 座0 | 巡航871km/h | 航程8058km (r=1465) | 价系数142
+- Airbus_A318                  | 空客 A318 / Airbus A318            | 年2001 | 座107 | 巡航829km/h | 航程5742km (r=1044) | 价系数57
+- Airbus_A319                  | 空客 A319 / Airbus A319            | 年1994 | 座124 | 巡航829km/h | 航程6941km (r=1262) | 价系数57
+- Airbus_A319neo               | 空客 A319neo / Airbus A319neo         | 年2015 | 座160 | 巡航833km/h | 航程6848km (r=1245) | 价系数95
+- Airbus_A320_100              | 空客 A320-100 / Airbus A320-100        | 年1986 | 座150 | 巡航828km/h | 航程4812km (r=875) | 价系数71
+- Airbus_A320_200              | 空客 A320-200 / Airbus A320-200        | 年1987 | 座150 | 巡航828km/h | 航程6100km (r=1109) | 价系数73
+- Airbus_A320neo               | 空客 A320neo / Airbus A320neo         | 年2014 | 座150 | 巡航828km/h | 航程6298km (r=1145) | 价系数101
+- Airbus_A321_100              | 空客 A321-100 / Airbus A321-100        | 年1992 | 座185 | 巡航828km/h | 航程4152km (r=755) | 价系数84
+- Airbus_A321_200              | 空客 A321-200 / Airbus A321-200        | 年1994 | 座185 | 巡航828km/h | 航程5929km (r=1078) | 价系数84
+- Airbus_A321neo               | 空客 A321neo / Airbus A321neo         | 年2014 | 座206 | 巡航833km/h | 航程7398km (r=1345) | 价系数108
+- Airbus_A330_200              | 空客 A330-200 / Airbus A330-200        | 年1996 | 座253 | 巡航871km/h | 航程13448km (r=2445) | 价系数169
+- Airbus_A330_200F             | 空客 A330-200F / Airbus A330-200F       | 年2008 | 座0 | 巡航871km/h | 航程7398km (r=1345) | 价系数171
+- Airbus_A330_300              | 空客 A330-300 / Airbus A330-300        | 年1992 | 座277 | 巡航871km/h | 航程11748km (r=2136) | 价系数187
+- Airbus_A330_900neo           | 空客 A330-900neo / Airbus A330-900neo     | 年2016 | 座287 | 巡航871km/h | 航程13612km (r=2475) | 价系数190
+- Airbus_A340_300              | 空客 A340-300 / Airbus A340-300        | 年1991 | 座295 | 巡航871km/h | 航程12402km (r=2255) | 价系数200
+- Airbus_A340_500              | 空客 A340-500 / Airbus A340-500        | 年2000 | 座313 | 巡航871km/h | 航程16670km (r=3031) | 价系数200
+- Airbus_A340_600              | 空客 A340-600 / Airbus A340-600        | 年2000 | 座379 | 巡航871km/h | 航程13898km (r=2527) | 价系数231
+- Airbus_A350_1000             | 空客 A350-1000 / Airbus A350-1000       | 年2016 | 座410 | 巡航912km/h | 航程16698km (r=3036) | 价系数235
+- Airbus_A350_900              | 空客 A350-900 / Airbus A350-900        | 年2013 | 座325 | 巡航903km/h | 航程15752km (r=2864) | 价系数220
+- Airbus_A380_800              | 空客 A380-800 / Airbus A380-800        | 年2005 | 座525 | 巡航903km/h | 航程15702km (r=2855) | 价系数347
+
+### 安东诺夫 (Antonov)
+- ANTONOV_AN140                | 安东诺夫 安-140 / Antonov An-140         | 年2000 | 座52 | 巡航575km/h | 航程2101km (r=382) | 价系数14
+- ANTONOV_AN148                | 安东诺夫 安-148 / Antonov An-148         | 年2007 | 座68 | 巡航870km/h | 航程4400km (r=800) | 价系数50
+- ANTONOV_AN158                | 安东诺夫 安-158 / Antonov An-158         | 年2008 | 座86 | 巡航870km/h | 航程2502km (r=455) | 价系数65
+- Antonov_124                  | 安东诺夫 安-124 / Antonov An-124         | 年1984 | 座350 | 巡航865km/h | 航程3702km (r=673) | 价系数274
+- Antonov_225                  | 安东诺夫 安-225 / Antonov An-225         | 年1986 | 座0 | 巡航800km/h | 航程15400km (r=2800) | 价系数274
+
+### BAC (BAC)
+- BAC_1_11_200                 | BAC 1-11-200 / BAC 1-11-200           | 年1962 | 座89 | 巡航882km/h | 航程1342km (r=244) | 价系数24
+- BAC_1_11_300                 | BAC 1-11-300 / BAC 1-11-300           | 年1962 | 座89 | 巡航882km/h | 航程2040km (r=371) | 价系数24
+- BAC_1_11_400                 | BAC 1-11-400 / BAC 1-11-400           | 年1962 | 座89 | 巡航882km/h | 航程2040km (r=371) | 价系数37
+- BAC_1_11_500                 | BAC 1-11-500 / BAC 1-11-500           | 年1965 | 座119 | 巡航871km/h | 航程2744km (r=499) | 价系数37
+- BAC_CONCORDE                 | 协和式超音速客机 / Aerospatiale/BAC Concorde | 年1974 | 座128 | 巡航2154km/h | 航程6578km (r=1196) | 价系数160
+
+### 英国宇航 (BAe)
+- BAe_146_100                  | 英国宇航 146-100 / British Aerospace 146-100 | 年1981 | 座82 | 巡航789km/h | 航程3872km (r=704) | 价系数20
+- BAe_146_200                  | 英国宇航 146-200 / British Aerospace 146-200 | 年1980 | 座100 | 巡航789km/h | 航程3652km (r=664) | 价系数22
+- BAe_146_300                  | 英国宇航 146-300 / British Aerospace 146-300 | 年1986 | 座112 | 巡航789km/h | 航程3338km (r=607) | 价系数24
+- BAe_146_300QT                | 英国宇航 146-300QT / British Aerospace 146-300QT | 年1986 | 座0 | 巡航789km/h | 航程3338km (r=607) | 价系数24
+
+### 波音 (Boeing)
+- BOEING_737MAX7               | 波音 737 MAX 7 / Boeing 737 MAX 7       | 年2024 | 座153 | 巡航839km/h | 航程7002km (r=1273) | 价系数101
+- BOEING_747SP                 | 波音 747SP / Boeing 747SP           | 年1974 | 座331 | 巡航1000km/h | 航程12314km (r=2239) | 价系数265
+- BOEING_757_300               | 波音 757-300 / Boeing 757-300         | 年1997 | 座243 | 巡航858km/h | 航程6286km (r=1143) | 价系数79
+- BOEING_777_8                 | 波音 777-8 / Boeing 777-8           | 年2025 | 座350 | 巡航905km/h | 航程17589km (r=3198) | 价系数262
+- Boeing_707_320               | 波音 707-320 / Boeing 707-320         | 年1951 | 座189 | 巡航972km/h | 航程6941km (r=1262) | 价系数38
+- Boeing_707_420               | 波音 707-420 / Boeing 707-420         | 年1958 | 座189 | 巡航972km/h | 航程8948km (r=1627) | 价系数41
+- Boeing_717_200               | 波音 717-200 / Boeing 717-200         | 年1997 | 座106 | 巡航811km/h | 航程3822km (r=695) | 价系数34
+- Boeing_727_100               | 波音 727-100 / Boeing 727-100         | 年1961 | 座106 | 巡航960km/h | 航程4169km (r=758) | 价系数35
+- Boeing_727_200               | 波音 727-200 / Boeing 727-200         | 年1965 | 座134 | 巡航954km/h | 航程4719km (r=858) | 价系数37
+- Boeing_727_200F              | 波音 727-200F / Boeing 727-200F        | 年1970 | 座0 | 巡航954km/h | 航程4719km (r=858) | 价系数29
+- Boeing_737_100               | 波音 737-100 / Boeing 737-100         | 年1965 | 座118 | 巡航796km/h | 航程2849km (r=518) | 价系数29
+- Boeing_737_200               | 波音 737-200 / Boeing 737-200         | 年1966 | 座130 | 巡航796km/h | 航程4802km (r=873) | 价系数29
+- Boeing_737_200C              | 波音 737-200C / Boeing 737-200C        | 年1966 | 座0 | 巡航796km/h | 航程4802km (r=873) | 价系数37
+- Boeing_737_300               | 波音 737-300 / Boeing 737-300         | 年1982 | 座149 | 巡航828km/h | 航程4174km (r=759) | 价系数29
+- Boeing_737_300F              | 波音 737-300F / Boeing 737-300F        | 年1982 | 座0 | 巡航828km/h | 航程4174km (r=759) | 价系数45
+- Boeing_737_400               | 波音 737-400 / Boeing 737-400         | 年1983 | 座188 | 巡航828km/h | 航程3822km (r=695) | 价系数49
+- Boeing_737_500               | 波音 737-500 / Boeing 737-500         | 年1988 | 座132 | 巡航828km/h | 航程4400km (r=800) | 价系数53
+- Boeing_737_600               | 波音 737-600 / Boeing 737-600         | 年1997 | 座130 | 巡航834km/h | 航程5990km (r=1089) | 价系数53
+- Boeing_737_700               | 波音 737-700 / Boeing 737-700         | 年1996 | 座149 | 巡航834km/h | 航程5572km (r=1013) | 价系数64
+- Boeing_737_800               | 波音 737-800 / Boeing 737-800         | 年1996 | 座189 | 巡航837km/h | 航程5434km (r=988) | 价系数74
+- Boeing_737_900               | 波音 737-900 / Boeing 737-900         | 年1999 | 座189 | 巡航828km/h | 航程5500km (r=1000) | 价系数77
+- Boeing_737_900ER             | 波音 737-900ER / Boeing 737-900ER       | 年2005 | 座220 | 巡航840km/h | 航程5924km (r=1077) | 价系数80
+- Boeing_737_MAX10             | 波音 737 MAX 10 / Boeing 737 MAX 10      | 年2025 | 座230 | 巡航842km/h | 航程5698km (r=1036) | 价系数112
+- Boeing_737_MAX8              | 波音 737 MAX 8 / Boeing 737 MAX 8       | 年2015 | 座189 | 巡航842km/h | 航程6501km (r=1182) | 价系数101
+- Boeing_737_MAX9              | 波音 737 MAX 9 / Boeing 737 MAX 9       | 年2016 | 座220 | 巡航842km/h | 航程6100km (r=1109) | 价系数106
+- Boeing_747_100               | 波音 747-100 / Boeing 747-100         | 年1965 | 座366 | 巡航900km/h | 航程9801km (r=1782) | 价系数276
+- Boeing_747_200               | 波音 747-200 / Boeing 747-200         | 年1969 | 座366 | 巡航900km/h | 航程12150km (r=2209) | 价系数265
+- Boeing_747_200M              | 波音 747-200M / Boeing 747-200M        | 年1972 | 座238 | 巡航900km/h | 航程12150km (r=2209) | 价系数265
+- Boeing_747_300               | 波音 747-300 / Boeing 747-300         | 年1981 | 座412 | 巡航905km/h | 航程11720km (r=2131) | 价系数274
+- Boeing_747_300M              | 波音 747-300M / Boeing 747-300M        | 年1981 | 座366 | 巡航905km/h | 航程12402km (r=2255) | 价系数274
+- Boeing_747_400               | 波音 747-400 / Boeing 747-400         | 年1987 | 座416 | 巡航910km/h | 航程13448km (r=2445) | 价系数297
+- Boeing_747_400BCF            | 波音 747-400F BCF / Boeing 747-400F BCF    | 年2003 | 座0 | 巡航910km/h | 航程8250km (r=1500) | 价系数187
+- Boeing_747_400D              | 波音 747-400D / Boeing 747-400D        | 年1989 | 座568 | 巡航957km/h | 航程9999km (r=1818) | 价系数274
+- Boeing_747_400ER             | 波音 747-400ER / Boeing 747-400ER       | 年2000 | 座416 | 巡航899km/h | 航程14047km (r=2554) | 价系数298
+- Boeing_747_400ERF            | 波音 747-400F ERF / Boeing 747-400F ERF    | 年1999 | 座0 | 巡航899km/h | 航程9229km (r=1678) | 价系数311
+- Boeing_747_400M              | 波音 747-400M / Boeing 747-400M        | 年1987 | 座266 | 巡航957km/h | 航程13448km (r=2445) | 价系数293
+- Boeing_747_400SCD            | 波音 747-400F SCD / Boeing 747-400F SCD    | 年1991 | 座450 | 巡航911km/h | 航程13442km (r=2444) | 价系数291
+- Boeing_747_8F                | 波音 747-8F / Boeing 747-8F          | 年2009 | 座0 | 巡航898km/h | 航程8129km (r=1478) | 价系数322
+- Boeing_747_8I                | 波音 747-8I / Boeing 747-8I          | 年2010 | 座467 | 巡航908km/h | 航程14998km (r=2727) | 价系数321
+- Boeing_757_200               | 波音 757-200 / Boeing 757-200         | 年1981 | 座200 | 巡航858km/h | 航程7128km (r=1296) | 价系数79
+- Boeing_757_200F              | 波音 757-200F / Boeing 757-200F        | 年1985 | 座0 | 巡航858km/h | 航程5830km (r=1060) | 价系数82
+- Boeing_767_200               | 波音 767-200 / Boeing 767-200         | 年1979 | 座216 | 巡航858km/h | 航程7200km (r=1309) | 价系数127
+- Boeing_767_200ER             | 波音 767-200ER / Boeing 767-200ER       | 年1982 | 座181 | 巡航858km/h | 航程12199km (r=2218) | 价系数131
+- Boeing_767_300               | 波音 767-300 / Boeing 767-300         | 年1984 | 座269 | 巡航858km/h | 航程7200km (r=1309) | 价系数148
+- Boeing_767_300ER             | 波音 767-300ER / Boeing 767-300ER       | 年1986 | 座218 | 巡航858km/h | 航程11072km (r=2013) | 价系数155
+- Boeing_767_300F              | 波音 767-300F / Boeing 767-300F        | 年1993 | 座0 | 巡航858km/h | 航程6022km (r=1095) | 价系数152
+- Boeing_767_400ER             | 波音 767-400ER / Boeing 767-400ER       | 年1998 | 座245 | 巡航851km/h | 航程10417km (r=1894) | 价系数158
+- Boeing_777X                  | 波音 777X / Boeing 777X            | 年2025 | 座414 | 巡航903km/h | 航程14822km (r=2695) | 价系数305
+- Boeing_777_200               | 波音 777-200 / Boeing 777-200         | 年1993 | 座305 | 巡航896km/h | 航程9702km (r=1764) | 价系数241
+- Boeing_777_200ER             | 波音 777-200ER / Boeing 777-200ER       | 年1995 | 座301 | 巡航896km/h | 航程13084km (r=2379) | 价系数237
+- Boeing_777_200F              | 波音 777-200F / Boeing 777-200F        | 年2007 | 座0 | 巡航896km/h | 航程18056km (r=3283) | 价系数270
+- Boeing_777_200LR             | 波音 777-200LR / Boeing 777-200LR       | 年2004 | 座301 | 巡航896km/h | 航程15846km (r=2881) | 价系数266
+- Boeing_777_300               | 波音 777-300 / Boeing 777-300         | 年1996 | 座368 | 巡航896km/h | 航程11121km (r=2022) | 价系数262
+- Boeing_777_300ER             | 波音 777-300ER / Boeing 777-300ER       | 年2002 | 座392 | 巡航916km/h | 航程13651km (r=2482) | 价系数288
+- Boeing_787_10                | 波音 787-10 / Boeing 787-10          | 年2016 | 座336 | 巡航903km/h | 航程11720km (r=2131) | 价系数230
+- Boeing_787_8                 | 波音 787-8 / Boeing 787-8           | 年2009 | 座248 | 巡航903km/h | 航程13530km (r=2460) | 价系数189
+- Boeing_787_9                 | 波音 787-9 / Boeing 787-9           | 年2012 | 座296 | 巡航903km/h | 航程14008km (r=2547) | 价系数223
+
+### 庞巴迪 (Bombardier)
+- Bombardier_CRJ1000           | 庞巴迪 CRJ 1000 / Bombardier CRJ 1000    | 年2008 | 座104 | 巡航829km/h | 航程2700km (r=491) | 价系数44
+- Bombardier_CRJ1000EL         | 庞巴迪 CRJ 1000EL / Bombardier CRJ 1000EL  | 年2008 | 座104 | 巡航829km/h | 航程1908km (r=347) | 价系数45
+- Bombardier_CRJ100ER          | 庞巴迪 CRJ-100ER / Bombardier CRJ-100ER   | 年1990 | 座50 | 巡航786km/h | 航程2998km (r=545) | 价系数22
+- Bombardier_CRJ100LR          | 庞巴迪 CRJ-100LR / Bombardier CRJ-100LR   | 年1990 | 座50 | 巡航786km/h | 航程3712km (r=675) | 价系数25
+- Bombardier_CRJ200ER          | 庞巴迪 CRJ-200ER / Bombardier CRJ-200ER   | 年1994 | 座50 | 巡航786km/h | 航程3047km (r=554) | 价系数26
+- Bombardier_CRJ200LR          | 庞巴迪 CRJ-200LR / Bombardier CRJ-200LR   | 年1994 | 座50 | 巡航786km/h | 航程3712km (r=675) | 价系数28
+- Bombardier_CRJ700            | 庞巴迪 CRJ-700 / Bombardier CRJ-700     | 年1995 | 座78 | 巡航876km/h | 航程3152km (r=573) | 价系数22
+- Bombardier_CRJ700ER          | 庞巴迪 CRJ-700ER / Bombardier CRJ-700ER   | 年1995 | 座68 | 巡航876km/h | 航程3762km (r=684) | 价系数24
+- Bombardier_CRJ900            | 庞巴迪 CRJ-900 / Bombardier CRJ-900     | 年2005 | 座90 | 巡航829km/h | 航程2502km (r=455) | 价系数27
+- Bombardier_CRJ900ER          | 庞巴迪 CRJ-900ER / Bombardier CRJ-900ER   | 年2005 | 座90 | 巡航829km/h | 航程2948km (r=536) | 价系数28
+- Bombardier_CRJ900LR          | 庞巴迪 CRJ-900LR / Bombardier CRJ-900LR   | 年2005 | 座90 | 巡航829km/h | 航程3382km (r=615) | 价系数29
+- Bombardier_Dash_8_100        | 庞巴迪 Dash 8-100 / Bombardier Dash 8-100  | 年1982 | 座40 | 巡航500km/h | 航程1886km (r=343) | 价系数9
+- Bombardier_Dash_8_200        | 庞巴迪 Dash 8-200 / Bombardier Dash 8-200  | 年1994 | 座40 | 巡航535km/h | 航程1710km (r=311) | 价系数9
+- Bombardier_Dash_8_200Q       | 庞巴迪 Dash 8-200Q / Bombardier Dash 8-200Q | 年1994 | 座40 | 巡航535km/h | 航程1710km (r=311) | 价系数9
+- Bombardier_Dash_8_300        | 庞巴迪 Dash 8-300 / Bombardier Dash 8-300  | 年1987 | 座56 | 巡航532km/h | 航程1556km (r=283) | 价系数14
+- Bombardier_Dash_8_300Q       | 庞巴迪 Dash 8-300Q / Bombardier Dash 8-300Q | 年1994 | 座56 | 巡航532km/h | 航程1556km (r=283) | 价系数14
+- Bombardier_Dash_8_400Q       | 庞巴迪 Dash 8-400Q / Bombardier Dash 8-400Q | 年1998 | 座78 | 巡航667km/h | 航程2040km (r=371) | 价系数22
+
+### 布里顿-诺曼 (Britten-Norman)
+- BRITTEN_NORMAN_BN2B          | 布里顿-诺曼 BN-2B 岛民 / Britten-Norman BN-2B Islander | 年1965 | 座9 | 巡航240km/h | 航程1397km (r=254) | 价系数14
+- BRITTEN_NORMAN_BN2T          | 布里顿-诺曼 BN-2T 涡桨岛民 / Britten-Norman BN-2T Turbine Islander | 年1976 | 座9 | 巡航326km/h | 航程1342km (r=244) | 价系数14
+
+### 中国商飞 (COMAC)
+- COMAC_C909                   | 中国商飞 C909 / COMAC C909             | 年2015 | 座78 | 巡航828km/h | 航程2200km (r=400) | 价系数65
+- COMAC_C919                   | 中国商飞 C919 / COMAC C919             | 年2023 | 座158 | 巡航835km/h | 航程4076km (r=741) | 价系数73
+- COMAC_C929                   | 中国商飞 C929 / COMAC C929             | 年2028 | 座280 | 巡航908km/h | 航程12001km (r=2182) | 价系数220
+
+### 塞斯纳 (Cessna)
+- CESSNA_208                   | 塞斯纳 208 凯旋 / Cessna 208 Caravan     | 年1982 | 座9 | 巡航344km/h | 航程1980km (r=360) | 价系数18
+- CESSNA_208B                  | 塞斯纳 208B 大凯旋 / Cessna 208B Grand Caravan | 年1984 | 座14 | 巡航344km/h | 航程1788km (r=325) | 价系数19
+- CESSNA_402                   | 塞斯纳 402 / Cessna 402             | 年1964 | 座10 | 巡航263km/h | 航程2360km (r=429) | 价系数12
+- CESSNA_404                   | 塞斯纳 404 泰坦 / Cessna 404 Titan       | 年1974 | 座10 | 巡航302km/h | 航程3410km (r=620) | 价系数13
+- CESSNA_408                   | 塞斯纳 408 SkyCourier / Cessna 408 SkyCourier  | 年2020 | 座19 | 巡航390km/h | 航程1700km (r=309) | 价系数18
+- CESSNA_414                   | 塞斯纳 414 校长 / Cessna 414 Chancellor  | 年1967 | 座8 | 巡航339km/h | 航程2458km (r=447) | 价系数12
+- CESSNA_421                   | 塞斯纳 421 金鹰 / Cessna 421 Golden Eagle | 年1965 | 座6 | 巡航440km/h | 航程2756km (r=501) | 价系数14
+
+### 康维尔 (Convair)
+- CONVAIR_880                  | 康维尔 880 / Convair 880            | 年1958 | 座110 | 巡航990km/h | 航程4576km (r=832) | 价系数35
+- CONVAIR_990                  | 康维尔 990 / Convair 990            | 年1959 | 座149 | 巡航896km/h | 航程6116km (r=1112) | 价系数42
+
+### 巴航工业 (Embraer)
+- EMBRAER_E175_E2              | 巴航工 E175-E2 / Embraer E175-E2        | 年2025 | 座80 | 巡航833km/h | 航程3702km (r=673) | 价系数26
+- EMBRAER_E190_E2              | 巴航工 E190-E2 / Embraer E190-E2        | 年2016 | 座97 | 巡航833km/h | 航程5462km (r=993) | 价系数65
+- EMBRAER_ERJ135               | 巴航工 ERJ-135 / Embraer ERJ-135        | 年1997 | 座37 | 巡航831km/h | 航程3240km (r=589) | 价系数14
+- EMBRAER_ERJ140               | 巴航工 ERJ-140 / Embraer ERJ-140        | 年1999 | 座44 | 巡航831km/h | 航程3058km (r=556) | 价系数14
+- Embraer_E170LR               | 巴航工 E170 LR / Embraer 170 LR         | 年2002 | 座66 | 巡航829km/h | 航程3982km (r=724) | 价系数25
+- Embraer_E170STD              | 巴航工 E170 STD / Embraer 170 STD        | 年2002 | 座66 | 巡航829km/h | 航程3982km (r=724) | 价系数24
+- Embraer_E175LR               | 巴航工 E175 LR / Embraer 175 LR         | 年2003 | 座76 | 巡航829km/h | 航程4076km (r=741) | 价系数27
+- Embraer_E175STD              | 巴航工 E175 STD / Embraer 175 STD        | 年2003 | 座76 | 巡航829km/h | 航程4076km (r=741) | 价系数26
+- Embraer_E190AR               | 巴航工 E190 AR / Embraer 190 AR         | 年2002 | 座100 | 巡航829km/h | 航程94km (r=17) | 价系数59
+- Embraer_E190LR               | 巴航工 E190 LR / Embraer 190 LR         | 年2002 | 座100 | 巡航829km/h | 航程4538km (r=825) | 价系数60
+- Embraer_E190STD              | 巴航工 E190 STD / Embraer 190 STD        | 年2002 | 座100 | 巡航829km/h | 航程4450km (r=809) | 价系数65
+- Embraer_E195AR               | 巴航工 E195 AR / Embraer 195 AR         | 年2004 | 座100 | 巡航829km/h | 航程4076km (r=741) | 价系数37
+- Embraer_E195LR               | 巴航工 E195 LR / Embraer 195 LR         | 年2003 | 座100 | 巡航829km/h | 航程3333km (r=606) | 价系数37
+- Embraer_E195STD              | 巴航工 E195 STD / Embraer 195 STD        | 年2003 | 座100 | 巡航829km/h | 航程2596km (r=472) | 价系数37
+- Embraer_E195_E2              | 巴航工 E195-E2 / Embraer E195-E2        | 年2017 | 座120 | 巡航833km/h | 航程5599km (r=1018) | 价系数44
+- Embraer_ERJ145               | 巴航工 E145 / Embraer 145            | 年1994 | 座50 | 巡航829km/h | 航程3702km (r=673) | 价系数14
+
+### 福克 (Fokker)
+- FOKKER_F27                   | 福克 F27 / Fokker F27             | 年1956 | 座52 | 巡航460km/h | 航程2602km (r=473) | 价系数14
+- FOKKER_F28                   | 福克 F28 / Fokker F28             | 年1967 | 座85 | 巡航848km/h | 航程1666km (r=303) | 价系数27
+- Fokker_F100                  | 福克 100 / Fokker 100             | 年1984 | 座122 | 巡航845km/h | 航程3168km (r=576) | 价系数27
+- Fokker_F70                   | 福克 70 / Fokker 70              | 年1990 | 座85 | 巡航845km/h | 航程3410km (r=620) | 价系数18
+
+### 通用原子 (General Atomics)
+- GENERAL_ATOMICS_DO228        | 通用原子 DO 228 / General Atomics DO 228 | 年1981 | 座19 | 巡航413km/h | 航程2365km (r=430) | 价系数14
+
+### 霍克·西德利 (Hawker_Siddeley)
+- HS_TRIDENT                   | 霍克·西德利 三叉戟 / Hawker Siddeley Trident | 年1962 | 座115 | 巡航980km/h | 航程4350km (r=791) | 价系数37
+
+### 伊留申 (Ilyushin)
+- ILYUSHIN_IL114               | 伊尔-114 / Ilyushin Il-114        | 年1995 | 座64 | 巡航470km/h | 航程1001km (r=182) | 价系数14
+- ILYUSHIN_IL18                | 伊尔-18 / Ilyushin Il-18         | 年1955 | 座65 | 巡航625km/h | 航程6501km (r=1182) | 价系数25
+- ILYUSHIN_IL96                | 伊尔-96 / Ilyushin Il-96         | 年1990 | 座262 | 巡航870km/h | 航程9999km (r=1818) | 价系数187
+- Ilyushin_62                  | 伊尔-62 / Ilyushin Il-62         | 年1965 | 座168 | 巡航900km/h | 航程9999km (r=1818) | 价系数169
+- Ilyushin_76                  | 伊尔-76 / Ilyushin Il-76         | 年1972 | 座225 | 巡航852km/h | 航程5000km (r=909) | 价系数44
+
+### 伊尔库特 (Irkut)
+- IRKUT_MC21                   | 伊尔库特 MC-21 / Irkut MC-21            | 年2022 | 座163 | 巡航870km/h | 航程6000km (r=1091) | 价系数73
+
+### LET (LET)
+- LET_L410                     | 列特 L-410 / LET L-410              | 年1969 | 座19 | 巡航405km/h | 航程1502km (r=273) | 价系数14
+
+### 洛克希德 (Lockheed)
+- LOCKHEED_L1011               | 洛克希德 L-1011 三星 / Lockheed L-1011 TriStar | 年1970 | 座256 | 巡航972km/h | 航程9900km (r=1800) | 价系数155
+- LOCKHEED_L188                | 洛克希德 L-188 伊莱克特拉 / Lockheed L-188 Electra | 年1957 | 座98 | 巡航600km/h | 航程4460km (r=811) | 价系数18
+- Lockheed_L049_Constellation  | 洛克希德 L-049 超级星座 / Lockheed L-049 Constellation | 年1943 | 座81 | 巡航504km/h | 航程6430km (r=1169) | 价系数35
+
+### 麦克唐纳·道格拉斯 (McDonnell_Douglas)
+- DOUGLAS_DC3                  | 道格拉斯 DC-3 / Douglas DC-3           | 年1934 | 座32 | 巡航333km/h | 航程2398km (r=436) | 价系数25
+- DOUGLAS_DC6                  | 道格拉斯 DC-6 / Douglas DC-6           | 年1944 | 座68 | 巡航501km/h | 航程7376km (r=1341) | 价系数35
+- DOUGLAS_DC7                  | 道格拉斯 DC-7 / Douglas DC-7           | 年1951 | 座105 | 巡航557km/h | 航程9070km (r=1649) | 价系数35
+- Douglas_DC10_10              | 道格拉斯 DC-10-10 / Douglas DC-10-10       | 年1968 | 座270 | 巡航876km/h | 航程6501km (r=1182) | 价系数139
+- Douglas_DC10_30              | 道格拉斯 DC-10-30 / Douglas DC-10-30       | 年1971 | 座270 | 巡航876km/h | 航程9598km (r=1745) | 价系数155
+- Douglas_DC10_40              | 道格拉斯 DC-10-40 / Douglas DC-10-40       | 年1971 | 座270 | 巡航876km/h | 航程9400km (r=1709) | 价系数146
+- Douglas_DC8_10               | 道格拉斯 DC-8-10 / Douglas DC-8-10        | 年1957 | 座177 | 巡航895km/h | 航程6958km (r=1265) | 价系数37
+- Douglas_DC8_20               | 道格拉斯 DC-8-20 / Douglas DC-8-20        | 年1957 | 座177 | 巡航895km/h | 航程7502km (r=1364) | 价系数38
+- Douglas_DC8_30               | 道格拉斯 DC-8-30 / Douglas DC-8-30        | 年1958 | 座177 | 巡航895km/h | 航程7420km (r=1349) | 价系数39
+- Douglas_DC8_40               | 道格拉斯 DC-8-40 / Douglas DC-8-40        | 年1958 | 座177 | 巡航895km/h | 航程9828km (r=1787) | 价系数38
+- Douglas_DC8_50               | 道格拉斯 DC-8-50 / Douglas DC-8-50        | 年1959 | 座189 | 巡航895km/h | 航程10840km (r=1971) | 价系数41
+- Douglas_DC9_10               | 道格拉斯 DC-9-10 / Douglas DC-9-10        | 年1963 | 座90 | 巡航903km/h | 航程2343km (r=426) | 价系数38
+- Douglas_DC9_20               | 道格拉斯 DC-9-20 / Douglas DC-9-20        | 年1966 | 座90 | 巡航898km/h | 航程2690km (r=489) | 价系数38
+- Douglas_DC9_30               | 道格拉斯 DC-9-30 / Douglas DC-9-30        | 年1965 | 座115 | 巡航898km/h | 航程2778km (r=505) | 价系数42
+- Douglas_DC9_40               | 道格拉斯 DC-9-40 / Douglas DC-9-40        | 年1966 | 座125 | 巡航898km/h | 航程2882km (r=524) | 价系数43
+- Douglas_DC9_50               | 道格拉斯 DC-9-50 / Douglas DC-9-50        | 年1973 | 座139 | 巡航898km/h | 航程2409km (r=438) | 价系数44
+- McDonnell_Douglas_MD11       | 麦道 MD-11 / McDonnell Douglas MD-11 | 年1986 | 座293 | 巡航886km/h | 航程12458km (r=2265) | 价系数137
+- McDonnell_Douglas_MD11F      | 麦道 MD-11F / McDonnell Douglas MD-11F | 年1986 | 座0 | 巡航886km/h | 航程6545km (r=1190) | 价系数137
+- McDonnell_Douglas_MD81       | 麦道 MD-81 / McDonnell Douglas MD-81 | 年1978 | 座155 | 巡航840km/h | 航程2898km (r=527) | 价系数46
+- McDonnell_Douglas_MD82       | 麦道 MD-82 / McDonnell Douglas MD-82 | 年1979 | 座155 | 巡航811km/h | 航程3800km (r=691) | 价系数51
+- McDonnell_Douglas_MD83       | 麦道 MD-83 / McDonnell Douglas MD-83 | 年1983 | 座155 | 巡航811km/h | 航程4636km (r=843) | 价系数57
+- McDonnell_Douglas_MD87       | 麦道 MD-87 / McDonnell Douglas MD-87 | 年1983 | 座130 | 巡航811km/h | 航程5401km (r=982) | 价系数49
+- McDonnell_Douglas_MD88       | 麦道 MD-88 / McDonnell Douglas MD-88 | 年1985 | 座155 | 巡航811km/h | 航程4636km (r=843) | 价系数51
+- McDonnell_Douglas_MD90       | 麦道 MD-90 / McDonnell Douglas MD-90 | 年1991 | 座158 | 巡航812km/h | 航程3790km (r=689) | 价系数59
+
+### PZL (PZL)
+- PZL_AN28                     | 安东诺夫 AN-28 空中卡车 / PZL/Antonov AN-28 Skytruck | 年1973 | 座15 | 巡航335km/h | 航程1364km (r=248) | 价系数14
+
+### 皮拉图斯 (Pilatus)
+- PILATUS_PC12                 | 皮拉图斯 PC-12 / Pilatus PC-12          | 年1992 | 座9 | 巡航528km/h | 航程3416km (r=621) | 价系数14
+- PILATUS_PC24                 | 皮拉图斯 PC-24 / Pilatus PC-24          | 年2016 | 座10 | 巡航810km/h | 航程3702km (r=673) | 价系数27
+
+### 雷神 (Raytheon)
+- RAYTHEON_BEECH1900D          | 雷神 1900D 空运者 / Raytheon Beech 1900D Airliner | 年1988 | 座19 | 巡航518km/h | 航程2304km (r=419) | 价系数14
+
+### SUD 宇航 (SUD)
+- SUD_CARAVELLE_III            | SUD 卡拉维尔 III / SUD Caravelle III      | 年1956 | 座80 | 巡航845km/h | 航程2502km (r=455) | 价系数27
+
+### 苏霍伊 (Sukhoi)
+- SUKHOI_SSJ100                | 苏霍伊 Superjet 100 / Sukhoi Superjet 100    | 年2009 | 座87 | 巡航870km/h | 航程3047km (r=554) | 价系数65
+
+### 图波列夫 (Tupolev)
+- TUPOLEV_TU204                | 图波列夫 图-204 / Tupolev Tu-204         | 年1990 | 座172 | 巡航850km/h | 航程4301km (r=782) | 价系数79
+- TUPOLEV_TU214                | 图波列夫 图-214 / Tupolev Tu-214         | 年1994 | 座164 | 巡航850km/h | 航程4340km (r=789) | 价系数79
+- Tupolev_Tu134                | 图波列夫 图-134 / Tupolev Tu-134         | 年1964 | 座84 | 巡航850km/h | 航程2998km (r=545) | 价系数32
+- Tupolev_Tu154B               | 图波列夫 图-154B / Tupolev Tu-154B        | 年1964 | 座114 | 巡航850km/h | 航程5280km (r=960) | 价系数41
+- Tupolev_Tu154M               | 图波列夫 图-154M / Tupolev Tu-154M        | 年1964 | 座114 | 巡航850km/h | 航程6600km (r=1200) | 价系数41
+
+### 维克斯 (Vickers)
+- VICKERS_VC10                 | 维克斯 VC10 / Vickers VC10           | 年1960 | 座151 | 巡航890km/h | 航程9410km (r=1711) | 价系数169
+- VICKERS_VISCOUNT             | 维克斯 子爵 / Vickers Viscount       | 年1951 | 座75 | 巡航566km/h | 航程2222km (r=404) | 价系数14
+
+### 雅克夫列夫 (Yakovlev)
+- YAKOVLEV_YAK40               | 雅克夫列夫 Yak-40 / Yakovlev Yak-40        | 年1966 | 座32 | 巡航550km/h | 航程1798km (r=327) | 价系数20
+- YAKOVLEV_YAK42               | 雅克夫列夫 Yak-42 / Yakovlev Yak-42        | 年1978 | 座96 | 巡航740km/h | 航程4076km (r=741) | 价系数30
+
+### 德哈维兰 (de Havilland)
+- DEHAVILLAND_COMET            | 德哈维兰 彗星 / de Havilland Comet     | 年1950 | 座81 | 巡航790km/h | 航程7398km (r=1345) | 价系数37
+- DEHAVILLAND_DHC6_400         | 德哈维兰 DHC-6-400 双水獭 / de Havilland DHC-6-400 Twin Otter | 年1984 | 座19 | 巡航337km/h | 航程1480km (r=269) | 价系数22

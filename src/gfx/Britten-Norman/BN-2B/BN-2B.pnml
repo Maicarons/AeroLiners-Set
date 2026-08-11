@@ -129,7 +129,7 @@ switch (FEAT_AIRCRAFT, SELF, BRITTEN_NORMAN_BN2B_speed, flight_state())
 {
   12..13: return plane_speed_kmh(117); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(158); // airplane climbing after take-off
-      18: return plane_speed_kmh(257); // heading for tower contact point
+      18: return plane_speed_kmh(240); // heading for tower contact point
   16..20: return plane_speed_kmh(154); // in flight
   21..22: return plane_speed_kmh(95); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(92);
@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, BRITTEN_NORMAN_BN2B)
     passenger_capacity: 9;
     mail_capacity: 1;
     acceleration: 27;
-    range: 195;
+    range: 254;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -195,7 +195,7 @@ item (FEAT_AIRCRAFT, BRITTEN_NORMAN_BN2B)
 
     cost_factor: 14;
     purchase_running_cost_factor: 38;
-    purchase_speed: plane_speed_kmh(257);
+    purchase_speed: plane_speed_kmh(240);
   }
 }
 
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, BRITTEN_NORMAN_BN2B)
   {
     property
-    { range: 195; }
+    { range: 254; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, BRITTEN_NORMAN_BN2B)
   {
     property
-    { range: 293; }
+    { range: 382; }
   }
 }

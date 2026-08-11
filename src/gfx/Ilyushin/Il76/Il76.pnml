@@ -90,7 +90,7 @@ switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_speed, flight_state())
 {
   12..13: return plane_speed_kmh(295); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(475); // airplane climbing after take-off
-      18: return plane_speed_kmh(798); // heading for tower contact point
+      18: return plane_speed_kmh(852); // heading for tower contact point
   16..20: return plane_speed_kmh(441); // in flight
   21..22: return plane_speed_kmh(286); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -126,10 +126,10 @@ item (FEAT_AIRCRAFT, Ilyushin_76)
     cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
     reliability_decay: 20;
     loading_speed: 10;
-    passenger_capacity: 0;
+    passenger_capacity: 225;
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1200;
+    range: 909;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -145,7 +145,7 @@ item (FEAT_AIRCRAFT, Ilyushin_76)
 
     cost_factor: 44; 
     purchase_running_cost_factor: 214;
-    purchase_speed: plane_speed_kmh(798); 
+    purchase_speed: plane_speed_kmh(852); 
   }
 }
 
@@ -163,7 +163,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Ilyushin_76)
   {
     property
-    { range: 1200; }
+    { range: 909; }
   }
 }
 
@@ -172,6 +172,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Ilyushin_76)
   {
     property
-    { range: 1800; }
+    { range: 1364; }
   }
 }

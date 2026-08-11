@@ -92,7 +92,7 @@ switch (FEAT_AIRCRAFT, SELF, Antonov_225_speed, flight_state())
 {
   12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(531); // airplane climbing after take-off
-      18: return plane_speed_kmh(846); // heading for tower contact point
+      18: return plane_speed_kmh(800); // heading for tower contact point
   16..20: return plane_speed_kmh(846); // in flight
   21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -132,7 +132,7 @@ item (FEAT_AIRCRAFT, Antonov_225)
     passenger_capacity: 0;
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2770;
+    range: 2800;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -148,7 +148,7 @@ item (FEAT_AIRCRAFT, Antonov_225)
 
     cost_factor: 274; 
     purchase_running_cost_factor: 180;
-    purchase_speed: plane_speed_kmh(846); 
+    purchase_speed: plane_speed_kmh(800); 
   }
 }
 
@@ -166,7 +166,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Antonov_225)
   {
     property
-    { range: 2770; }
+    { range: 2800; }
   }
 }
 
@@ -175,6 +175,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Antonov_225)
   {
     property
-    { range: 4160; }
+    { range: 4205; }
   }
 }

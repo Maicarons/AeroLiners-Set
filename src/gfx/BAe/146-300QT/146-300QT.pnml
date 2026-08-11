@@ -101,7 +101,7 @@ switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(781); // heading for tower contact point
+      18: return plane_speed_kmh(789); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -141,7 +141,7 @@ item (FEAT_AIRCRAFT, BAe_146_300QT)
     passenger_capacity: 0;
     mail_capacity: 100;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 495;
+    range: 607;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -156,7 +156,7 @@ item (FEAT_AIRCRAFT, BAe_146_300QT)
 
     cost_factor: 24; 
     purchase_running_cost_factor: 56;
-    purchase_speed: plane_speed_kmh(781); 
+    purchase_speed: plane_speed_kmh(789); 
   }
 }
 
@@ -174,7 +174,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, BAe_146_300QT)
   {
     property
-    { range: 495; }
+    { range: 607; }
   }
 }
 
@@ -183,6 +183,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, BAe_146_300QT)
   {
     property
-    { range: 745; }
+    { range: 914; }
   }
 }

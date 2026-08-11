@@ -173,7 +173,7 @@ item (FEAT_AIRCRAFT, ATR_72_200)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 74;
+    passenger_capacity: 72;
     mail_capacity: 7;
     acceleration: 27;                  // in 27,75 mph/day
     range: 290;

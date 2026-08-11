@@ -295,7 +295,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(975); // heading for tower contact point
+      18: return plane_speed_kmh(840); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -367,10 +367,10 @@ item (FEAT_AIRCRAFT, Boeing_737_900ER)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 18;
-    passenger_capacity: 180;
+    passenger_capacity: 220;
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 900;
+    range: 1077;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -386,7 +386,7 @@ item (FEAT_AIRCRAFT, Boeing_737_900ER)
 
     cost_factor: 80; 
     purchase_running_cost_factor: 84;
-    purchase_speed: plane_speed_kmh(975); 
+    purchase_speed: plane_speed_kmh(840); 
   }
 }
 
@@ -404,7 +404,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_737_900ER)
   {
     property
-    { range: 900; }
+    { range: 1077; }
   }
 }
 
@@ -413,6 +413,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_737_900ER)
   {
     property
-    { range: 1350; }
+    { range: 1616; }
   }
 }

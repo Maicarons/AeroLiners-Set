@@ -155,7 +155,7 @@ switch (FEAT_AIRCRAFT, SELF, CESSNA_408_speed, flight_state())
 {
   12..13: return plane_speed_kmh(194); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(261); // airplane climbing after take-off
-      18: return plane_speed_kmh(388); // heading for tower contact point
+      18: return plane_speed_kmh(390); // heading for tower contact point
   16..20: return plane_speed_kmh(285); // in flight
   21..22: return plane_speed_kmh(163); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(151);
@@ -209,7 +209,7 @@ item (FEAT_AIRCRAFT, CESSNA_408)
     passenger_capacity: 19;
     mail_capacity: 2;
     acceleration: 27;
-    range: 304;
+    range: 309;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -225,7 +225,7 @@ item (FEAT_AIRCRAFT, CESSNA_408)
 
     cost_factor: 18;
     purchase_running_cost_factor: 39;
-    purchase_speed: plane_speed_kmh(388);
+    purchase_speed: plane_speed_kmh(390);
   }
 }
 
@@ -243,7 +243,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, CESSNA_408)
   {
     property
-    { range: 304; }
+    { range: 309; }
   }
 }
 
@@ -252,6 +252,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, CESSNA_408)
   {
     property
-    { range: 459; }
+    { range: 467; }
   }
 }

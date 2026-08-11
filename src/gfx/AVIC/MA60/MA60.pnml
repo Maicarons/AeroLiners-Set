@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, AVIC_MA60)
     passenger_capacity: 60;
     mail_capacity: 6;
     acceleration: 27;
-    range: 249;
+    range: 291;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, AVIC_MA60)
   {
     property
-    { range: 249; }
+    { range: 291; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, AVIC_MA60)
   {
     property
-    { range: 374; }
+    { range: 437; }
   }
 }

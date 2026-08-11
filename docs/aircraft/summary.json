@@ -1,96 +1,246 @@
 {
-  "total_aircraft": 157,
-  "total_liveries": 1957,
+  "total_aircraft": 216,
+  "total_liveries": 2264,
   "manufacturers": [
     {
       "en": "Airbus",
       "zh": "空中客车",
-      "aircraft": 26,
-      "liveries": 556
+      "slug": "airbus",
+      "aircraft": 30,
+      "liveries": 580,
+      "has_preview": true
     },
     {
       "en": "Antonov",
       "zh": "安东诺夫",
-      "aircraft": 2,
-      "liveries": 4
+      "slug": "antonov",
+      "aircraft": 5,
+      "liveries": 20,
+      "has_preview": true
     },
     {
       "en": "ATR",
       "zh": "ATR",
-      "aircraft": 6,
-      "liveries": 37
+      "slug": "atr",
+      "aircraft": 8,
+      "liveries": 47,
+      "has_preview": true
     },
     {
       "en": "BAC",
       "zh": "BAC",
+      "slug": "bac",
       "aircraft": 5,
-      "liveries": 31
+      "liveries": 31,
+      "has_preview": true
     },
     {
       "en": "BAe",
-      "zh": "BAe",
+      "zh": "英国宇航",
+      "slug": "bae",
       "aircraft": 4,
-      "liveries": 30
+      "liveries": 30,
+      "has_preview": true
     },
     {
       "en": "Boeing",
       "zh": "波音",
-      "aircraft": 53,
-      "liveries": 856
-    },
-    {
-      "en": "Bombardier",
-      "zh": "庞巴迪",
-      "aircraft": 17,
-      "liveries": 76
-    },
-    {
-      "en": "Embraer",
-      "zh": "巴航工业",
-      "aircraft": 12,
-      "liveries": 67
-    },
-    {
-      "en": "Fokker",
-      "zh": "福克",
-      "aircraft": 2,
-      "liveries": 29
-    },
-    {
-      "en": "Ilyushin",
-      "zh": "伊留申",
-      "aircraft": 2,
-      "liveries": 9
-    },
-    {
-      "en": "Lockheed",
-      "zh": "洛克希德",
-      "aircraft": 1,
-      "liveries": 6
+      "slug": "boeing",
+      "aircraft": 57,
+      "liveries": 880,
+      "has_preview": true
     },
     {
       "en": "McDonnell_Douglas",
       "zh": "麦克唐纳·道格拉斯",
-      "aircraft": 21,
-      "liveries": 183
+      "slug": "mcdonnell_douglas",
+      "aircraft": 24,
+      "liveries": 199,
+      "has_preview": true
+    },
+    {
+      "en": "Bombardier",
+      "zh": "庞巴迪",
+      "slug": "bombardier",
+      "aircraft": 17,
+      "liveries": 76,
+      "has_preview": true
+    },
+    {
+      "en": "Embraer",
+      "zh": "巴航工业",
+      "slug": "embraer",
+      "aircraft": 16,
+      "liveries": 82,
+      "has_preview": true
+    },
+    {
+      "en": "Fokker",
+      "zh": "福克",
+      "slug": "fokker",
+      "aircraft": 4,
+      "liveries": 39,
+      "has_preview": true
+    },
+    {
+      "en": "Ilyushin",
+      "zh": "伊留申",
+      "slug": "ilyushin",
+      "aircraft": 5,
+      "liveries": 25,
+      "has_preview": true
     },
     {
       "en": "SUD",
       "zh": "SUD 宇航",
+      "slug": "sud",
       "aircraft": 1,
-      "liveries": 16
+      "liveries": 16,
+      "has_preview": true
     },
     {
       "en": "Tupolev",
       "zh": "图波列夫",
+      "slug": "tupolev",
+      "aircraft": 5,
+      "liveries": 57,
+      "has_preview": true
+    },
+    {
+      "en": "Lockheed",
+      "zh": "洛克希德",
+      "slug": "lockheed",
       "aircraft": 3,
-      "liveries": 45
+      "liveries": 18,
+      "has_preview": true
     },
     {
       "en": "COMAC",
-      "zh": "COMAC",
+      "zh": "中国商飞",
+      "slug": "comac",
+      "aircraft": 3,
+      "liveries": 18,
+      "has_preview": true
+    },
+    {
+      "en": "Sukhoi",
+      "zh": "苏霍伊",
+      "slug": "sukhoi",
+      "aircraft": 1,
+      "liveries": 6,
+      "has_preview": false
+    },
+    {
+      "en": "Irkut",
+      "zh": "伊尔库特",
+      "slug": "irkut",
+      "aircraft": 1,
+      "liveries": 6,
+      "has_preview": false
+    },
+    {
+      "en": "Yakovlev",
+      "zh": "雅克夫列夫",
+      "slug": "yakovlev",
       "aircraft": 2,
-      "liveries": 12
+      "liveries": 12,
+      "has_preview": false
+    },
+    {
+      "en": "de Havilland",
+      "zh": "德哈维兰",
+      "slug": "de-havilland",
+      "aircraft": 2,
+      "liveries": 12,
+      "has_preview": false
+    },
+    {
+      "en": "Vickers",
+      "zh": "维克斯",
+      "slug": "vickers",
+      "aircraft": 2,
+      "liveries": 10,
+      "has_preview": false
+    },
+    {
+      "en": "Convair",
+      "zh": "康维尔",
+      "slug": "convair",
+      "aircraft": 2,
+      "liveries": 12,
+      "has_preview": false
+    },
+    {
+      "en": "Hawker_Siddeley",
+      "zh": "霍克·西德利",
+      "slug": "hawker_siddeley",
+      "aircraft": 1,
+      "liveries": 6,
+      "has_preview": false
+    },
+    {
+      "en": "Cessna",
+      "zh": "塞斯纳",
+      "slug": "cessna",
+      "aircraft": 7,
+      "liveries": 34,
+      "has_preview": false
+    },
+    {
+      "en": "AVIC",
+      "zh": "中航工业",
+      "slug": "avic",
+      "aircraft": 3,
+      "liveries": 14,
+      "has_preview": false
+    },
+    {
+      "en": "Britten-Norman",
+      "zh": "布里顿-诺曼",
+      "slug": "britten-norman",
+      "aircraft": 2,
+      "liveries": 8,
+      "has_preview": false
+    },
+    {
+      "en": "General Atomics",
+      "zh": "通用原子",
+      "slug": "general-atomics",
+      "aircraft": 1,
+      "liveries": 4,
+      "has_preview": false
+    },
+    {
+      "en": "LET",
+      "zh": "LET",
+      "slug": "let",
+      "aircraft": 1,
+      "liveries": 4,
+      "has_preview": false
+    },
+    {
+      "en": "Pilatus",
+      "zh": "皮拉图斯",
+      "slug": "pilatus",
+      "aircraft": 2,
+      "liveries": 10,
+      "has_preview": false
+    },
+    {
+      "en": "PZL",
+      "zh": "PZL",
+      "slug": "pzl",
+      "aircraft": 1,
+      "liveries": 4,
+      "has_preview": false
+    },
+    {
+      "en": "Raytheon",
+      "zh": "雷神",
+      "slug": "raytheon",
+      "aircraft": 1,
+      "liveries": 4,
+      "has_preview": false
     }
   ]
 }

@@ -201,7 +201,7 @@ item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
     passenger_capacity: 81;
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1330;
+    range: 1169;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -235,7 +235,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
   {
     property
-    { range: 1330; }
+    { range: 1169; }
   }
 }
 
@@ -244,6 +244,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
   {
     property
-    { range: 2000; }
+    { range: 1758; }
   }
 }

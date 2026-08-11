@@ -139,7 +139,7 @@ switch (FEAT_AIRCRAFT, SELF, ATR_42_300F_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(346); // airplane climbing after take-off
-      18: return plane_speed_kmh(491); // heading for tower contact point
+      18: return plane_speed_kmh(495); // heading for tower contact point
   16..20: return plane_speed_kmh(338); // in flight
   21..22: return plane_speed_kmh(209); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -182,7 +182,7 @@ item (FEAT_AIRCRAFT, ATR_42_300F)
     passenger_capacity: 0;
     mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 165;
+    range: 421;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -197,7 +197,7 @@ item (FEAT_AIRCRAFT, ATR_42_300F)
 
     cost_factor: 12; 
     purchase_running_cost_factor: 51;
-    purchase_speed: plane_speed_kmh(491); 
+    purchase_speed: plane_speed_kmh(495); 
   }
 }
 
@@ -215,7 +215,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, ATR_42_300F)
   {
     property
-    { range: 165; }
+    { range: 421; }
   }
 }
 
@@ -224,6 +224,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, ATR_42_300F)
   {
     property
-    { range: 245; }
+    { range: 625; }
   }
 }

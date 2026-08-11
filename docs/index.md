@@ -19,7 +19,7 @@ features:
     icon: ✈️
     link: /aircraft/
   - title: 机队图鉴
-    details: 从源文件提取全部 216 款机型与 1957 张涂装预览图，按制造商分类展示。
+    details: 从源文件提取全部 216 款机型与 2264 种涂装，按制造商分类展示。
     icon: 🖼️
     link: /aircraft/
   - title: 多语言支持

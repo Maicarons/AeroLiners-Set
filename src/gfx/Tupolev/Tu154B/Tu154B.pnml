@@ -243,7 +243,7 @@ switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154B_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(435); // airplane climbing after take-off
-      18: return plane_speed_kmh(951); // heading for tower contact point
+      18: return plane_speed_kmh(850); // heading for tower contact point
   16..20: return plane_speed_kmh(362); // in flight
   21..22: return plane_speed_kmh(225); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -292,7 +292,7 @@ item (FEAT_AIRCRAFT, Tupolev_Tu154B)
     passenger_capacity: 150;
     mail_capacity: 15;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 735;
+    range: 960;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -307,7 +307,7 @@ item (FEAT_AIRCRAFT, Tupolev_Tu154B)
 
     cost_factor: 41; 
     purchase_running_cost_factor: 148;
-    purchase_speed: plane_speed_kmh(951); 
+    purchase_speed: plane_speed_kmh(850); 
   }
 }
 
@@ -325,7 +325,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Tupolev_Tu154B)
   {
     property
-    { range: 785; }
+    { range: 960; }
   }
 }
 
@@ -334,6 +334,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Tupolev_Tu154B)
   {
     property
-    { range: 1100; }
+    { range: 1345; }
   }
 }

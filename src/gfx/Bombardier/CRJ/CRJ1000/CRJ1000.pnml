@@ -113,7 +113,7 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(386); // airplane climbing after take-off
-      18: return plane_speed_kmh(850); // heading for tower contact point
+      18: return plane_speed_kmh(829); // heading for tower contact point
   16..20: return plane_speed_kmh(323); // in flight
   21..22: return plane_speed_kmh(266); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -154,7 +154,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ1000)
     passenger_capacity: 100;
     mail_capacity: 10;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 475;
+    range: 491;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -169,7 +169,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ1000)
 
     cost_factor: 44; 
     purchase_running_cost_factor: 54;
-    purchase_speed: plane_speed_kmh(850); 
+    purchase_speed: plane_speed_kmh(829); 
   }
 }
 
@@ -187,7 +187,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Bombardier_CRJ1000)
   {
     property
-    { range: 475; }
+    { range: 491; }
   }
 }
 
@@ -196,6 +196,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Bombardier_CRJ1000)
   {
     property
-    { range: 715; }
+    { range: 739; }
   }
 }

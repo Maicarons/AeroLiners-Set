@@ -207,7 +207,7 @@ item (FEAT_AIRCRAFT, CESSNA_208B)
     passenger_capacity: 14;
     mail_capacity: 2;
     acceleration: 27;
-    range: 360;
+    range: 325;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -241,7 +241,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, CESSNA_208B)
   {
     property
-    { range: 360; }
+    { range: 325; }
   }
 }
 
@@ -250,6 +250,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, CESSNA_208B)
   {
     property
-    { range: 543; }
+    { range: 490; }
   }
 }

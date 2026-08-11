@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, COMAC_C929_speed, flight_state())
 {
   12..13: return plane_speed_kmh(274); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(443); // airplane climbing after take-off
-      18: return plane_speed_kmh(945); // heading for tower contact point
+      18: return plane_speed_kmh(908); // heading for tower contact point
   16..20: return plane_speed_kmh(426); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, COMAC_C929)
 
     cost_factor: 220;
     purchase_running_cost_factor: 191;
-    purchase_speed: plane_speed_kmh(945);
+    purchase_speed: plane_speed_kmh(908);
   }
 }
 

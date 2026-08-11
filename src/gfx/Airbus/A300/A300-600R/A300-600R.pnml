@@ -256,7 +256,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(354); // airplane climbing after take-off
-      18: return plane_speed_kmh(870); // heading for tower contact point
+      18: return plane_speed_kmh(833); // heading for tower contact point
   16..20: return plane_speed_kmh(338); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -314,10 +314,10 @@ item (FEAT_AIRCRAFT, Airbus_A300_600R)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 49;
-    passenger_capacity: 220;
+    passenger_capacity: 247;
     mail_capacity: 26;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2230;
+    range: 1364;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -332,7 +332,7 @@ item (FEAT_AIRCRAFT, Airbus_A300_600R)
 
     cost_factor: 122; 
     purchase_running_cost_factor: 117;
-    purchase_speed: plane_speed_kmh(870); 
+    purchase_speed: plane_speed_kmh(833); 
   }
 }
 
@@ -350,7 +350,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A300_600R)
   {
     property
-    { range: 2230; }
+    { range: 1364; }
   }
 }
 
@@ -359,6 +359,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A300_600R)
   {
     property
-    { range: 3345; }
+    { range: 2046; }
   }
 }

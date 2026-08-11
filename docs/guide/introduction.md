@@ -30,8 +30,8 @@
 ## 已知限制（Known Issues）
 
 寰宇飞机 仍有一些尚未处理的问题，开发团队已知悉，通常无需再重复反馈。更完整的已知问题清单，
-请参考上游发布对应的 wiki 页面：
-<http://dev.openttdcoop.org/projects/worldairlinersset/wiki>
+请参考本项目的 GitHub Issues：
+<https://github.com/Maicarons/AeroLiners-Set/issues>
 
 ## 计划中功能（Future Features）
 
@@ -44,7 +44,7 @@
 
 ## 联系与社区
 
-- 开发主页：<https://dev.openttdcoop.org/projects/worldairlinersset>
+- 开发主页（GitHub）：<https://github.com/Maicarons/AeroLiners-Set>
 - 官方论坛：<http://worldairlinerset.forumotion.com/>
 - tt-forums 讨论串：<http://www.tt-forums.net/viewtopic.php?t=39227>
 

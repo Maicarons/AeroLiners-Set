@@ -1,0 +1,1514 @@
+{
+  "ATR_42_300": {
+    "id": "ATR_42_300",
+    "name": "ATR 42-300",
+    "range_km": 1470.0,
+    "seats": 48.0,
+    "cruise": 484.0
+  },
+  "ATR_42_300F": {
+    "id": "ATR_42_300F",
+    "name": "ATR 42-300F",
+    "range_km": 2316.0,
+    "seats": 0,
+    "cruise": 495.0
+  },
+  "ATR_42_500": {
+    "id": "ATR_42_500",
+    "name": "ATR 42-500",
+    "range_km": 1345.0,
+    "seats": 48.0,
+    "cruise": 556.0
+  },
+  "ATR_42_600": {
+    "id": "ATR_42_600",
+    "name": "ATR 42-600",
+    "range_km": 1345.0,
+    "seats": 48.0,
+    "cruise": 535.0
+  },
+  "ATR_72_200": {
+    "id": "ATR_72_200",
+    "name": "ATR 72-200",
+    "range_km": 1596.0,
+    "seats": 66,
+    "cruise": 515.0
+  },
+  "ATR_72_200F": {
+    "id": "ATR_72_200F",
+    "name": "ATR 72-200F",
+    "range_km": 1596.0,
+    "seats": 0,
+    "cruise": 517.0
+  },
+  "ATR_72_500": {
+    "id": "ATR_72_500",
+    "name": "ATR 72-500",
+    "range_km": 1430.0,
+    "seats": 74,
+    "cruise": 510.0
+  },
+  "ATR_72_600": {
+    "id": "ATR_72_600",
+    "name": "ATR 72-600",
+    "range_km": 1404.0,
+    "seats": 72,
+    "cruise": 510.0
+  },
+  "AVIC_MA60": {
+    "id": "AVIC_MA60",
+    "name": "AVIC MA-60",
+    "range_km": 1600.0,
+    "seats": 60,
+    "cruise": 430.0
+  },
+  "AVIC_MA600": {
+    "id": "AVIC_MA600",
+    "name": "AVIC MA-600",
+    "range_km": 1430.0,
+    "seats": 60,
+    "cruise": 430.0
+  },
+  "AVIC_Y7_200": {
+    "id": "AVIC_Y7_200",
+    "name": "AVIC Y-7-200",
+    "range_km": 910.0,
+    "seats": 7,
+    "cruise": 423.0
+  },
+  "AIRBUS_A220_100": {
+    "id": "AIRBUS_A220_100",
+    "name": "Airbus A220-100",
+    "range_km": 6300.0,
+    "seats": 116,
+    "cruise": 870.0
+  },
+  "AIRBUS_A321LR": {
+    "id": "AIRBUS_A321LR",
+    "name": "Airbus A321LR",
+    "range_km": 7410.0,
+    "seats": 206,
+    "cruise": 833.0
+  },
+  "AIRBUS_A321XLR": {
+    "id": "AIRBUS_A321XLR",
+    "name": "Airbus A321XLR",
+    "range_km": 8700.0,
+    "seats": 206,
+    "cruise": 833.0
+  },
+  "AIRBUS_A330_800NEO": {
+    "id": "AIRBUS_A330_800NEO",
+    "name": "Airbus A330-800neo",
+    "range_km": 15000.0,
+    "seats": 220,
+    "cruise": 871.0
+  },
+  "Airbus_A220_300": {
+    "id": "Airbus_A220_300",
+    "name": "Airbus A220-300",
+    "range_km": 6570.0,
+    "seats": 141,
+    "cruise": 870.0
+  },
+  "Airbus_A300_600F": {
+    "id": "Airbus_A300_600F",
+    "name": "Airbus A300-600F",
+    "range_km": 7500.0,
+    "seats": 0,
+    "cruise": 833.0
+  },
+  "Airbus_A300_600R": {
+    "id": "Airbus_A300_600R",
+    "name": "Airbus A300-600R",
+    "range_km": 7500.0,
+    "seats": 247,
+    "cruise": 833.0
+  },
+  "Airbus_A310_200": {
+    "id": "Airbus_A310_200",
+    "name": "Airbus A310-200",
+    "range_km": 6500.0,
+    "seats": 195,
+    "cruise": 870.0
+  },
+  "Airbus_A310_200F": {
+    "id": "Airbus_A310_200F",
+    "name": "Airbus A310-200F",
+    "range_km": 5950.0,
+    "seats": 0,
+    "cruise": 871.0
+  },
+  "Airbus_A310_300": {
+    "id": "Airbus_A310_300",
+    "name": "Airbus A310-300",
+    "range_km": 9540.0,
+    "seats": 220,
+    "cruise": 870.0
+  },
+  "Airbus_A310_300F": {
+    "id": "Airbus_A310_300F",
+    "name": "Airbus A310-300F",
+    "range_km": 8060.0,
+    "seats": 0,
+    "cruise": 871.0
+  },
+  "Airbus_A318": {
+    "id": "Airbus_A318",
+    "name": "Airbus A318",
+    "range_km": 5740.0,
+    "seats": 107,
+    "cruise": 829.0
+  },
+  "Airbus_A319": {
+    "id": "Airbus_A319",
+    "name": "Airbus A319",
+    "range_km": 6940.0,
+    "seats": 124,
+    "cruise": 829.0
+  },
+  "Airbus_A319neo": {
+    "id": "Airbus_A319neo",
+    "name": "Airbus A319neo",
+    "range_km": 6850.0,
+    "seats": 160,
+    "cruise": 833.0
+  },
+  "Airbus_A320_100": {
+    "id": "Airbus_A320_100",
+    "name": "Airbus A320-100",
+    "range_km": 4813.0,
+    "seats": 150,
+    "cruise": 828.0
+  },
+  "Airbus_A320_200": {
+    "id": "Airbus_A320_200",
+    "name": "Airbus A320-200",
+    "range_km": 6100.0,
+    "seats": 150.0,
+    "cruise": 828.0
+  },
+  "Airbus_A320neo": {
+    "id": "Airbus_A320neo",
+    "name": "Airbus A320neo",
+    "range_km": 6300.0,
+    "seats": 150.0,
+    "cruise": 828.0
+  },
+  "Airbus_A321_100": {
+    "id": "Airbus_A321_100",
+    "name": "Airbus A321-100",
+    "range_km": 4150.0,
+    "seats": 185.0,
+    "cruise": 828.0
+  },
+  "Airbus_A321_200": {
+    "id": "Airbus_A321_200",
+    "name": "Airbus A321-200",
+    "range_km": 5930.0,
+    "seats": 185.0,
+    "cruise": 828.0
+  },
+  "Airbus_A321neo": {
+    "id": "Airbus_A321neo",
+    "name": "Airbus A321neo",
+    "range_km": 7400.0,
+    "seats": 206.0,
+    "cruise": 833.0
+  },
+  "Airbus_A330_200": {
+    "id": "Airbus_A330_200",
+    "name": "Airbus A330-200",
+    "range_km": 13450.0,
+    "seats": 253.0,
+    "cruise": 871.0
+  },
+  "Airbus_A330_200F": {
+    "id": "Airbus_A330_200F",
+    "name": "Airbus A330-200F",
+    "range_km": 7400.0,
+    "seats": 0.0,
+    "cruise": 871.0
+  },
+  "Airbus_A330_300": {
+    "id": "Airbus_A330_300",
+    "name": "Airbus A330-300",
+    "range_km": 11750.0,
+    "seats": 277.0,
+    "cruise": 871.0
+  },
+  "Airbus_A330_900neo": {
+    "id": "Airbus_A330_900neo",
+    "name": "Airbus A330-900neo",
+    "range_km": 13610.0,
+    "seats": 287.0,
+    "cruise": 871.0
+  },
+  "Airbus_A340_300": {
+    "id": "Airbus_A340_300",
+    "name": "Airbus A340-300",
+    "range_km": 12400.0,
+    "seats": 295.0,
+    "cruise": 871.0
+  },
+  "Airbus_A340_500": {
+    "id": "Airbus_A340_500",
+    "name": "Airbus A340-500",
+    "range_km": 16670.0,
+    "seats": 313.0,
+    "cruise": 871.0
+  },
+  "Airbus_A340_600": {
+    "id": "Airbus_A340_600",
+    "name": "Airbus A340-600",
+    "range_km": 13900.0,
+    "seats": 379.0,
+    "cruise": 871.0
+  },
+  "Airbus_A350_1000": {
+    "id": "Airbus_A350_1000",
+    "name": "Airbus A350-1000",
+    "range_km": 16700.0,
+    "seats": 410.0,
+    "cruise": 912.0
+  },
+  "Airbus_A350_900": {
+    "id": "Airbus_A350_900",
+    "name": "Airbus A350-900",
+    "range_km": 15750.0,
+    "seats": 325.0,
+    "cruise": 903.0
+  },
+  "Airbus_A380_800": {
+    "id": "Airbus_A380_800",
+    "name": "Airbus A380-800",
+    "range_km": 15700.0,
+    "seats": 525.0,
+    "cruise": 903.0
+  },
+  "ANTONOV_AN140": {
+    "id": "ANTONOV_AN140",
+    "name": "Antonov An-140",
+    "range_km": 2100.0,
+    "seats": 52,
+    "cruise": 575.0
+  },
+  "ANTONOV_AN148": {
+    "id": "ANTONOV_AN148",
+    "name": "Antonov An-148",
+    "range_km": 4400.0,
+    "seats": 68,
+    "cruise": 870.0
+  },
+  "ANTONOV_AN158": {
+    "id": "ANTONOV_AN158",
+    "name": "Antonov An-158",
+    "range_km": 2500.0,
+    "seats": 86,
+    "cruise": 870.0
+  },
+  "Antonov_124": {
+    "id": "Antonov_124",
+    "name": "Antonov An-124",
+    "range_km": 3700.0,
+    "seats": 350.0,
+    "cruise": 865.0
+  },
+  "Antonov_225": {
+    "id": "Antonov_225",
+    "name": "Antonov An-225",
+    "range_km": 15400.0,
+    "seats": 0,
+    "cruise": 800.0
+  },
+  "BAC_1_11_200": {
+    "id": "BAC_1_11_200",
+    "name": "BAC 1-11 200",
+    "range_km": 1340.0,
+    "seats": 89.0,
+    "cruise": 882.0
+  },
+  "BAC_1_11_300": {
+    "id": "BAC_1_11_300",
+    "name": "BAC 1-11 300",
+    "range_km": 2040.0,
+    "seats": 89.0,
+    "cruise": 882.0
+  },
+  "BAC_1_11_400": {
+    "id": "BAC_1_11_400",
+    "name": "BAC 1-11 400",
+    "range_km": 2040.0,
+    "seats": 89.0,
+    "cruise": 882.0
+  },
+  "BAC_1_11_500": {
+    "id": "BAC_1_11_500",
+    "name": "BAC 1-11 500",
+    "range_km": 2744.0,
+    "seats": 119.0,
+    "cruise": 871.0
+  },
+  "BAC_CONCORDE": {
+    "id": "BAC_CONCORDE",
+    "name": "BAC Concorde",
+    "range_km": 6580.0,
+    "seats": 128.0,
+    "cruise": 2154.0
+  },
+  "BAe_146_100": {
+    "id": "BAe_146_100",
+    "name": "BAe 146-100",
+    "range_km": 3870.0,
+    "seats": 82.0,
+    "cruise": 789.0
+  },
+  "BAe_146_200": {
+    "id": "BAe_146_200",
+    "name": "BAe 146-200",
+    "range_km": 3650.0,
+    "seats": 100.0,
+    "cruise": 789.0
+  },
+  "BAe_146_300": {
+    "id": "BAe_146_300",
+    "name": "BAe 146-300",
+    "range_km": 3340.0,
+    "seats": 112.0,
+    "cruise": 789.0
+  },
+  "BAe_146_300QT": {
+    "id": "BAe_146_300QT",
+    "name": "BAe 146-300QT",
+    "range_km": 3340.0,
+    "seats": 0.0,
+    "cruise": 789.0
+  },
+  "BOEING_737MAX7": {
+    "id": "BOEING_737MAX7",
+    "name": "Boeing 737 MAX 7",
+    "range_km": 7000.0,
+    "seats": 153,
+    "cruise": 839.0
+  },
+  "BOEING_747SP": {
+    "id": "BOEING_747SP",
+    "name": "Boeing 747SP",
+    "range_km": 12315.0,
+    "seats": 331,
+    "cruise": 1000.0
+  },
+  "BOEING_757_300": {
+    "id": "BOEING_757_300",
+    "name": "Boeing 757-300",
+    "range_km": 6288.0,
+    "seats": 243,
+    "cruise": 858.0
+  },
+  "BOEING_777_8": {
+    "id": "BOEING_777_8",
+    "name": "Boeing 777-8",
+    "range_km": 17590.0,
+    "seats": 350,
+    "cruise": 905.0
+  },
+  "Boeing_707_320": {
+    "id": "Boeing_707_320",
+    "name": "Boeing 707-320",
+    "range_km": 6940.0,
+    "seats": 189,
+    "cruise": 972.0
+  },
+  "Boeing_707_420": {
+    "id": "Boeing_707_420",
+    "name": "Boeing 707-420",
+    "range_km": 8950.0,
+    "seats": 189,
+    "cruise": 972.0
+  },
+  "Boeing_717_200": {
+    "id": "Boeing_717_200",
+    "name": "Boeing 717-200",
+    "range_km": 3820.0,
+    "seats": 106,
+    "cruise": 811.0
+  },
+  "Boeing_727_100": {
+    "id": "Boeing_727_100",
+    "name": "Boeing 727-100",
+    "range_km": 4170.0,
+    "seats": 106,
+    "cruise": 960.0
+  },
+  "Boeing_727_200": {
+    "id": "Boeing_727_200",
+    "name": "Boeing 727-200",
+    "range_km": 4720.0,
+    "seats": 134,
+    "cruise": 954.0
+  },
+  "Boeing_727_200F": {
+    "id": "Boeing_727_200F",
+    "name": "Boeing 727-200F",
+    "range_km": 4720.0,
+    "seats": 0,
+    "cruise": 954.0
+  },
+  "Boeing_737_100": {
+    "id": "Boeing_737_100",
+    "name": "Boeing 737-100",
+    "range_km": 2850.0,
+    "seats": 118,
+    "cruise": 796.0
+  },
+  "Boeing_737_200": {
+    "id": "Boeing_737_200",
+    "name": "Boeing 737-200",
+    "range_km": 4800.0,
+    "seats": 130,
+    "cruise": 796.0
+  },
+  "Boeing_737_200C": {
+    "id": "Boeing_737_200C",
+    "name": "Boeing 737-200C",
+    "range_km": 4800.0,
+    "seats": 0,
+    "cruise": 796.0
+  },
+  "Boeing_737_300": {
+    "id": "Boeing_737_300",
+    "name": "Boeing 737-300",
+    "range_km": 4175.0,
+    "seats": 149,
+    "cruise": 828.0
+  },
+  "Boeing_737_300F": {
+    "id": "Boeing_737_300F",
+    "name": "Boeing 737-300F",
+    "range_km": 4176.0,
+    "seats": 0,
+    "cruise": 828.0
+  },
+  "Boeing_737_400": {
+    "id": "Boeing_737_400",
+    "name": "Boeing 737-400",
+    "range_km": 3820.0,
+    "seats": 188.0,
+    "cruise": 828.0
+  },
+  "Boeing_737_500": {
+    "id": "Boeing_737_500",
+    "name": "Boeing 737-500",
+    "range_km": 4398.0,
+    "seats": 132.0,
+    "cruise": 828.0
+  },
+  "Boeing_737_600": {
+    "id": "Boeing_737_600",
+    "name": "Boeing 737-600",
+    "range_km": 5991.0,
+    "seats": 130.0,
+    "cruise": 834.0
+  },
+  "Boeing_737_700": {
+    "id": "Boeing_737_700",
+    "name": "Boeing 737-700",
+    "range_km": 5570.0,
+    "seats": 149.0,
+    "cruise": 834.0
+  },
+  "Boeing_737_800": {
+    "id": "Boeing_737_800",
+    "name": "Boeing 737-800",
+    "range_km": 5436.0,
+    "seats": 189.0,
+    "cruise": 837.0
+  },
+  "Boeing_737_900": {
+    "id": "Boeing_737_900",
+    "name": "Boeing 737-900",
+    "range_km": 5500.0,
+    "seats": 189.0,
+    "cruise": 828.0
+  },
+  "Boeing_737_900ER": {
+    "id": "Boeing_737_900ER",
+    "name": "Boeing 737-900ER",
+    "range_km": 5925.0,
+    "seats": 220.0,
+    "cruise": 840.0
+  },
+  "Boeing_737_MAX10": {
+    "id": "Boeing_737_MAX10",
+    "name": "Boeing 737 MAX 10",
+    "range_km": 5700.0,
+    "seats": 230.0,
+    "cruise": 842.0
+  },
+  "Boeing_737_MAX8": {
+    "id": "Boeing_737_MAX8",
+    "name": "Boeing 737 MAX 8",
+    "range_km": 6500.0,
+    "seats": 189.0,
+    "cruise": 842.0
+  },
+  "Boeing_737_MAX9": {
+    "id": "Boeing_737_MAX9",
+    "name": "Boeing 737 MAX 9",
+    "range_km": 6100.0,
+    "seats": 220.0,
+    "cruise": 842.0
+  },
+  "Boeing_747_100": {
+    "id": "Boeing_747_100",
+    "name": "Boeing 747-100",
+    "range_km": 9800.0,
+    "seats": 366.0,
+    "cruise": 900.0
+  },
+  "Boeing_747_200": {
+    "id": "Boeing_747_200",
+    "name": "Boeing 747-200",
+    "range_km": 12150.0,
+    "seats": 366.0,
+    "cruise": 900.0
+  },
+  "Boeing_747_200M": {
+    "id": "Boeing_747_200M",
+    "name": "Boeing 747-200M",
+    "range_km": 12150.0,
+    "seats": 238.0,
+    "cruise": 900.0
+  },
+  "Boeing_747_300": {
+    "id": "Boeing_747_300",
+    "name": "Boeing 747-300",
+    "range_km": 11720.0,
+    "seats": 412.0,
+    "cruise": 905.0
+  },
+  "Boeing_747_300M": {
+    "id": "Boeing_747_300M",
+    "name": "Boeing 747-300M",
+    "range_km": 12400.0,
+    "seats": 366.0,
+    "cruise": 905.0
+  },
+  "Boeing_747_400": {
+    "id": "Boeing_747_400",
+    "name": "Boeing 747-400",
+    "range_km": 13450.0,
+    "seats": 416.0,
+    "cruise": 910.0
+  },
+  "Boeing_747_400BCF": {
+    "id": "Boeing_747_400BCF",
+    "name": "Boeing 747-400BCF",
+    "range_km": 8250.0,
+    "seats": 0.0,
+    "cruise": 910.0
+  },
+  "Boeing_747_400D": {
+    "id": "Boeing_747_400D",
+    "name": "Boeing 747-400D",
+    "range_km": 10000.0,
+    "seats": 568.0,
+    "cruise": 957.0
+  },
+  "Boeing_747_400ER": {
+    "id": "Boeing_747_400ER",
+    "name": "Boeing 747-400ER",
+    "range_km": 14045.0,
+    "seats": 416.0,
+    "cruise": 899.0
+  },
+  "Boeing_747_400ERF": {
+    "id": "Boeing_747_400ERF",
+    "name": "Boeing 747-400ERF",
+    "range_km": 9230.0,
+    "seats": 0.0,
+    "cruise": 899.0
+  },
+  "Boeing_747_400M": {
+    "id": "Boeing_747_400M",
+    "name": "Boeing 747-400M",
+    "range_km": 13450.0,
+    "seats": 266.0,
+    "cruise": 957.0
+  },
+  "Boeing_747_400SCD": {
+    "id": "Boeing_747_400SCD",
+    "name": "Boeing 747-400SCD",
+    "range_km": 13440.0,
+    "seats": 450.0,
+    "cruise": 911.0
+  },
+  "Boeing_747_8F": {
+    "id": "Boeing_747_8F",
+    "name": "Boeing 747-8F",
+    "range_km": 8130.0,
+    "seats": 0.0,
+    "cruise": 898.0
+  },
+  "Boeing_747_8I": {
+    "id": "Boeing_747_8I",
+    "name": "Boeing 747-8I",
+    "range_km": 15000.0,
+    "seats": 467.0,
+    "cruise": 908.0
+  },
+  "Boeing_757_200": {
+    "id": "Boeing_757_200",
+    "name": "Boeing 757-200",
+    "range_km": 7130.0,
+    "seats": 200.0,
+    "cruise": 858.0
+  },
+  "Boeing_757_200F": {
+    "id": "Boeing_757_200F",
+    "name": "Boeing 757-200F",
+    "range_km": 5830.0,
+    "seats": 0.0,
+    "cruise": 858.0
+  },
+  "Boeing_767_200": {
+    "id": "Boeing_767_200",
+    "name": "Boeing 767-200",
+    "range_km": 7200.0,
+    "seats": 216.0,
+    "cruise": 858.0
+  },
+  "Boeing_767_200ER": {
+    "id": "Boeing_767_200ER",
+    "name": "Boeing 767-200ER",
+    "range_km": 12200.0,
+    "seats": 181.0,
+    "cruise": 858.0
+  },
+  "Boeing_767_300": {
+    "id": "Boeing_767_300",
+    "name": "Boeing 767-300",
+    "range_km": 7200.0,
+    "seats": 269.0,
+    "cruise": 858.0
+  },
+  "Boeing_767_300ER": {
+    "id": "Boeing_767_300ER",
+    "name": "Boeing 767-300ER",
+    "range_km": 11070.0,
+    "seats": 218.0,
+    "cruise": 858.0
+  },
+  "Boeing_767_300F": {
+    "id": "Boeing_767_300F",
+    "name": "Boeing 767-300F",
+    "range_km": 6025.0,
+    "seats": 0,
+    "cruise": 858.0
+  },
+  "Boeing_767_400ER": {
+    "id": "Boeing_767_400ER",
+    "name": "Boeing 767-400ER",
+    "range_km": 10415.0,
+    "seats": 245.0,
+    "cruise": 851.0
+  },
+  "Boeing_777X": {
+    "id": "Boeing_777X",
+    "name": "Boeing 777X",
+    "range_km": 14820.0,
+    "seats": 414.0,
+    "cruise": 903.0
+  },
+  "Boeing_777_200": {
+    "id": "Boeing_777_200",
+    "name": "Boeing 777-200",
+    "range_km": 9700.0,
+    "seats": 305.0,
+    "cruise": 896.0
+  },
+  "Boeing_777_200ER": {
+    "id": "Boeing_777_200ER",
+    "name": "Boeing 777-200ER",
+    "range_km": 13084.0,
+    "seats": 301.0,
+    "cruise": 896.0
+  },
+  "Boeing_777_200F": {
+    "id": "Boeing_777_200F",
+    "name": "Boeing 777-200F",
+    "range_km": 18057.0,
+    "seats": 0,
+    "cruise": 896.0
+  },
+  "Boeing_777_200LR": {
+    "id": "Boeing_777_200LR",
+    "name": "Boeing 777-200LR",
+    "range_km": 15844.0,
+    "seats": 301.0,
+    "cruise": 896.0
+  },
+  "Boeing_777_300": {
+    "id": "Boeing_777_300",
+    "name": "Boeing 777-300",
+    "range_km": 11121.0,
+    "seats": 368.0,
+    "cruise": 896.0
+  },
+  "Boeing_777_300ER": {
+    "id": "Boeing_777_300ER",
+    "name": "Boeing 777-300ER",
+    "range_km": 13650.0,
+    "seats": 392.0,
+    "cruise": 916.0
+  },
+  "Boeing_787_10": {
+    "id": "Boeing_787_10",
+    "name": "Boeing 787-10",
+    "range_km": 11720.0,
+    "seats": 336.0,
+    "cruise": 903.0
+  },
+  "Boeing_787_8": {
+    "id": "Boeing_787_8",
+    "name": "Boeing 787-8",
+    "range_km": 13529.0,
+    "seats": 248.0,
+    "cruise": 903.0
+  },
+  "Boeing_787_9": {
+    "id": "Boeing_787_9",
+    "name": "Boeing 787-9",
+    "range_km": 14010.0,
+    "seats": 296.0,
+    "cruise": 903.0
+  },
+  "Bombardier_CRJ1000": {
+    "id": "Bombardier_CRJ1000",
+    "name": "Bombardier CRJ1000",
+    "range_km": 2698.0,
+    "seats": 104,
+    "cruise": 829.0
+  },
+  "Bombardier_CRJ1000EL": {
+    "id": "Bombardier_CRJ1000EL",
+    "name": "Bombardier CRJ1000EL",
+    "range_km": 1910.0,
+    "seats": 104,
+    "cruise": 829.0
+  },
+  "Bombardier_CRJ100ER": {
+    "id": "Bombardier_CRJ100ER",
+    "name": "Bombardier CRJ-100ER",
+    "range_km": 3000.0,
+    "seats": 50,
+    "cruise": 786.0
+  },
+  "Bombardier_CRJ100LR": {
+    "id": "Bombardier_CRJ100LR",
+    "name": "Bombardier CRJ-100LR",
+    "range_km": 3710.0,
+    "seats": 50,
+    "cruise": 786.0
+  },
+  "Bombardier_CRJ200ER": {
+    "id": "Bombardier_CRJ200ER",
+    "name": "Bombardier CRJ-200ER",
+    "range_km": 3045.0,
+    "seats": 50,
+    "cruise": 786.0
+  },
+  "Bombardier_CRJ200LR": {
+    "id": "Bombardier_CRJ200LR",
+    "name": "Bombardier CRJ-200LR",
+    "range_km": 3713.0,
+    "seats": 50,
+    "cruise": 786.0
+  },
+  "Bombardier_CRJ700": {
+    "id": "Bombardier_CRJ700",
+    "name": "Bombardier CRJ-700",
+    "range_km": 3152.0,
+    "seats": 78,
+    "cruise": 876.0
+  },
+  "Bombardier_CRJ700ER": {
+    "id": "Bombardier_CRJ700ER",
+    "name": "Bombardier CRJ-700ER",
+    "range_km": 3763.0,
+    "seats": 68,
+    "cruise": 876.0
+  },
+  "Bombardier_CRJ900": {
+    "id": "Bombardier_CRJ900",
+    "name": "Bombardier CRJ-900",
+    "range_km": 2500.0,
+    "seats": 90,
+    "cruise": 829.0
+  },
+  "Bombardier_CRJ900ER": {
+    "id": "Bombardier_CRJ900ER",
+    "name": "Bombardier CRJ-900ER",
+    "range_km": 2950.0,
+    "seats": 90,
+    "cruise": 829.0
+  },
+  "Bombardier_CRJ900LR": {
+    "id": "Bombardier_CRJ900LR",
+    "name": "Bombardier CRJ-900LR",
+    "range_km": 3385.0,
+    "seats": 90,
+    "cruise": 829.0
+  },
+  "Bombardier_Dash_8_100": {
+    "id": "Bombardier_Dash_8_100",
+    "name": "Bombardier Dash 8-100",
+    "range_km": 1889.0,
+    "seats": 40.0,
+    "cruise": 500.0
+  },
+  "Bombardier_Dash_8_200": {
+    "id": "Bombardier_Dash_8_200",
+    "name": "Bombardier Dash 8-200",
+    "range_km": 1713.0,
+    "seats": 40.0,
+    "cruise": 535.0
+  },
+  "Bombardier_Dash_8_200Q": {
+    "id": "Bombardier_Dash_8_200Q",
+    "name": "Bombardier Dash 8-200Q",
+    "range_km": 1713.0,
+    "seats": 40.0,
+    "cruise": 535.0
+  },
+  "Bombardier_Dash_8_300": {
+    "id": "Bombardier_Dash_8_300",
+    "name": "Bombardier Dash 8-300",
+    "range_km": 1558.0,
+    "seats": 56.0,
+    "cruise": 532.0
+  },
+  "Bombardier_Dash_8_300Q": {
+    "id": "Bombardier_Dash_8_300Q",
+    "name": "Bombardier Dash 8-300Q",
+    "range_km": 1558.0,
+    "seats": 56.0,
+    "cruise": 532.0
+  },
+  "Bombardier_Dash_8_400Q": {
+    "id": "Bombardier_Dash_8_400Q",
+    "name": "Bombardier Dash 8-400Q",
+    "range_km": 2040.0,
+    "seats": 78.0,
+    "cruise": 667.0
+  },
+  "BRITTEN_NORMAN_BN2B": {
+    "id": "BRITTEN_NORMAN_BN2B",
+    "name": "Britten-Norman BN-2B Islander",
+    "range_km": 1398.0,
+    "seats": 9.0,
+    "cruise": 240.0
+  },
+  "BRITTEN_NORMAN_BN2T": {
+    "id": "BRITTEN_NORMAN_BN2T",
+    "name": "Britten-Norman BN-2T Turbine Islander",
+    "range_keep_current": true,
+    "seats": 9.0,
+    "cruise_keep_current": true
+  },
+  "COMAC_C909": {
+    "id": "COMAC_C909",
+    "name": "COMAC C909 (ARJ21)",
+    "range_km": 2200.0,
+    "seats": 78.0,
+    "cruise": 828.0
+  },
+  "COMAC_C919": {
+    "id": "COMAC_C919",
+    "name": "COMAC C919",
+    "range_km": 4075.0,
+    "seats": 158.0,
+    "cruise": 835.0
+  },
+  "COMAC_C929": {
+    "id": "COMAC_C929",
+    "name": "COMAC C929",
+    "range_km": 12000.0,
+    "seats": 280.0,
+    "cruise": 908.0
+  },
+  "CESSNA_208": {
+    "id": "CESSNA_208",
+    "name": "Cessna 208 Caravan",
+    "range_km": 1980.0,
+    "seats": 9.0,
+    "cruise": 344.0
+  },
+  "CESSNA_208B": {
+    "id": "CESSNA_208B",
+    "name": "Cessna 208B Grand Caravan",
+    "range_km": 1785.0,
+    "seats": 14.0,
+    "cruise": 344.0
+  },
+  "CESSNA_402": {
+    "id": "CESSNA_402",
+    "name": "Cessna 402",
+    "range_km": 2358.0,
+    "seats": 10.0,
+    "cruise": 263.0
+  },
+  "CESSNA_404": {
+    "id": "CESSNA_404",
+    "name": "Cessna 404 Titan",
+    "range_km": 3410.0,
+    "seats": 10.0,
+    "cruise": 302.0
+  },
+  "CESSNA_408": {
+    "id": "CESSNA_408",
+    "name": "Cessna 408 SkyCourier",
+    "range_km": 1700.0,
+    "seats": 19.0,
+    "cruise": 390.0
+  },
+  "CESSNA_414": {
+    "id": "CESSNA_414",
+    "name": "Cessna 414 Chancellor",
+    "range_km": 2458.0,
+    "seats": 8.0,
+    "cruise": 339.0
+  },
+  "CESSNA_421": {
+    "id": "CESSNA_421",
+    "name": "Cessna 421 Golden Eagle",
+    "range_km": 2754.0,
+    "seats": 6.0,
+    "cruise": 440.0
+  },
+  "CONVAIR_880": {
+    "id": "CONVAIR_880",
+    "name": "Convair 880",
+    "range_km": 4578.0,
+    "seats": 110.0,
+    "cruise": 990.0
+  },
+  "CONVAIR_990": {
+    "id": "CONVAIR_990",
+    "name": "Convair 990",
+    "range_km": 6115.0,
+    "seats": 149.0,
+    "cruise": 896.0
+  },
+  "EMBRAER_E175_E2": {
+    "id": "EMBRAER_E175_E2",
+    "name": "Embraer E175-E2",
+    "range_km": 3700.0,
+    "seats": 80.0,
+    "cruise": 833.0
+  },
+  "EMBRAER_E190_E2": {
+    "id": "EMBRAER_E190_E2",
+    "name": "Embraer E190-E2",
+    "range_km": 5460.0,
+    "seats": 97,
+    "cruise": 833.0
+  },
+  "EMBRAER_ERJ135": {
+    "id": "EMBRAER_ERJ135",
+    "name": "Embraer ERJ-135",
+    "range_km": 3240.0,
+    "seats": 37.0,
+    "cruise": 831.0
+  },
+  "EMBRAER_ERJ140": {
+    "id": "EMBRAER_ERJ140",
+    "name": "Embraer ERJ-140",
+    "range_km": 3060.0,
+    "seats": 44.0,
+    "cruise": 831.0
+  },
+  "Embraer_E170LR": {
+    "id": "Embraer_E170LR",
+    "name": "Embraer 170 LR",
+    "range_km": 3982.0,
+    "seats": 66,
+    "cruise": 829.0
+  },
+  "Embraer_E170STD": {
+    "id": "Embraer_E170STD",
+    "name": "Embraer 170 STD",
+    "range_km": 3982.0,
+    "seats": 66,
+    "cruise": 829.0
+  },
+  "Embraer_E175LR": {
+    "id": "Embraer_E175LR",
+    "name": "Embraer 175 LR",
+    "range_km": 4074.0,
+    "seats": 76,
+    "cruise": 829.0
+  },
+  "Embraer_E175STD": {
+    "id": "Embraer_E175STD",
+    "name": "Embraer 175 STD",
+    "range_km": 4074.0,
+    "seats": 76,
+    "cruise": 829.0
+  },
+  "Embraer_E190AR": {
+    "id": "Embraer_E190AR",
+    "name": "Embraer 190 AR",
+    "range_km": 93.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E190LR": {
+    "id": "Embraer_E190LR",
+    "name": "Embraer 190 LR",
+    "range_km": 4537.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E190STD": {
+    "id": "Embraer_E190STD",
+    "name": "Embraer 190 STD",
+    "range_km": 4448.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E195AR": {
+    "id": "Embraer_E195AR",
+    "name": "Embraer 195 AR",
+    "range_km": 4077.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E195LR": {
+    "id": "Embraer_E195LR",
+    "name": "Embraer 195 LR",
+    "range_km": 3334.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E195STD": {
+    "id": "Embraer_E195STD",
+    "name": "Embraer 195 STD",
+    "range_km": 2594.0,
+    "seats": 100.0,
+    "cruise": 829.0
+  },
+  "Embraer_E195_E2": {
+    "id": "Embraer_E195_E2",
+    "name": "Embraer E195-E2",
+    "range_km": 5600.0,
+    "seats": 120.0,
+    "cruise": 833.0
+  },
+  "Embraer_ERJ145": {
+    "id": "Embraer_ERJ145",
+    "name": "Embraer 145 (ERJ-145)",
+    "range_km": 3700.0,
+    "seats": 50.0,
+    "cruise": 829.0
+  },
+  "FOKKER_F27": {
+    "id": "FOKKER_F27",
+    "name": "Fokker F27 Friendship",
+    "range_km": 2600.0,
+    "seats": 52.0,
+    "cruise": 460.0
+  },
+  "FOKKER_F28": {
+    "id": "FOKKER_F28",
+    "name": "Fokker F28 Fellowship",
+    "range_km": 1668.0,
+    "seats": 85.0,
+    "cruise": 848.0
+  },
+  "Fokker_F100": {
+    "id": "Fokker_F100",
+    "name": "Fokker 100",
+    "range_km": 3170.0,
+    "seats": 122.0,
+    "cruise": 845.0
+  },
+  "Fokker_F70": {
+    "id": "Fokker_F70",
+    "name": "Fokker 70",
+    "range_km": 3410.0,
+    "seats": 85.0,
+    "cruise": 845.0
+  },
+  "GENERAL_ATOMICS_DO228": {
+    "id": "GENERAL_ATOMICS_DO228",
+    "name": "General Atomics DO 228",
+    "range_km": 2363.0,
+    "seats": 19.0,
+    "cruise": 413.0
+  },
+  "HS_TRIDENT": {
+    "id": "HS_TRIDENT",
+    "name": "Hawker Siddeley Trident",
+    "range_km": 4350.0,
+    "seats": 115.0,
+    "cruise": 980.0
+  },
+  "ILYUSHIN_IL114": {
+    "id": "ILYUSHIN_IL114",
+    "name": "Ilyushin Il-114",
+    "range_km": 1000.0,
+    "seats": 64,
+    "cruise": 470.0
+  },
+  "ILYUSHIN_IL18": {
+    "id": "ILYUSHIN_IL18",
+    "name": "Ilyushin Il-18",
+    "range_km": 6500.0,
+    "seats": 65,
+    "cruise": 625.0
+  },
+  "ILYUSHIN_IL96": {
+    "id": "ILYUSHIN_IL96",
+    "name": "Ilyushin Il-96",
+    "range_km": 10000.0,
+    "seats": 262,
+    "cruise": 870.0
+  },
+  "Ilyushin_62": {
+    "id": "Ilyushin_62",
+    "name": "Ilyushin Il-62",
+    "range_km": 10000.0,
+    "seats": 168,
+    "cruise": 900.0
+  },
+  "Ilyushin_76": {
+    "id": "Ilyushin_76",
+    "name": "Ilyushin Il-76",
+    "range_km": 5000.0,
+    "seats": 225.0,
+    "cruise": 852.0
+  },
+  "IRKUT_MC21": {
+    "id": "IRKUT_MC21",
+    "name": "Irkut MC-21",
+    "range_km": 6000.0,
+    "seats": 163,
+    "cruise": 870.0
+  },
+  "LET_L410": {
+    "id": "LET_L410",
+    "name": "LET L-410",
+    "range_km": 1500.0,
+    "seats": 19.0,
+    "cruise": 405.0
+  },
+  "LOCKHEED_L1011": {
+    "id": "LOCKHEED_L1011",
+    "name": "Lockheed L-1011 TriStar",
+    "range_km": 9899.0,
+    "seats": 256.0,
+    "cruise": 972.0
+  },
+  "LOCKHEED_L188": {
+    "id": "LOCKHEED_L188",
+    "name": "Lockheed L-188 Electra",
+    "range_km": 4460.0,
+    "seats": 98.0,
+    "cruise": 600.0
+  },
+  "Lockheed_L049_Constellation": {
+    "id": "Lockheed_L049_Constellation",
+    "name": "Lockheed L-049 Constellation",
+    "range_km": 6429.0,
+    "seats": 81.0,
+    "cruise": 504.0
+  },
+  "DOUGLAS_DC3": {
+    "id": "DOUGLAS_DC3",
+    "name": "Douglas DC-3",
+    "range_km": 2400.0,
+    "seats": 32.0,
+    "cruise": 333.0
+  },
+  "DOUGLAS_DC6": {
+    "id": "DOUGLAS_DC6",
+    "name": "Douglas DC-6",
+    "range_km": 7377.0,
+    "seats": 68.0,
+    "cruise": 501.0
+  },
+  "DOUGLAS_DC7": {
+    "id": "DOUGLAS_DC7",
+    "name": "Douglas DC-7",
+    "range_km": 9069.0,
+    "seats": 105.0,
+    "cruise": 557.0
+  },
+  "Douglas_DC10_10": {
+    "id": "Douglas_DC10_10",
+    "name": "Douglas DC-10-10",
+    "range_km": 6500.0,
+    "seats": 270.0,
+    "cruise": 876.0
+  },
+  "Douglas_DC10_30": {
+    "id": "Douglas_DC10_30",
+    "name": "Douglas DC-10-30",
+    "range_km": 9600.0,
+    "seats": 270.0,
+    "cruise": 876.0
+  },
+  "Douglas_DC10_40": {
+    "id": "Douglas_DC10_40",
+    "name": "Douglas DC-10-40",
+    "range_km": 9400.0,
+    "seats": 270.0,
+    "cruise": 876.0
+  },
+  "Douglas_DC8_10": {
+    "id": "Douglas_DC8_10",
+    "name": "Douglas DC-8-10",
+    "range_km": 6960.0,
+    "seats": 177.0,
+    "cruise": 895.0
+  },
+  "Douglas_DC8_20": {
+    "id": "Douglas_DC8_20",
+    "name": "Douglas DC-8-20",
+    "range_km": 7500.0,
+    "seats": 177.0,
+    "cruise": 895.0
+  },
+  "Douglas_DC8_30": {
+    "id": "Douglas_DC8_30",
+    "name": "Douglas DC-8-30",
+    "range_km": 7417.0,
+    "seats": 177.0,
+    "cruise": 895.0
+  },
+  "Douglas_DC8_40": {
+    "id": "Douglas_DC8_40",
+    "name": "Douglas DC-8-40",
+    "range_km": 9830.0,
+    "seats": 177.0,
+    "cruise": 895.0
+  },
+  "Douglas_DC8_50": {
+    "id": "Douglas_DC8_50",
+    "name": "Douglas DC-8-50",
+    "range_km": 10843.0,
+    "seats": 189.0,
+    "cruise": 895.0
+  },
+  "Douglas_DC9_10": {
+    "id": "Douglas_DC9_10",
+    "name": "Douglas DC-9-10",
+    "range_km": 2343.0,
+    "seats": 90.0,
+    "cruise": 903.0
+  },
+  "Douglas_DC9_20": {
+    "id": "Douglas_DC9_20",
+    "name": "Douglas DC-9-20",
+    "range_km": 2687.0,
+    "seats": 90.0,
+    "cruise": 898.0
+  },
+  "Douglas_DC9_30": {
+    "id": "Douglas_DC9_30",
+    "name": "Douglas DC-9-30",
+    "range_km": 2778.0,
+    "seats": 115.0,
+    "cruise": 898.0
+  },
+  "Douglas_DC9_40": {
+    "id": "Douglas_DC9_40",
+    "name": "Douglas DC-9-40",
+    "range_km": 2880.0,
+    "seats": 125.0,
+    "cruise": 898.0
+  },
+  "Douglas_DC9_50": {
+    "id": "Douglas_DC9_50",
+    "name": "Douglas DC-9-50",
+    "range_km": 2408.0,
+    "seats": 139.0,
+    "cruise": 898.0
+  },
+  "McDonnell_Douglas_MD11": {
+    "id": "McDonnell_Douglas_MD11",
+    "name": "McDonnell Douglas MD-11",
+    "range_km": 12455.0,
+    "seats": 293.0,
+    "cruise": 886.0
+  },
+  "McDonnell_Douglas_MD11F": {
+    "id": "McDonnell_Douglas_MD11F",
+    "name": "McDonnell Douglas MD-11F",
+    "range_km": 6543.0,
+    "seats": 0,
+    "cruise": 886.0
+  },
+  "McDonnell_Douglas_MD81": {
+    "id": "McDonnell_Douglas_MD81",
+    "name": "McDonnell Douglas MD-81",
+    "range_km": 2898.0,
+    "seats": 155.0,
+    "cruise": 840.0
+  },
+  "McDonnell_Douglas_MD82": {
+    "id": "McDonnell_Douglas_MD82",
+    "name": "McDonnell Douglas MD-82",
+    "range_km": 3800.0,
+    "seats": 155.0,
+    "cruise": 811.0
+  },
+  "McDonnell_Douglas_MD83": {
+    "id": "McDonnell_Douglas_MD83",
+    "name": "McDonnell Douglas MD-83",
+    "range_km": 4637.0,
+    "seats": 155.0,
+    "cruise": 811.0
+  },
+  "McDonnell_Douglas_MD87": {
+    "id": "McDonnell_Douglas_MD87",
+    "name": "McDonnell Douglas MD-87",
+    "range_km": 5400.0,
+    "seats": 130.0,
+    "cruise": 811.0
+  },
+  "McDonnell_Douglas_MD88": {
+    "id": "McDonnell_Douglas_MD88",
+    "name": "McDonnell Douglas MD-88",
+    "range_km": 4637.0,
+    "seats": 155.0,
+    "cruise": 811.0
+  },
+  "McDonnell_Douglas_MD90": {
+    "id": "McDonnell_Douglas_MD90",
+    "name": "McDonnell Douglas MD-90",
+    "range_km": 3787.0,
+    "seats": 158.0,
+    "cruise": 812.0
+  },
+  "PZL_AN28": {
+    "id": "PZL_AN28",
+    "name": "PZL AN-28",
+    "range_km": 1365.0,
+    "seats": 15.0,
+    "cruise": 335.0
+  },
+  "PILATUS_PC12": {
+    "id": "PILATUS_PC12",
+    "name": "Pilatus PC-12",
+    "range_km": 3417.0,
+    "seats": 9.0,
+    "cruise": 528.0
+  },
+  "PILATUS_PC24": {
+    "id": "PILATUS_PC24",
+    "name": "Pilatus PC-24",
+    "range_km": 3700.0,
+    "seats": 10.0,
+    "cruise": 810.0
+  },
+  "RAYTHEON_BEECH1900D": {
+    "id": "RAYTHEON_BEECH1900D",
+    "name": "Raytheon Beech 1900D",
+    "range_km": 2306.0,
+    "seats": 19.0,
+    "cruise": 518.0
+  },
+  "SUD_CARAVELLE_III": {
+    "id": "SUD_CARAVELLE_III",
+    "name": "SUD Caravelle III",
+    "range_km": 2500.0,
+    "seats": 80.0,
+    "cruise": 845.0
+  },
+  "SUKHOI_SSJ100": {
+    "id": "SUKHOI_SSJ100",
+    "name": "Sukhoi Superjet 100",
+    "range_km": 3048.0,
+    "seats": 87,
+    "cruise": 870.0
+  },
+  "TUPOLEV_TU204": {
+    "id": "TUPOLEV_TU204",
+    "name": "Tupolev Tu-204",
+    "range_km": 4300.0,
+    "seats": 172,
+    "cruise": 850.0
+  },
+  "TUPOLEV_TU214": {
+    "id": "TUPOLEV_TU214",
+    "name": "Tupolev Tu-214",
+    "range_km": 4340.0,
+    "seats": 164,
+    "cruise": 850.0
+  },
+  "Tupolev_Tu134": {
+    "id": "Tupolev_Tu134",
+    "name": "Tupolev Tu-134",
+    "range_km": 3000.0,
+    "seats": 84,
+    "cruise": 850.0
+  },
+  "Tupolev_Tu154B": {
+    "id": "Tupolev_Tu154B",
+    "name": "Tupolev Tu-154B",
+    "range_km": 5280.0,
+    "seats": 114,
+    "cruise": 850.0
+  },
+  "Tupolev_Tu154M": {
+    "id": "Tupolev_Tu154M",
+    "name": "Tupolev Tu-154M",
+    "range_km": 6600.0,
+    "seats": 114,
+    "cruise": 850.0
+  },
+  "VICKERS_VC10": {
+    "id": "VICKERS_VC10",
+    "name": "Vickers VC10",
+    "range_km": 9410.0,
+    "seats": 151.0,
+    "cruise": 890.0
+  },
+  "VICKERS_VISCOUNT": {
+    "id": "VICKERS_VISCOUNT",
+    "name": "Vickers Viscount",
+    "range_km": 2220.0,
+    "seats": 75.0,
+    "cruise": 566.0
+  },
+  "YAKOVLEV_YAK40": {
+    "id": "YAKOVLEV_YAK40",
+    "name": "Yakovlev Yak-40",
+    "range_km": 1800.0,
+    "seats": 32,
+    "cruise": 550.0
+  },
+  "YAKOVLEV_YAK42": {
+    "id": "YAKOVLEV_YAK42",
+    "name": "Yakovlev Yak-42",
+    "range_km": 4074.0,
+    "seats": 96,
+    "cruise": 740.0
+  },
+  "DEHAVILLAND_COMET": {
+    "id": "DEHAVILLAND_COMET",
+    "name": "de Havilland Comet",
+    "range_keep_current": true,
+    "seats": 81.0,
+    "cruise": 790.0
+  },
+  "DEHAVILLAND_DHC6_400": {
+    "id": "DEHAVILLAND_DHC6_400",
+    "name": "de Havilland DHC-6-400 Twin Otter",
+    "range_km": 1480.0,
+    "seats": 19.0,
+    "cruise": 337.0
+  }
+}

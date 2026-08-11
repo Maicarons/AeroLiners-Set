@@ -439,7 +439,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(918); // heading for tower contact point
+      18: return plane_speed_kmh(828); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -529,10 +529,10 @@ item (FEAT_AIRCRAFT, Boeing_737_400)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 146;
+    passenger_capacity: 188;
     mail_capacity: 17;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 755;
+    range: 695;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -548,7 +548,7 @@ item (FEAT_AIRCRAFT, Boeing_737_400)
 
     cost_factor: 49; 
     purchase_running_cost_factor: 76;
-    purchase_speed: plane_speed_kmh(918); 
+    purchase_speed: plane_speed_kmh(828); 
   }
 }
 
@@ -566,7 +566,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_737_400)
   {
     property
-    { range: 755; }
+    { range: 695; }
   }
 }
 
@@ -575,6 +575,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_737_400)
   {
     property
-    { range: 1135; }
+    { range: 1045; }
   }
 }

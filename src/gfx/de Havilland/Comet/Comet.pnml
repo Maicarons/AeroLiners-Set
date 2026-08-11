@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, DEHAVILLAND_COMET_speed, flight_state())
 {
   12..13: return plane_speed_kmh(205); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(294); // airplane climbing after take-off
-      18: return plane_speed_kmh(740); // heading for tower contact point
+      18: return plane_speed_kmh(790); // heading for tower contact point
   16..20: return plane_speed_kmh(384); // in flight
   21..22: return plane_speed_kmh(191); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(171);
@@ -204,7 +204,7 @@ item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 10;
-    passenger_capacity: 90;
+    passenger_capacity: 81;
     mail_capacity: 7;
     acceleration: 27;
     range: 1345;
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, DEHAVILLAND_COMET)
 
     cost_factor: 37;
     purchase_running_cost_factor: 53;
-    purchase_speed: plane_speed_kmh(740);
+    purchase_speed: plane_speed_kmh(790);
   }
 }
 

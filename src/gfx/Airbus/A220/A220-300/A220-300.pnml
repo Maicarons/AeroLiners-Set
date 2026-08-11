@@ -365,7 +365,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A220_300_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(362); // airplane climbing after take-off
-      18: return plane_speed_kmh(833); // heading for tower contact point
+      18: return plane_speed_kmh(870); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(244); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -441,10 +441,10 @@ item (FEAT_AIRCRAFT , Airbus_A220_300)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 145;
+    passenger_capacity: 141;
     mail_capacity: 14;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1090;
+    range: 1195;
   }
   graphics {
     default: Airbus_A220_300_sprites;
@@ -457,7 +457,7 @@ item (FEAT_AIRCRAFT , Airbus_A220_300)
 
     cost_factor: 92; 
     purchase_running_cost_factor: 66;
-    purchase_speed: plane_speed_kmh(840); 
+    purchase_speed: plane_speed_kmh(870); 
   }
 }
 
@@ -475,7 +475,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A220_300)
   {
     property
-    { range: 1090; }
+    { range: 1195; }
   }
 }
 
@@ -484,6 +484,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A220_300)
   {
     property
-    { range: 1635; }
+    { range: 1792; }
   }
 }

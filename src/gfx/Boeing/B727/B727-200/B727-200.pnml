@@ -488,7 +488,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_speed, flight_state())
 {
   12..13: return plane_speed_kmh(289); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(515); // airplane climbing after take-off
-      18: return plane_speed_kmh(999); // heading for tower contact point
+      18: return plane_speed_kmh(954); // heading for tower contact point
   16..20: return plane_speed_kmh(459); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -566,10 +566,10 @@ item (FEAT_AIRCRAFT, Boeing_727_200)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 147;
+    passenger_capacity: 134;
     mail_capacity: 19;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1155;
+    range: 858;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -585,7 +585,7 @@ item (FEAT_AIRCRAFT, Boeing_727_200)
 
     cost_factor: 37; 
     purchase_running_cost_factor: 97;
-    purchase_speed: plane_speed_kmh(999); 
+    purchase_speed: plane_speed_kmh(954); 
   }
 }
 
@@ -603,7 +603,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_727_200)
   {
     property
-    { range: 1155; }
+    { range: 858; }
   }
 }
 
@@ -612,6 +612,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_727_200)
   {
     property
-    { range: 1730; }
+    { range: 1285; }
   }
 }

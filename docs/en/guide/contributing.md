@@ -4,7 +4,7 @@ Contributions to AeroLiners Set (and its documentation) are welcome — whether 
 
 ## Reporting bugs
 
-1. Register an account at the development homepage <https://dev.openttdcoop.org/projects/worldairlinersset>.
+1. Open an Issue or Pull Request on the project's GitHub repository: <https://github.com/Maicarons/AeroLiners-Set>.
 2. Check the **Issues** tab first to confirm the problem hasn't been reported.
 3. Submit a **New Issue**, including as much as possible:
    - AeroLiners Set version

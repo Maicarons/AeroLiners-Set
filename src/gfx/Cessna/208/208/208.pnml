@@ -204,7 +204,7 @@ item (FEAT_AIRCRAFT, CESSNA_208)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 13;
+    passenger_capacity: 9;
     mail_capacity: 2;
     acceleration: 27;
     range: 360;

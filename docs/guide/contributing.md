@@ -4,7 +4,7 @@
 
 ## 报告问题（Bug Report）
 
-1. 到开发主页 <https://dev.openttdcoop.org/projects/worldairlinersset> 注册账号。
+1. 在本项目的 GitHub 仓库提交 Issue 或 Pull Request：<https://github.com/Maicarons/AeroLiners-Set>（无需在上游站点注册账号）。
 2. 先查看 **Issues** 标签，确认该问题尚未被报告。
 3. 在 **New Issue** 中提交，并尽量包含：
    - 寰宇飞机 版本号

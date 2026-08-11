@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, VICKERS_VC10_speed, flight_state())
 {
   12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(394); // airplane climbing after take-off
-      18: return plane_speed_kmh(822); // heading for tower contact point
+      18: return plane_speed_kmh(890); // heading for tower contact point
   16..20: return plane_speed_kmh(370); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -204,10 +204,10 @@ item (FEAT_AIRCRAFT, VICKERS_VC10)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 145;
+    passenger_capacity: 151;
     mail_capacity: 15;
     acceleration: 27;
-    range: 1800;
+    range: 1711;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, VICKERS_VC10)
 
     cost_factor: 169;
     purchase_running_cost_factor: 42;
-    purchase_speed: plane_speed_kmh(822);
+    purchase_speed: plane_speed_kmh(890);
   }
 }
 
@@ -241,7 +241,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, VICKERS_VC10)
   {
     property
-    { range: 1800; }
+    { range: 1711; }
   }
 }
 
@@ -250,6 +250,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, VICKERS_VC10)
   {
     property
-    { range: 2700; }
+    { range: 2566; }
   }
 }

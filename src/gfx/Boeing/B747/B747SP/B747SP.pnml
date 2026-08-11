@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, BOEING_747SP_speed, flight_state())
 {
   12..13: return plane_speed_kmh(289); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(435); // airplane climbing after take-off
-      18: return plane_speed_kmh(967); // heading for tower contact point
+      18: return plane_speed_kmh(1000); // heading for tower contact point
   16..20: return plane_speed_kmh(451); // in flight
   21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -204,10 +204,10 @@ item (FEAT_AIRCRAFT, BOEING_747SP)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 34;
-    passenger_capacity: 320;
+    passenger_capacity: 331;
     mail_capacity: 32;
     acceleration: 27;
-    range: 2236;
+    range: 2239;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, BOEING_747SP)
 
     cost_factor: 265;
     purchase_running_cost_factor: 285;
-    purchase_speed: plane_speed_kmh(967);
+    purchase_speed: plane_speed_kmh(1000);
   }
 }
 
@@ -241,7 +241,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, BOEING_747SP)
   {
     property
-    { range: 2236; }
+    { range: 2239; }
   }
 }
 
@@ -250,6 +250,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, BOEING_747SP)
   {
     property
-    { range: 3354; }
+    { range: 3358; }
   }
 }

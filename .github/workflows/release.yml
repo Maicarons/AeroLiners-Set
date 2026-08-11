@@ -45,8 +45,8 @@ jobs:
           gcc -D REPO_REVISION="${{ steps.meta.outputs.repo_revision }}" \
               -D NEWGRF_VERSION="${{ steps.meta.outputs.newgrf_version }}" \
               -C -E -nostdinc -x c-header \
-              -o bin/WorldAirlinersSet.nml WAS.pnml
-          nmlc --grf=bin/AeroLinersSet.grf -c bin/WorldAirlinersSet.nml
+              -o bin/AeroLinersSet.nml WAS.pnml
+          nmlc --grf=bin/AeroLinersSet.grf -c bin/AeroLinersSet.nml
           ls -la bin/AeroLinersSet.grf
 
       - name: Create GitHub Release

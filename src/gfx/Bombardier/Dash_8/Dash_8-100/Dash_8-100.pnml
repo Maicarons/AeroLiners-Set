@@ -100,7 +100,7 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_100_speed, flight_state())
 {
   12..13: return plane_speed_kmh(233); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(322); // airplane climbing after take-off
-      18: return plane_speed_kmh(499); // heading for tower contact point
+      18: return plane_speed_kmh(500); // heading for tower contact point
   16..20: return plane_speed_kmh(298); // in flight
   21..22: return plane_speed_kmh(201); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -143,10 +143,10 @@ item (FEAT_AIRCRAFT, Bombardier_Dash_8_100)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 17;
-    passenger_capacity: 39;
+    passenger_capacity: 40;
     mail_capacity: 4;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 340;
+    range: 343;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -162,7 +162,7 @@ item (FEAT_AIRCRAFT, Bombardier_Dash_8_100)
 
     cost_factor: 9; 
     purchase_running_cost_factor: 26;
-    purchase_speed: plane_speed_kmh(499); 
+    purchase_speed: plane_speed_kmh(500); 
   }
 }
 
@@ -180,7 +180,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Bombardier_Dash_8_100)
   {
     property
-    { range: 340; }
+    { range: 343; }
   }
 }
 
@@ -189,6 +189,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Bombardier_Dash_8_100)
   {
     property
-    { range: 510; }
+    { range: 514; }
   }
 }

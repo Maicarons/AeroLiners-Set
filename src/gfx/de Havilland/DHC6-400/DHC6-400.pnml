@@ -207,7 +207,7 @@ item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
     passenger_capacity: 19;
     mail_capacity: 2;
     acceleration: 27;
-    range: 236;
+    range: 269;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -241,7 +241,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
   {
     property
-    { range: 236; }
+    { range: 269; }
   }
 }
 
@@ -250,6 +250,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
   {
     property
-    { range: 353; }
+    { range: 402; }
   }
 }

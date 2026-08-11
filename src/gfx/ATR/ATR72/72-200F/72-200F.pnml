@@ -113,7 +113,7 @@ switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(346); // airplane climbing after take-off
-      18: return plane_speed_kmh(523); // heading for tower contact point
+      18: return plane_speed_kmh(517); // heading for tower contact point
   16..20: return plane_speed_kmh(362); // in flight
   21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -169,7 +169,7 @@ item (FEAT_AIRCRAFT, ATR_72_200F)
 
     cost_factor: 19; 
     purchase_running_cost_factor: 39;
-    purchase_speed: plane_speed_kmh(523); 
+    purchase_speed: plane_speed_kmh(517); 
   }
 }
 

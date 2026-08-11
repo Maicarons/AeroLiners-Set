@@ -204,7 +204,7 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_speed, flight_state())
 {
   12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(451); // airplane climbing after take-off
-      18: return plane_speed_kmh(814); // heading for tower contact point
+      18: return plane_speed_kmh(812); // heading for tower contact point
   16..20: return plane_speed_kmh(427); // in flight
   21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -262,10 +262,10 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD90)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 155;
+    passenger_capacity: 158;
     mail_capacity: 16;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 930;
+    range: 689;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -281,7 +281,7 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD90)
 
     cost_factor: 59; 
     purchase_running_cost_factor: 79;
-    purchase_speed: plane_speed_kmh(841); 
+    purchase_speed: plane_speed_kmh(812); 
   }
 }
 
@@ -299,7 +299,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, McDonnell_Douglas_MD81)
   {
     property
-    { range: 930; }
+    { range: 689; }
   }
 }
 
@@ -308,6 +308,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, McDonnell_Douglas_MD81)
   {
     property
-    { range: 1395; }
+    { range: 1034; }
   }
 }

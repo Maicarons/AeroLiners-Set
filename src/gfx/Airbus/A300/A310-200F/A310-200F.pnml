@@ -101,7 +101,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(354); // airplane climbing after take-off
-      18: return plane_speed_kmh(902); // heading for tower contact point
+      18: return plane_speed_kmh(871); // heading for tower contact point
   16..20: return plane_speed_kmh(338); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -134,7 +134,7 @@ item (FEAT_AIRCRAFT, Airbus_A310_200F)
     passenger_capacity: 0;
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1000;
+    range: 1082;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -149,7 +149,7 @@ item (FEAT_AIRCRAFT, Airbus_A310_200F)
 
     cost_factor: 134; 
     purchase_running_cost_factor: 126;
-    purchase_speed: plane_speed_kmh(902); 
+    purchase_speed: plane_speed_kmh(871); 
   }
 }
 
@@ -167,7 +167,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A310_200F)
   {
     property
-    { range: 1000; }
+    { range: 1082; }
   }
 }
 
@@ -176,6 +176,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A310_200F)
   {
     property
-    { range: 1500; }
+    { range: 1623; }
   }
 }

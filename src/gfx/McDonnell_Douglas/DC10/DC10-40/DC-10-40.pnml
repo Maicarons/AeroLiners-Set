@@ -101,7 +101,7 @@ switch (FEAT_AIRCRAFT, SELF, Douglas_DC10_40_speed, flight_state())
 {
   12..13: return plane_speed_kmh(330); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(515); // airplane climbing after take-off
-      18: return plane_speed_kmh(983); // heading for tower contact point
+      18: return plane_speed_kmh(876); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -144,10 +144,10 @@ item (FEAT_AIRCRAFT, Douglas_DC10_40)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 49;
-    passenger_capacity: 255;
+    passenger_capacity: 270;
     mail_capacity: 29;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1665;
+    range: 1709;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -163,7 +163,7 @@ item (FEAT_AIRCRAFT, Douglas_DC10_40)
 
     cost_factor: 146; 
     purchase_running_cost_factor: 205;
-    purchase_speed: plane_speed_kmh(983); 
+    purchase_speed: plane_speed_kmh(876); 
   }
 }
 
@@ -181,7 +181,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Douglas_DC10_40)
   {
     property
-    { range: 1665; }
+    { range: 1709; }
   }
 }
 
@@ -190,6 +190,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Douglas_DC10_40)
   {
     property
-    { range: 2500; }
+    { range: 2566; }
   }
 }

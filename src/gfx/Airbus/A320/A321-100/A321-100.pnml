@@ -192,7 +192,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(362); // airplane climbing after take-off
-      18: return plane_speed_kmh(902); // heading for tower contact point
+      18: return plane_speed_kmh(828); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -245,7 +245,7 @@ item (FEAT_AIRCRAFT, Airbus_A321_100)
     passenger_capacity: 185;
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 785;
+    range: 755;
   }
   graphics {
     default: Airbus_A321_100_sprites;
@@ -259,7 +259,7 @@ item (FEAT_AIRCRAFT, Airbus_A321_100)
 
     cost_factor: 84; 
     purchase_running_cost_factor: 75;
-    purchase_speed: plane_speed_kmh(902); 
+    purchase_speed: plane_speed_kmh(828); 
   }
 }
 
@@ -277,7 +277,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A321_100)
   {
     property
-    { range: 785; }
+    { range: 755; }
   }
 }
 
@@ -286,6 +286,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A321_100)
   {
     property
-    { range: 1175; }
+    { range: 1130; }
   }
 }

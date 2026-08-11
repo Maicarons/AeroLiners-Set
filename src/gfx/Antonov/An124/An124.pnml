@@ -92,7 +92,7 @@ switch (FEAT_AIRCRAFT, SELF, Antonov_124_speed, flight_state())
 {
   12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(531); // airplane climbing after take-off
-      18: return plane_speed_kmh(862); // heading for tower contact point
+      18: return plane_speed_kmh(865); // heading for tower contact point
   16..20: return plane_speed_kmh(862); // in flight
   21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -129,10 +129,10 @@ item (FEAT_AIRCRAFT, Antonov_124)
     cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
     reliability_decay: 20;
     loading_speed: 15;
-    passenger_capacity: 0;
+    passenger_capacity: 350;
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1075;
+    range: 673;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -148,7 +148,7 @@ item (FEAT_AIRCRAFT, Antonov_124)
 
     cost_factor: 274; 
     purchase_running_cost_factor: 180;
-    purchase_speed: plane_speed_kmh(862); 
+    purchase_speed: plane_speed_kmh(865); 
   }
 }
 
@@ -166,7 +166,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Antonov_124)
   {
     property
-    { range: 1075; }
+    { range: 673; }
   }
 }
 
@@ -175,6 +175,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Antonov_124)
   {
     property
-    { range: 1615; }
+    { range: 1011; }
   }
 }

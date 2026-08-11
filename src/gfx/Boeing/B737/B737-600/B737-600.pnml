@@ -165,7 +165,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(959); // heading for tower contact point
+      18: return plane_speed_kmh(834); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -217,10 +217,10 @@ item (FEAT_AIRCRAFT, Boeing_737_600)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 18;
-    passenger_capacity: 108;
+    passenger_capacity: 130;
     mail_capacity: 13;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1015;
+    range: 1089;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -236,7 +236,7 @@ item (FEAT_AIRCRAFT, Boeing_737_600)
 
     cost_factor: 53; 
     purchase_running_cost_factor: 74;
-    purchase_speed: plane_speed_kmh(959); 
+    purchase_speed: plane_speed_kmh(834); 
   }
 }
 
@@ -254,7 +254,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_737_600)
   {
     property
-    { range: 1015; }
+    { range: 1089; }
   }
 }
 
@@ -263,6 +263,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_737_600)
   {
     property
-    { range: 1525; }
+    { range: 1636; }
   }
 }

@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, RAYTHEON_BEECH1900D)
     passenger_capacity: 19;
     mail_capacity: 2;
     acceleration: 27;
-    range: 327;
+    range: 419;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, RAYTHEON_BEECH1900D)
   {
     property
-    { range: 327; }
+    { range: 419; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, RAYTHEON_BEECH1900D)
   {
     property
-    { range: 491; }
+    { range: 629; }
   }
 }

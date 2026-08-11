@@ -174,10 +174,10 @@ item (FEAT_AIRCRAFT, DOUGLAS_DC3)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 17;
-    passenger_capacity: 30;
+    passenger_capacity: 32;
     mail_capacity: 3;
     acceleration: 27;
-    range: 473;
+    range: 436;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -211,7 +211,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, DOUGLAS_DC3)
   {
     property
-    { range: 473; }
+    { range: 436; }
   }
 }
 
@@ -220,6 +220,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, DOUGLAS_DC3)
   {
     property
-    { range: 710; }
+    { range: 654; }
   }
 }

@@ -13,7 +13,7 @@ export default defineConfig({
   cleanUrls: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
     // SEO / 社交分享
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'AeroLiners Set (寰宇飞机) 文档' }],
@@ -39,8 +39,7 @@ export default defineConfig({
             text: '外部链接',
             items: [
               { text: '文档站', link: site },
-              { text: '开发主页 (dev.openttdcoop)', link: 'https://dev.openttdcoop.org/projects/worldairlinersset' },
-              { text: '本项目 GitHub 仓库', link: `https://github.com/${repo}` },
+              { text: '开发主页 (GitHub)', link: `https://github.com/${repo}` },
               { text: '上游仓库 (RvP93)', link: 'https://github.com/RvP93/WorldAirlinersSet' },
               { text: '许可协议 GPL-3.0', link: '/guide/license' }
             ]
@@ -97,7 +96,22 @@ export default defineConfig({
                 { text: '洛克希德 Lockheed', link: '/aircraft/lockheed' },
                 { text: '麦克唐纳·道格拉斯 McDonnell Douglas', link: '/aircraft/mcdonnell_douglas' },
                 { text: 'SUD 宇航', link: '/aircraft/sud' },
-                { text: '图波列夫 Tupolev', link: '/aircraft/tupolev' }
+                { text: '图波列夫 Tupolev', link: '/aircraft/tupolev' },
+                { text: '苏霍伊 Sukhoi', link: '/aircraft/sukhoi' },
+                { text: '伊尔库特 Irkut', link: '/aircraft/irkut' },
+                { text: '雅克夫列夫 Yakovlev', link: '/aircraft/yakovlev' },
+                { text: '德哈维兰 de Havilland', link: '/aircraft/de-havilland' },
+                { text: '维克斯 Vickers', link: '/aircraft/vickers' },
+                { text: '康维尔 Convair', link: '/aircraft/convair' },
+                { text: '霍克·西德利 Hawker Siddeley', link: '/aircraft/hawker_siddeley' },
+                { text: '塞斯纳 Cessna', link: '/aircraft/cessna' },
+                { text: '中航工业 AVIC', link: '/aircraft/avic' },
+                { text: '布里顿-诺曼 Britten-Norman', link: '/aircraft/britten-norman' },
+                { text: '通用原子 General Atomics', link: '/aircraft/general-atomics' },
+                { text: 'LET', link: '/aircraft/let' },
+                { text: '皮拉图斯 Pilatus', link: '/aircraft/pilatus' },
+                { text: 'PZL', link: '/aircraft/pzl' },
+                { text: '雷神 Raytheon', link: '/aircraft/raytheon' }
               ]
             }
           ]
@@ -141,8 +155,7 @@ export default defineConfig({
             text: 'External Links',
             items: [
               { text: 'Docs Site', link: site },
-              { text: 'Dev homepage (dev.openttdcoop)', link: 'https://dev.openttdcoop.org/projects/worldairlinersset' },
-              { text: 'GitHub Repository', link: `https://github.com/${repo}` },
+              { text: 'Dev homepage (GitHub)', link: `https://github.com/${repo}` },
               { text: 'Upstream (RvP93)', link: 'https://github.com/RvP93/WorldAirlinersSet' },
               { text: 'License GPL-3.0', link: '/guide/license' }
             ]
@@ -199,7 +212,22 @@ export default defineConfig({
                 { text: 'Lockheed', link: '/aircraft/lockheed' },
                 { text: 'McDonnell Douglas', link: '/aircraft/mcdonnell_douglas' },
                 { text: 'SUD Aviation', link: '/aircraft/sud' },
-                { text: 'Tupolev', link: '/aircraft/tupolev' }
+                { text: 'Tupolev', link: '/aircraft/tupolev' },
+                { text: 'Sukhoi', link: '/aircraft/sukhoi' },
+                { text: 'Irkut', link: '/aircraft/irkut' },
+                { text: 'Yakovlev', link: '/aircraft/yakovlev' },
+                { text: 'de Havilland', link: '/aircraft/de-havilland' },
+                { text: 'Vickers', link: '/aircraft/vickers' },
+                { text: 'Convair', link: '/aircraft/convair' },
+                { text: 'Hawker Siddeley', link: '/aircraft/hawker_siddeley' },
+                { text: 'Cessna', link: '/aircraft/cessna' },
+                { text: 'AVIC', link: '/aircraft/avic' },
+                { text: 'Britten-Norman', link: '/aircraft/britten-norman' },
+                { text: 'General Atomics', link: '/aircraft/general-atomics' },
+                { text: 'LET', link: '/aircraft/let' },
+                { text: 'Pilatus', link: '/aircraft/pilatus' },
+                { text: 'PZL', link: '/aircraft/pzl' },
+                { text: 'Raytheon', link: '/aircraft/raytheon' }
               ]
             }
           ]
@@ -229,7 +257,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.svg',
 
     socialLinks: [
       { icon: 'github', link: `https://github.com/${repo}` }

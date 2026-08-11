@@ -677,7 +677,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A319_speed, flight_state())
 {
   12..13: return plane_speed_kmh(245); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(349); // airplane climbing after take-off
-      18: return plane_speed_kmh(869); // heading for tower contact point
+      18: return plane_speed_kmh(829); // heading for tower contact point
   16..20: return plane_speed_kmh(425); // in flight
   21..22: return plane_speed_kmh(219); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -812,7 +812,7 @@ item (FEAT_AIRCRAFT, Airbus_A319)
     passenger_capacity: 124;
     mail_capacity: 16;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1230;
+    range: 1262;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -827,7 +827,7 @@ item (FEAT_AIRCRAFT, Airbus_A319)
 
     cost_factor: 57; 
     purchase_running_cost_factor: 90;
-    purchase_speed: plane_speed_kmh(869); 
+    purchase_speed: plane_speed_kmh(829); 
   }
 }
 
@@ -845,7 +845,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A319)
   {
     property
-    { range: 1230; }
+    { range: 1262; }
   }
 }
 
@@ -854,6 +854,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A319)
   {
     property
-    { range: 1850; }
+    { range: 1898; }
   }
 }

@@ -165,7 +165,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_speed, flight_state())
 {
   12..13: return plane_speed_kmh(274); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(443); // airplane climbing after take-off
-      18: return plane_speed_kmh(945); // heading for tower contact point
+      18: return plane_speed_kmh(903); // heading for tower contact point
   16..20: return plane_speed_kmh(426); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -211,10 +211,10 @@ item (FEAT_AIRCRAFT, Airbus_A350_900)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 43;
-    passenger_capacity: 315;
+    passenger_capacity: 325;
     mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2700;
+    range: 2864;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -229,7 +229,7 @@ item (FEAT_AIRCRAFT, Airbus_A350_900)
 
     cost_factor: 220; 
     purchase_running_cost_factor: 191;
-    purchase_speed: plane_speed_kmh(945); 
+    purchase_speed: plane_speed_kmh(903); 
   }
 }
 
@@ -247,7 +247,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A350_900)
   {
     property
-    { range: 2700; }
+    { range: 2864; }
   }
 }
 
@@ -256,6 +256,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A350_900)
   {
     property
-    { range: 4050; }
+    { range: 4296; }
   }
 }

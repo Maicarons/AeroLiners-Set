@@ -441,10 +441,10 @@ item (FEAT_AIRCRAFT , Airbus_A321neo)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 220;
+    passenger_capacity: 206;
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1400;
+    range: 1345;
   }
   graphics {
     default: Airbus_A321neo_sprites;
@@ -475,7 +475,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A321neo)
   {
     property
-    { range: 1400; }
+    { range: 1345; }
   }
 }
 
@@ -484,6 +484,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A321neo)
   {
     property
-    { range: 2100; }
+    { range: 2018; }
   }
 }

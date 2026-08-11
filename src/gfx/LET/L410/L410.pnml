@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, LET_L410)
     passenger_capacity: 19;
     mail_capacity: 2;
     acceleration: 27;
-    range: 251;
+    range: 273;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, LET_L410)
   {
     property
-    { range: 251; }
+    { range: 273; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, LET_L410)
   {
     property
-    { range: 377; }
+    { range: 410; }
   }
 }

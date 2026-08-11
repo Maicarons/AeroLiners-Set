@@ -114,7 +114,7 @@ switch (FEAT_AIRCRAFT, SELF, EMBRAER_ERJ135_speed, flight_state())
 {
   12..13: return plane_speed_kmh(242); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(391); // airplane climbing after take-off
-      18: return plane_speed_kmh(834); // heading for tower contact point
+      18: return plane_speed_kmh(831); // heading for tower contact point
   16..20: return plane_speed_kmh(380); // in flight
   21..22: return plane_speed_kmh(236); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(202);
@@ -162,7 +162,7 @@ item (FEAT_AIRCRAFT, EMBRAER_ERJ135)
     passenger_capacity: 37;
     mail_capacity: 4;
     acceleration: 27;
-    range: 591;
+    range: 589;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -178,7 +178,7 @@ item (FEAT_AIRCRAFT, EMBRAER_ERJ135)
 
     cost_factor: 14;
     purchase_running_cost_factor: 28;
-    purchase_speed: plane_speed_kmh(834);
+    purchase_speed: plane_speed_kmh(831);
   }
 }
 
@@ -196,7 +196,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, EMBRAER_ERJ135)
   {
     property
-    { range: 591; }
+    { range: 589; }
   }
 }
 
@@ -205,6 +205,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, EMBRAER_ERJ135)
   {
     property
-    { range: 889; }
+    { range: 886; }
   }
 }

@@ -101,7 +101,7 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_300_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(346); // airplane climbing after take-off
-      18: return plane_speed_kmh(878); // heading for tower contact point
+      18: return plane_speed_kmh(882); // heading for tower contact point
   16..20: return plane_speed_kmh(451); // in flight
   21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -138,10 +138,10 @@ item (FEAT_AIRCRAFT, BAC_1_11_300)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 75;
+    passenger_capacity: 89;
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 235;
+    range: 371;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -156,7 +156,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_300)
 
     cost_factor: 24; 
     purchase_running_cost_factor: 79;
-    purchase_speed: plane_speed_kmh(878); 
+    purchase_speed: plane_speed_kmh(882); 
   }
 }
 
@@ -174,7 +174,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, BAC_1_11_300)
   {
     property
-    { range: 465; }
+    { range: 371; }
   }
 }
 
@@ -183,6 +183,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, BAC_1_11_300)
   {
     property
-    { range: 700; }
+    { range: 558; }
   }
 }

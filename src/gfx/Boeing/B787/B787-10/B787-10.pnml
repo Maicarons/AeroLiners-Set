@@ -326,7 +326,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_10_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(418); // airplane climbing after take-off
-      18: return plane_speed_kmh(943); // heading for tower contact point
+      18: return plane_speed_kmh(903); // heading for tower contact point
   16..20: return plane_speed_kmh(427); // in flight
   21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -396,10 +396,10 @@ item (FEAT_AIRCRAFT, Boeing_787_10)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 42;
-    passenger_capacity: 318;
+    passenger_capacity: 336;
     mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2165;
+    range: 2131;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -414,7 +414,7 @@ item (FEAT_AIRCRAFT, Boeing_787_10)
 
     cost_factor: 230; 
     purchase_running_cost_factor: 175;
-    purchase_speed: plane_speed_kmh(943); 
+    purchase_speed: plane_speed_kmh(903); 
   }
 }
 
@@ -432,7 +432,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_787_10)
   {
     property
-    { range: 2165; }
+    { range: 2131; }
   }
 }
 
@@ -441,6 +441,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_787_10)
   {
     property
-    { range: 3248; }
+    { range: 3197; }
   }
 }

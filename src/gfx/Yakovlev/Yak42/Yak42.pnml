@@ -215,10 +215,10 @@ item (FEAT_AIRCRAFT, YAKOVLEV_YAK42)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 120;
+    passenger_capacity: 96;
     mail_capacity: 16;
     acceleration: 27;
-    range: 527;
+    range: 741;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -252,7 +252,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, YAKOVLEV_YAK42)
   {
     property
-    { range: 527; }
+    { range: 741; }
   }
 }
 
@@ -261,6 +261,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, YAKOVLEV_YAK42)
   {
     property
-    { range: 789; }
+    { range: 1109; }
   }
 }

@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, IRKUT_MC21_speed, flight_state())
 {
   12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(362); // airplane climbing after take-off
-      18: return plane_speed_kmh(902); // heading for tower contact point
+      18: return plane_speed_kmh(870); // heading for tower contact point
   16..20: return plane_speed_kmh(467); // in flight
   21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -204,7 +204,7 @@ item (FEAT_AIRCRAFT, IRKUT_MC21)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 22;
-    passenger_capacity: 180;
+    passenger_capacity: 163;
     mail_capacity: 18;
     acceleration: 27;
     range: 1091;
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, IRKUT_MC21)
 
     cost_factor: 73;
     purchase_running_cost_factor: 77;
-    purchase_speed: plane_speed_kmh(902);
+    purchase_speed: plane_speed_kmh(870);
   }
 }
 

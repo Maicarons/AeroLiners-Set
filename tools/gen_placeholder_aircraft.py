@@ -532,6 +532,72 @@ def update_was(tgt):
     print("  + WAS.pnml include")
 
 
+# 段注释精确文本（与 src/sort_order.pnml 现有一致；新厂商用规范名）。
+# 注意：原始 WAS 把 Ilyushin 拼成 Ilyusin，须用原拼写才能匹配到已有段。
+SECTION_COMMENT = {
+    'Airbus': '//Airbus', 'Antonov': '//Antonov', 'ATR': '//ATR', 'BAC': '//BAC',
+    'BAe': '//BAe', 'Boeing': '//Boeing', 'Bombardier': '//Bombardier',
+    'Douglas': '//Douglas', 'Embraer': '//Embraer', 'Fokker': '//Fokker',
+    'Lockheed': '//Lockheed', 'Ilyushin': '//Ilyusin',
+    'McDonnell_Douglas': '//McDonnell_Douglas', 'SUD': '//SUD', 'Tupolev': '//Tupolev',
+}
+# dir 顶层目录 -> sort 段（DOUGLAS_* 逻辑归 Douglas 段，尽管其 pnml 在 McDonnell_Douglas 目录）
+DIR_TO_SECTION = {
+    'Airbus': 'Airbus', 'Embraer': 'Embraer', 'ATR': 'ATR', 'Boeing': 'Boeing',
+    'Antonov': 'Antonov', 'Tupolev': 'Tupolev', 'Ilyushin': 'Ilyushin',
+    'Yakovlev': 'Yakovlev', 'Lockheed': 'Lockheed', 'de Havilland': 'de Havilland',
+    'Vickers': 'Vickers', 'Fokker': 'Fokker', 'Convair': 'Convair',
+    'Hawker_Siddeley': 'Hawker_Siddeley', 'McDonnell_Douglas': 'McDonnell_Douglas',
+    'Sukhoi': 'Sukhoi', 'Irkut': 'Irkut', 'COMAC': 'COMAC', 'Cessna': 'Cessna',
+    'AVIC': 'AVIC', 'Britten-Norman': 'Britten-Norman',
+    'General Atomics': 'General Atomics', 'LET': 'LET', 'Pilatus': 'Pilatus',
+    'PZL': 'PZL', 'Raytheon': 'Raytheon',
+}
+
+
+def update_sort_order(tgt):
+    """把新机型补进 src/sort_order.pnml 的厂商段，避免游戏内购买列表把它甩到末尾。
+    显示顺序由 NML 的 sort(FEAT_AIRCRAFT,[...]) 控制，只排序列表内机型；列表外机型
+    会被追加到末尾。故每加一款占位机都必须同步进 sort 列表的对应厂商段。"""
+    fp = os.path.join(ROOT, "src/sort_order.pnml")
+    with open(fp, encoding="utf-8") as f:
+        content = f.read()
+    name = tgt['id']
+    if name in content:
+        return  # 已在 sort 列表（幂等，重跑生成器不会重复插入）
+    top = tgt['dir'].split('/')[2]
+    if name.startswith('DOUGLAS_'):
+        section = 'Douglas'
+    else:
+        section = DIR_TO_SECTION.get(top, top)
+    comment = SECTION_COMMENT.get(section, '//' + section)
+    lines = content.split('\n')
+    sec_idx = None
+    for i, ln in enumerate(lines):
+        if ln.strip() == comment:
+            sec_idx = i
+            break
+    new_line = '\t' + name + ','
+    if sec_idx is not None:
+        # 找该段结束（下一个 \t// 段注释 或 // Helicopters 或 ]);），在其前插入
+        end = len(lines)
+        for j in range(sec_idx + 1, len(lines)):
+            s = lines[j].strip()
+            if s.startswith('//') or s.startswith(']);'):
+                end = j
+                break
+        lines.insert(end, new_line)
+    else:
+        # 新建段：插在 // Helicopters 之前
+        hel = next((i for i, ln in enumerate(lines) if ln.strip().startswith('// Helicopters')), len(lines) - 1)
+        lines.insert(hel, '\t' + comment)
+        lines.insert(hel + 1, new_line)
+        lines.insert(hel + 2, '')
+    with open(fp, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines))
+    print("  + sort_order.pnml (%s -> %s)" % (name, section))
+
+
 def main():
     for tgt in TARGETS:
         print("== %s (%s) ==" % (tgt['id'], tgt['dir']))
@@ -544,6 +610,7 @@ def main():
         print("  wrote %s (donor=%s, liveries=%d)" % (tgt['dir'], d['donor_id'], min(N_LIVERIES, len(d['liveries']))))
         update_lang(tgt)
         update_was(tgt)
+        update_sort_order(tgt)
     print("\nDONE. Generated %d placeholder aircraft." % len(TARGETS))
 
 

@@ -413,7 +413,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_speed, flight_state())
 {
   12..13: return plane_speed_kmh(233); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(427); // airplane climbing after take-off
-      18: return plane_speed_kmh(999); // heading for tower contact point
+      18: return plane_speed_kmh(972); // heading for tower contact point
   16..20: return plane_speed_kmh(402); // in flight
   21..22: return plane_speed_kmh(193); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -484,7 +484,7 @@ item (FEAT_AIRCRAFT, Boeing_707_320)
     passenger_capacity: 189;
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 2050;
+    range: 1262;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -500,7 +500,7 @@ item (FEAT_AIRCRAFT, Boeing_707_320)
 
     cost_factor: 38; 
     purchase_running_cost_factor: 139;
-    purchase_speed: plane_speed_kmh(999); 
+    purchase_speed: plane_speed_kmh(972); 
   }
 }
 
@@ -518,7 +518,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Boeing_707_320)
   {
     property
-    { range: 2050; }
+    { range: 1262; }
   }
 }
 
@@ -527,6 +527,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Boeing_707_320)
   {
     property
-    { range: 3075; }
+    { range: 1893; }
   }
 }

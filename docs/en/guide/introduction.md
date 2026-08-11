@@ -28,8 +28,8 @@ AeroLiners Set is an independent continuation of the upstream **World Airliner S
 
 ## Known issues
 
-Some issues are already known to the development team and usually need not be reported again. For a more complete list, see the upstream release wiki:
-<http://dev.openttdcoop.org/projects/worldairlinersset/wiki>
+Some issues are already known to the development team and usually need not be reported again. For a more complete list, see this project's GitHub Issues:
+<https://github.com/Maicarons/AeroLiners-Set/issues>
 
 ## Planned features
 
@@ -42,7 +42,7 @@ The following are planned for later beta versions:
 
 ## Contact and community
 
-- Development homepage: <https://dev.openttdcoop.org/projects/worldairlinersset>
+- Development homepage (GitHub): <https://github.com/Maicarons/AeroLiners-Set>
 - Official forum: <http://worldairlinerset.forumotion.com/>
 - tt-forums thread: <http://www.tt-forums.net/viewtopic.php?t=39227>
 

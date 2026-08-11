@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, PILATUS_PC12)
     passenger_capacity: 9;
     mail_capacity: 1;
     acceleration: 27;
-    range: 544;
+    range: 621;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, PILATUS_PC12)
   {
     property
-    { range: 544; }
+    { range: 621; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, PILATUS_PC12)
   {
     property
-    { range: 817; }
+    { range: 933; }
   }
 }

@@ -127,7 +127,7 @@ switch (FEAT_AIRCRAFT, SELF, CESSNA_414_speed, flight_state())
 {
   12..13: return plane_speed_kmh(164); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(221); // airplane climbing after take-off
-      18: return plane_speed_kmh(360); // heading for tower contact point
+      18: return plane_speed_kmh(339); // heading for tower contact point
   16..20: return plane_speed_kmh(216); // in flight
   21..22: return plane_speed_kmh(133); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(128);
@@ -174,7 +174,7 @@ item (FEAT_AIRCRAFT, CESSNA_414)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 17;
-    passenger_capacity: 7;
+    passenger_capacity: 8;
     mail_capacity: 1;
     acceleration: 27;
     range: 447;
@@ -193,7 +193,7 @@ item (FEAT_AIRCRAFT, CESSNA_414)
 
     cost_factor: 12;
     purchase_running_cost_factor: 38;
-    purchase_speed: plane_speed_kmh(360);
+    purchase_speed: plane_speed_kmh(339);
   }
 }
 

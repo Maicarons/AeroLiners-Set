@@ -153,7 +153,7 @@ switch (FEAT_AIRCRAFT, SELF, ANTONOV_AN158_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(886); // heading for tower contact point
+      18: return plane_speed_kmh(870); // heading for tower contact point
   16..20: return plane_speed_kmh(427); // in flight
   21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -207,7 +207,7 @@ item (FEAT_AIRCRAFT, ANTONOV_AN158)
     passenger_capacity: 90;
     mail_capacity: 9;
     acceleration: 27;
-    range: 509;
+    range: 455;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -223,7 +223,7 @@ item (FEAT_AIRCRAFT, ANTONOV_AN158)
 
     cost_factor: 65;
     purchase_running_cost_factor: 29;
-    purchase_speed: plane_speed_kmh(886);
+    purchase_speed: plane_speed_kmh(870);
   }
 }
 
@@ -241,7 +241,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, ANTONOV_AN158)
   {
     property
-    { range: 509; }
+    { range: 455; }
   }
 }
 
@@ -250,6 +250,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, ANTONOV_AN158)
   {
     property
-    { range: 764; }
+    { range: 683; }
   }
 }

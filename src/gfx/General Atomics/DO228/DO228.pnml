@@ -129,7 +129,7 @@ switch (FEAT_AIRCRAFT, SELF, GENERAL_ATOMICS_DO228_speed, flight_state())
 {
   12..13: return plane_speed_kmh(197); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(265); // airplane climbing after take-off
-      18: return plane_speed_kmh(432); // heading for tower contact point
+      18: return plane_speed_kmh(413); // heading for tower contact point
   16..20: return plane_speed_kmh(259); // in flight
   21..22: return plane_speed_kmh(160); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(154);
@@ -179,7 +179,7 @@ item (FEAT_AIRCRAFT, GENERAL_ATOMICS_DO228)
     passenger_capacity: 19;
     mail_capacity: 2;
     acceleration: 27;
-    range: 187;
+    range: 430;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -195,7 +195,7 @@ item (FEAT_AIRCRAFT, GENERAL_ATOMICS_DO228)
 
     cost_factor: 14;
     purchase_running_cost_factor: 38;
-    purchase_speed: plane_speed_kmh(432);
+    purchase_speed: plane_speed_kmh(413);
   }
 }
 
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, GENERAL_ATOMICS_DO228)
   {
     property
-    { range: 187; }
+    { range: 430; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, GENERAL_ATOMICS_DO228)
   {
     property
-    { range: 281; }
+    { range: 646; }
   }
 }

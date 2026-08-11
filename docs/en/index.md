@@ -19,7 +19,7 @@ features:
     icon: ✈️
     link: /aircraft/
   - title: Fleet gallery
-    details: All 216 models and 1957 livery previews, extracted from source and grouped by manufacturer.
+    details: All 216 models and 2264 liveries, extracted from source and grouped by manufacturer.
     icon: 🖼️
     link: /aircraft/
   - title: Multilingual

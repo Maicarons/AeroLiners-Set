@@ -126,7 +126,7 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700ER_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(386); // airplane climbing after take-off
-      18: return plane_speed_kmh(830); // heading for tower contact point
+      18: return plane_speed_kmh(876); // heading for tower contact point
   16..20: return plane_speed_kmh(322); // in flight
   21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -176,7 +176,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ700ER)
     passenger_capacity: 70;
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 500;
+    range: 684;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -192,7 +192,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ700ER)
 
     cost_factor: 24; 
     purchase_running_cost_factor: 41;
-    purchase_speed: plane_speed_kmh(830); 
+    purchase_speed: plane_speed_kmh(876); 
   }
 }
 
@@ -210,7 +210,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Bombardier_CRJ700ER)
   {
     property
-    { range: 500; }
+    { range: 684; }
   }
 }
 
@@ -219,6 +219,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Bombardier_CRJ700ER)
   {
     property
-    { range: 750; }
+    { range: 1026; }
   }
 }

@@ -113,7 +113,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_speed, flight_state())
 {
   12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(483); // airplane climbing after take-off
-      18: return plane_speed_kmh(878); // heading for tower contact point
+      18: return plane_speed_kmh(871); // heading for tower contact point
   16..20: return plane_speed_kmh(443); // in flight
   21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -147,7 +147,7 @@ item (FEAT_AIRCRAFT, Airbus_A330_200F)
     passenger_capacity: 0;
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 1335;
+    range: 1345;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
@@ -162,7 +162,7 @@ item (FEAT_AIRCRAFT, Airbus_A330_200F)
 
     cost_factor: 171; 
     purchase_running_cost_factor: 175;
-    purchase_speed: plane_speed_kmh(878); 
+    purchase_speed: plane_speed_kmh(871); 
   }
 }
 
@@ -180,7 +180,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Airbus_A330_200F)
   {
     property
-    { range: 1335; }
+    { range: 1345; }
   }
 }
 
@@ -189,6 +189,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Airbus_A330_200F)
   {
     property
-    { range: 2000; }
+    { range: 2015; }
   }
 }

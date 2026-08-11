@@ -113,7 +113,7 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900LR_speed, flight_state())
 {
   12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(386); // airplane climbing after take-off
-      18: return plane_speed_kmh(846); // heading for tower contact point
+      18: return plane_speed_kmh(829); // heading for tower contact point
   16..20: return plane_speed_kmh(322); // in flight
   21..22: return plane_speed_kmh(265); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -162,7 +162,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ900LR)
     passenger_capacity: 90;
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 505;
+    range: 615;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -178,7 +178,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ900LR)
 
     cost_factor: 29; 
     purchase_running_cost_factor: 42;
-    purchase_speed: plane_speed_kmh(846); 
+    purchase_speed: plane_speed_kmh(829); 
   }
 }
 
@@ -196,7 +196,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Bombardier_CRJ900LR)
   {
     property
-    { range: 505; }
+    { range: 615; }
   }
 }
 
@@ -205,6 +205,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Bombardier_CRJ900LR)
   {
     property
-    { range: 760; }
+    { range: 926; }
   }
 }

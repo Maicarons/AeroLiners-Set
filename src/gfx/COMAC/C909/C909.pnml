@@ -157,7 +157,7 @@ switch (FEAT_AIRCRAFT, SELF, COMAC_C909_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(886); // heading for tower contact point
+      18: return plane_speed_kmh(828); // heading for tower contact point
   16..20: return plane_speed_kmh(427); // in flight
   21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -208,10 +208,10 @@ item (FEAT_AIRCRAFT, COMAC_C909)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 19;
-    passenger_capacity: 90;
+    passenger_capacity: 78;
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 673;
+    range: 400;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -227,7 +227,7 @@ item (FEAT_AIRCRAFT, COMAC_C909)
 
     cost_factor: 65;
     purchase_running_cost_factor: 29;
-    purchase_speed: plane_speed_kmh(886);
+    purchase_speed: plane_speed_kmh(828);
   }
 }
 
@@ -245,7 +245,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, COMAC_C909)
   {
     property
-    { range: 673; }
+    { range: 400; }
   }
 }
 
@@ -254,6 +254,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, COMAC_C909)
   {
     property
-    { range: 1010; }
+    { range: 600; }
   }
 }

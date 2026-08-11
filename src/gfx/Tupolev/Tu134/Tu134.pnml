@@ -283,7 +283,7 @@ switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_speed, flight_state())
 {
   12..13: return plane_speed_kmh(200); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(300); // airplane climbing after take-off
-      18: return plane_speed_kmh(902); // heading for tower contact point
+      18: return plane_speed_kmh(850); // heading for tower contact point
   16..20: return plane_speed_kmh(450); // in flight
   21..22: return plane_speed_kmh(200); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -340,10 +340,10 @@ item (FEAT_AIRCRAFT, Tupolev_Tu134)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 80;
+    passenger_capacity: 84;
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 340;
+    range: 545;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -359,7 +359,7 @@ item (FEAT_AIRCRAFT, Tupolev_Tu134)
 
     cost_factor: 32; 
     purchase_running_cost_factor: 83;
-    purchase_speed: plane_speed_kmh(902); 
+    purchase_speed: plane_speed_kmh(850); 
   }
 }
 
@@ -377,7 +377,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Tupolev_Tu134)
   {
     property
-    { range: 340; }
+    { range: 545; }
   }
 }
 
@@ -386,6 +386,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Tupolev_Tu134)
   {
     property
-    { range: 515; }
+    { range: 826; }
   }
 }

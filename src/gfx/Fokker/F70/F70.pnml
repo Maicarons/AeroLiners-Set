@@ -152,7 +152,7 @@ switch (FEAT_AIRCRAFT, SELF, Fokker_F70_speed, flight_state())
 {
   12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
       15: return plane_speed_kmh(378); // airplane climbing after take-off
-      18: return plane_speed_kmh(838); // heading for tower contact point
+      18: return plane_speed_kmh(845); // heading for tower contact point
   16..20: return plane_speed_kmh(427); // in flight
   21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
           return plane_speed_kmh(201);
@@ -202,10 +202,10 @@ item (FEAT_AIRCRAFT, Fokker_F70)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 16;
-    passenger_capacity: 79;
+    passenger_capacity: 85;
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
-    range: 615;
+    range: 620;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -221,7 +221,7 @@ item (FEAT_AIRCRAFT, Fokker_F70)
 
     cost_factor: 18; 
     purchase_running_cost_factor: 46;
-    purchase_speed: plane_speed_kmh(838); 
+    purchase_speed: plane_speed_kmh(845); 
   }
 }
 
@@ -239,7 +239,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, Fokker_F70)
   {
     property
-    { range: 615; }
+    { range: 620; }
   }
 }
 
@@ -248,6 +248,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, Fokker_F70)
   {
     property
-    { range: 920; }
+    { range: 927; }
   }
 }

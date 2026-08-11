@@ -1,254 +1,298 @@
 # Tupolev
 
-This page covers **Tupolev** aircraft: 3 models with 45 livery previews (including the default greyscale).
+This page collects **Tupolev**'s 5 models, with 57 livery preview images (including default greyscale).
 
 ---
 
 ## Tupolev Tu-134 {#tupolev_tu134}
 
-- **Internal ID**: `Tupolev_Tu134`
-- **English Name**: Tupolev Tu-134
+- **内部 ID**：`Tupolev_Tu134`
+- **英文名**：Tupolev Tu-134
 
-| Attribute | Value |
+| 属性 | 数值 |
 |---|---|
-| Year Introduced | 1964 |
-| Passenger Capacity | 80 |
-| Mail Capacity | 8 |
-| Cruise Speed | 902 km/h |
-| Design Range | 340 |
+| Intro year | 1964 |
+| Passengers | 84 |
+| Mail | 8 |
+| Cruise speed | 850 km/h |
+| Design range | 545 |
 | Acceleration | 27 |
-| Aircraft Class | Small |
-| Cost Factor | 32 |
+| Class | 小型 |
+| Cost factor | 32 |
 
-### Livery Preview (16 Liveries)
+### Livery previews (16)
 
 <div class="livery-grid">
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/000_0_Greyscale.png" alt="Tupolev Livery" loading="lazy">
-  <div class="livery-name">Tupolev Livery<br><small>图波列夫 出厂涂装</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/000_0_Greyscale.png" alt="图波列夫 出厂涂装" loading="lazy">
+    <div class="livery-name">图波列夫 出厂涂装<br><small>Tupolev Livery</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/001_Aeroflot.png" alt="Aeroflot" loading="lazy">
-  <div class="livery-name">Aeroflot<br><small>俄罗斯航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/001_Aeroflot.png" alt="俄罗斯航空" loading="lazy">
+    <div class="livery-name">俄罗斯航空<br><small>Aeroflot</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/002_Aeroflot_old.png" alt="Aeroflot (Old)" loading="lazy">
-  <div class="livery-name">Aeroflot (Old)<br><small>俄罗斯航空（旧版）</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/002_Aeroflot_old.png" alt="俄罗斯航空（旧版）" loading="lazy">
+    <div class="livery-name">俄罗斯航空（旧版）<br><small>Aeroflot (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/003_AirUkraine.png" alt="Air Ukraine" loading="lazy">
-  <div class="livery-name">Air Ukraine<br><small>乌克兰航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/003_AirUkraine.png" alt="乌克兰航空" loading="lazy">
+    <div class="livery-name">乌克兰航空<br><small>Air Ukraine</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/004_Alrosa.png" alt="Alrosa Avia" loading="lazy">
-  <div class="livery-name">Alrosa Avia<br><small>阿尔罗萨航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/004_Alrosa.png" alt="阿尔罗萨航空" loading="lazy">
+    <div class="livery-name">阿尔罗萨航空<br><small>Alrosa Avia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/005_Aviogenex.png" alt="Aviogenex" loading="lazy">
-  <div class="livery-name">Aviogenex<br><small>阿维奥基内克斯航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/005_Aviogenex.png" alt="阿维奥基内克斯航空" loading="lazy">
+    <div class="livery-name">阿维奥基内克斯航空<br><small>Aviogenex</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/006_BAL.png" alt="BAL Bashkirian Airlines" loading="lazy">
-  <div class="livery-name">BAL Bashkirian Airlines<br><small>巴什基尔航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/006_BAL.png" alt="巴什基尔航空" loading="lazy">
+    <div class="livery-name">巴什基尔航空<br><small>BAL Bashkirian Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/007_Balkan.png" alt="Balkan Bulgarian Airlines" loading="lazy">
-  <div class="livery-name">Balkan Bulgarian Airlines<br><small>巴尔干保加利亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/007_Balkan.png" alt="巴尔干保加利亚航空" loading="lazy">
+    <div class="livery-name">巴尔干保加利亚航空<br><small>Balkan Bulgarian Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/008_Belavia.png" alt="Belavia" loading="lazy">
-  <div class="livery-name">Belavia<br><small>白俄罗斯航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/008_Belavia.png" alt="白俄罗斯航空" loading="lazy">
+    <div class="livery-name">白俄罗斯航空<br><small>Belavia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/009_CSA.png" alt="CSA Czech Airlines" loading="lazy">
-  <div class="livery-name">CSA Czech Airlines<br><small>捷克航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/009_CSA.png" alt="捷克航空" loading="lazy">
+    <div class="livery-name">捷克航空<br><small>CSA Czech Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/010_Interflug.png" alt="Interflug" loading="lazy">
-  <div class="livery-name">Interflug<br><small>东德航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/010_Interflug.png" alt="东德航空" loading="lazy">
+    <div class="livery-name">东德航空<br><small>Interflug</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/011_KMV.png" alt="KMV Avia" loading="lazy">
-  <div class="livery-name">KMV Avia<br><small>KMV 航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/011_KMV.png" alt="KMV 航空" loading="lazy">
+    <div class="livery-name">KMV 航空<br><small>KMV Avia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/012_LOT.png" alt="LOT Polish Airlines" loading="lazy">
-  <div class="livery-name">LOT Polish Airlines<br><small>波兰航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/012_LOT.png" alt="波兰航空" loading="lazy">
+    <div class="livery-name">波兰航空<br><small>LOT Polish Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/013_Malev.png" alt="Malev" loading="lazy">
-  <div class="livery-name">Malev<br><small>匈牙利航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/013_Malev.png" alt="匈牙利航空" loading="lazy">
+    <div class="livery-name">匈牙利航空<br><small>Malev</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/014_Rossiya.png" alt="Rossiya Airlines" loading="lazy">
-  <div class="livery-name">Rossiya Airlines<br><small>罗斯尼亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/014_Rossiya.png" alt="罗斯尼亚航空" loading="lazy">
+    <div class="livery-name">罗斯尼亚航空<br><small>Rossiya Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu134/015_UTAir.png" alt="UTair" loading="lazy">
-  <div class="livery-name">UTair<br><small>UTair 航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu134/015_UTAir.png" alt="UTair 航空" loading="lazy">
+    <div class="livery-name">UTair 航空<br><small>UTair</small></div>
+  </div>
 </div>
 
 ---
 
 ## Tupolev Tu-154B {#tupolev_tu154b}
 
-- **Internal ID**: `Tupolev_Tu154B`
-- **English Name**: Tupolev Tu-154B
+- **内部 ID**：`Tupolev_Tu154B`
+- **英文名**：Tupolev Tu-154B
 
-| Attribute | Value |
+| 属性 | 数值 |
 |---|---|
-| Year Introduced | 1964 |
-| Passenger Capacity | 150 |
-| Mail Capacity | 15 |
-| Cruise Speed | 951 km/h |
-| Design Range | 735 |
+| Intro year | 1964 |
+| Passengers | 150 |
+| Mail | 15 |
+| Cruise speed | 850 km/h |
+| Design range | 960 |
 | Acceleration | 27 |
-| Aircraft Class | Small |
-| Cost Factor | 41 |
+| Class | 小型 |
+| Cost factor | 41 |
 
-### Livery Preview (13 Liveries)
+### Livery previews (13)
 
 <div class="livery-grid">
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/000_0_Greyscale.png" alt="Tupolev Livery" loading="lazy">
-  <div class="livery-name">Tupolev Livery<br><small>图波列夫 出厂涂装</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/000_0_Greyscale.png" alt="图波列夫 出厂涂装" loading="lazy">
+    <div class="livery-name">图波列夫 出厂涂装<br><small>Tupolev Livery</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/001_Aeroflot.png" alt="Aeroflot" loading="lazy">
-  <div class="livery-name">Aeroflot<br><small>俄罗斯航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/001_Aeroflot.png" alt="俄罗斯航空" loading="lazy">
+    <div class="livery-name">俄罗斯航空<br><small>Aeroflot</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/002_AeroflotOld.png" alt="Aeroflot (Old)" loading="lazy">
-  <div class="livery-name">Aeroflot (Old)<br><small>俄罗斯航空（旧版）</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/002_AeroflotOld.png" alt="俄罗斯航空（旧版）" loading="lazy">
+    <div class="livery-name">俄罗斯航空（旧版）<br><small>Aeroflot (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/003_AirKoryo.png" alt="Air Koryo" loading="lazy">
-  <div class="livery-name">Air Koryo<br><small>高丽航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/003_AirKoryo.png" alt="高丽航空" loading="lazy">
+    <div class="livery-name">高丽航空<br><small>Air Koryo</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/004_BalkanBulgaria.png" alt="Balkan Bulgarian Airlines" loading="lazy">
-  <div class="livery-name">Balkan Bulgarian Airlines<br><small>巴尔干保加利亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/004_BalkanBulgaria.png" alt="巴尔干保加利亚航空" loading="lazy">
+    <div class="livery-name">巴尔干保加利亚航空<br><small>Balkan Bulgarian Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/005_BalkanBulgariaOld.png" alt="Balkan Bulgarian Airlines (Old)" loading="lazy">
-  <div class="livery-name">Balkan Bulgarian Airlines (Old)<br><small>巴尔干保加利亚航空（旧）</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/005_BalkanBulgariaOld.png" alt="巴尔干保加利亚航空（旧）" loading="lazy">
+    <div class="livery-name">巴尔干保加利亚航空（旧）<br><small>Balkan Bulgarian Airlines (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/006_KMV.png" alt="KMV Avia" loading="lazy">
-  <div class="livery-name">KMV Avia<br><small>KMV 航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/006_KMV.png" alt="KMV 航空" loading="lazy">
+    <div class="livery-name">KMV 航空<br><small>KMV Avia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/007_Malev.png" alt="Malev" loading="lazy">
-  <div class="livery-name">Malev<br><small>匈牙利航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/007_Malev.png" alt="匈牙利航空" loading="lazy">
+    <div class="livery-name">匈牙利航空<br><small>Malev</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/008_MalevOld.png" alt="Malev (Old)" loading="lazy">
-  <div class="livery-name">Malev (Old)<br><small>马雷夫航空（旧）</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/008_MalevOld.png" alt="马雷夫航空（旧）" loading="lazy">
+    <div class="livery-name">马雷夫航空（旧）<br><small>Malev (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/009_TAROM.png" alt="TAROM" loading="lazy">
-  <div class="livery-name">TAROM<br><small>罗马尼亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/009_TAROM.png" alt="罗马尼亚航空" loading="lazy">
+    <div class="livery-name">罗马尼亚航空<br><small>TAROM</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/010_TAROMOld.png" alt="TAROM (Old)" loading="lazy">
-  <div class="livery-name">TAROM (Old)<br><small>罗马尼亚航空 (旧)</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/010_TAROMOld.png" alt="罗马尼亚航空 (旧)" loading="lazy">
+    <div class="livery-name">罗马尼亚航空 (旧)<br><small>TAROM (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/011_Ukraine.png" alt="Ukraine International Airlines" loading="lazy">
-  <div class="livery-name">Ukraine International Airlines<br><small>乌克兰国际航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/011_Ukraine.png" alt="乌克兰国际航空" loading="lazy">
+    <div class="livery-name">乌克兰国际航空<br><small>Ukraine International Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154B/012_Yamal.png" alt="Yamal Airlines" loading="lazy">
-  <div class="livery-name">Yamal Airlines<br><small>亚马尔航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154B/012_Yamal.png" alt="亚马尔航空" loading="lazy">
+    <div class="livery-name">亚马尔航空<br><small>Yamal Airlines</small></div>
+  </div>
 </div>
 
 ---
 
 ## Tupolev Tu-154M {#tupolev_tu154m}
 
-- **Internal ID**: `Tupolev_Tu154M`
-- **English Name**: Tupolev Tu-154M
+- **内部 ID**：`Tupolev_Tu154M`
+- **英文名**：Tupolev Tu-154M
 
-| Attribute | Value |
+| 属性 | 数值 |
 |---|---|
-| Year Introduced | 1964 |
-| Passenger Capacity | 150 |
-| Mail Capacity | 15 |
-| Cruise Speed | 951 km/h |
-| Design Range | 735 |
+| Intro year | 1964 |
+| Passengers | 150 |
+| Mail | 15 |
+| Cruise speed | 850 km/h |
+| Design range | 1200 |
 | Acceleration | 27 |
-| Aircraft Class | Small |
-| Cost Factor | 41 |
+| Class | 小型 |
+| Cost factor | 41 |
 
-### Livery Preview (16 Liveries)
+### Livery previews (16)
 
 <div class="livery-grid">
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/000_0_Greyscale.png" alt="Tupolev Livery" loading="lazy">
-  <div class="livery-name">Tupolev Livery<br><small>图波列夫 出厂涂装</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/000_0_Greyscale.png" alt="图波列夫 出厂涂装" loading="lazy">
+    <div class="livery-name">图波列夫 出厂涂装<br><small>Tupolev Livery</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/001_AirVia.png" alt="Air VIA" loading="lazy">
-  <div class="livery-name">Air VIA<br><small>维亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/001_AirVia.png" alt="维亚航空" loading="lazy">
+    <div class="livery-name">维亚航空<br><small>Air VIA</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/002_Alrosa.png" alt="Alrosa Avia" loading="lazy">
-  <div class="livery-name">Alrosa Avia<br><small>阿尔罗萨航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/002_Alrosa.png" alt="阿尔罗萨航空" loading="lazy">
+    <div class="livery-name">阿尔罗萨航空<br><small>Alrosa Avia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/003_BalkanBulgarian.png" alt="Balkan Bulgarian Airlines" loading="lazy">
-  <div class="livery-name">Balkan Bulgarian Airlines<br><small>巴尔干保加利亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/003_BalkanBulgarian.png" alt="巴尔干保加利亚航空" loading="lazy">
+    <div class="livery-name">巴尔干保加利亚航空<br><small>Balkan Bulgarian Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/004_BalkanBulgariaOld.png" alt="Balkan Bulgarian Airlines (Old)" loading="lazy">
-  <div class="livery-name">Balkan Bulgarian Airlines (Old)<br><small>巴尔干保加利亚航空（旧）</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/004_BalkanBulgariaOld.png" alt="巴尔干保加利亚航空（旧）" loading="lazy">
+    <div class="livery-name">巴尔干保加利亚航空（旧）<br><small>Balkan Bulgarian Airlines (Old)</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/005_Baskirian.png" alt="BAL Bashkirian Airlines" loading="lazy">
-  <div class="livery-name">BAL Bashkirian Airlines<br><small>巴什基尔航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/005_Baskirian.png" alt="巴什基尔航空" loading="lazy">
+    <div class="livery-name">巴什基尔航空<br><small>BAL Bashkirian Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/006_Belavia.png" alt="Belavia" loading="lazy">
-  <div class="livery-name">Belavia<br><small>白俄罗斯航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/006_Belavia.png" alt="白俄罗斯航空" loading="lazy">
+    <div class="livery-name">白俄罗斯航空<br><small>Belavia</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/007_CSA.png" alt="CSA Czech Airlines" loading="lazy">
-  <div class="livery-name">CSA Czech Airlines<br><small>捷克航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/007_CSA.png" alt="捷克航空" loading="lazy">
+    <div class="livery-name">捷克航空<br><small>CSA Czech Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/008_Interflug.png" alt="Interflug" loading="lazy">
-  <div class="livery-name">Interflug<br><small>东德航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/008_Interflug.png" alt="东德航空" loading="lazy">
+    <div class="livery-name">东德航空<br><small>Interflug</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/009_LOT.png" alt="LOT Polish Airlines" loading="lazy">
-  <div class="livery-name">LOT Polish Airlines<br><small>波兰航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/009_LOT.png" alt="波兰航空" loading="lazy">
+    <div class="livery-name">波兰航空<br><small>LOT Polish Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/010_Rossiya.png" alt="Rossiya Airlines" loading="lazy">
-  <div class="livery-name">Rossiya Airlines<br><small>罗斯尼亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/010_Rossiya.png" alt="罗斯尼亚航空" loading="lazy">
+    <div class="livery-name">罗斯尼亚航空<br><small>Rossiya Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/011_S7Airlines.png" alt="S7 Siberia Airlines" loading="lazy">
-  <div class="livery-name">S7 Siberia Airlines<br><small>S7 西伯利亚航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/011_S7Airlines.png" alt="S7 西伯利亚航空" loading="lazy">
+    <div class="livery-name">S7 西伯利亚航空<br><small>S7 Siberia Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/012_Ukraine.png" alt="Ukraine International Airlines" loading="lazy">
-  <div class="livery-name">Ukraine International Airlines<br><small>乌克兰国际航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/012_Ukraine.png" alt="乌克兰国际航空" loading="lazy">
+    <div class="livery-name">乌克兰国际航空<br><small>Ukraine International Airlines</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/013_Utair.png" alt="UTair" loading="lazy">
-  <div class="livery-name">UTair<br><small>UTair 航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/013_Utair.png" alt="UTair 航空" loading="lazy">
+    <div class="livery-name">UTair 航空<br><small>UTair</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/014_Vladivostok.png" alt="Vladivostok Air" loading="lazy">
-  <div class="livery-name">Vladivostok Air<br><small>海参崴航空</small></div>
-</div>
+    <img src="/aircraft/Tupolev_Tu154M/014_Vladivostok.png" alt="海参崴航空" loading="lazy">
+    <div class="livery-name">海参崴航空<br><small>Vladivostok Air</small></div>
+  </div>
   <div class="livery-card">
-  <img src="/aircraft/Tupolev_Tu154M/015_Yamal.png" alt="Yamal Airlines" loading="lazy">
-  <div class="livery-name">Yamal Airlines<br><small>亚马尔航空</small></div>
+    <img src="/aircraft/Tupolev_Tu154M/015_Yamal.png" alt="亚马尔航空" loading="lazy">
+    <div class="livery-name">亚马尔航空<br><small>Yamal Airlines</small></div>
+  </div>
 </div>
-</div>
+
+---
+
+## Tupolev Tu-204 {#tupolev_tu204}
+
+- **内部 ID**：`TUPOLEV_TU204`
+- **英文名**：Tupolev Tu-204
+
+| 属性 | 数值 |
+|---|---|
+| Intro year | 1990 |
+| Passengers | 190 |
+| Mail | 19 |
+| Cruise speed | 850 km/h |
+| Design range | 782 |
+| Acceleration | 27 |
+| Class | 小型 |
+| Cost factor | 79 |
+
+### Livery previews (6)
+
+> ⚠️ This model currently uses a **placeholder sprite** (reusing a donor airframe). Livery preview images will be generated automatically once real pixel art replaces it. In-game it still runs with real parameters and livery switching.
+
+---
+
+## Tupolev Tu-214 {#tupolev_tu214}
+
+- **内部 ID**：`TUPOLEV_TU214`
+- **英文名**：Tupolev Tu-214
+
+| 属性 | 数值 |
+|---|---|
+| Intro year | 1994 |
+| Passengers | 200 |
+| Mail | 20 |
+| Cruise speed | 850 km/h |
+| Design range | 789 |
+| Acceleration | 27 |
+| Class | 小型 |
+| Cost factor | 79 |
+
+### Livery previews (6)
+
+> ⚠️ This model currently uses a **placeholder sprite** (reusing a donor airframe). Livery preview images will be generated automatically once real pixel art replaces it. In-game it still runs with real parameters and livery switching.
 
 ---

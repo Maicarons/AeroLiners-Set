@@ -176,10 +176,10 @@ item (FEAT_AIRCRAFT, PZL_AN28)
     cargo_allow_refit: [PASS, TOUR];
     reliability_decay: 20;
     loading_speed: 17;
-    passenger_capacity: 19;
+    passenger_capacity: 15;
     mail_capacity: 2;
     acceleration: 27;
-    range: 264;
+    range: 248;
     sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
@@ -213,7 +213,7 @@ if (Ranges == 1)
   item (FEAT_AIRCRAFT, PZL_AN28)
   {
     property
-    { range: 264; }
+    { range: 248; }
   }
 }
 
@@ -222,6 +222,6 @@ if (Ranges == 2)
   item (FEAT_AIRCRAFT, PZL_AN28)
   {
     property
-    { range: 396; }
+    { range: 372; }
   }
 }
