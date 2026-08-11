@@ -1,10 +1,10 @@
 name: Release GRF
 
-# 自动发版：推送 v* tag 时，编译 bin/AeroLinersSet.grf 并作为 Release 附件上传。
+# 自动发版：推送 v* tag 时，先校验公开文档计数，再编译 bin/AeroLinersSet.grf 并作为 Release 附件上传。
 # 用法：
 #   1. （可选但推荐）先把 CMakeLists.txt 的 project(VERSION ...) 改成新版本号并提交
 #   2. git tag v1.1 && git push origin v1.1
-#   3. 本 workflow 自动编 grf + 发 Release，无需手动跑 gcc/nmlc/gh
+#   3. 本 workflow 自动校验 + 编 grf + 发 Release，无需手动跑 gcc/nmlc/gh
 on:
   push:
     tags:
@@ -14,8 +14,23 @@ permissions:
   contents: write
 
 jobs:
+  verify-counts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Verify public doc counts match source of truth
+        run: python tools/check_counts.py
+
   build:
     runs-on: ubuntu-latest
+    needs: verify-counts
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
@@ -56,4 +71,4 @@ jobs:
           gh release create "${GITHUB_REF_NAME}" bin/AeroLinersSet.grf \
             --repo Maicarons/AeroLiners-Set \
             --title "AeroLiners Set ${GITHUB_REF_NAME} (寰宇飞机)" \
-            --generate-notes
+            --notes-file docs/changelog.txt

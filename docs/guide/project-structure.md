@@ -4,7 +4,7 @@
 `#include` 与 `#define`）组织成上千个源文件。下面按目录梳理整个仓库的构成。
 
 ```
-WorldAirlinersSet/
+AeroLinersSet/
 ├── CMakeLists.txt          # 顶层构建定义（NML / GRF / Bundles 各目标）
 ├── CMakePresets.json       # CMake 预设（Ninja / Make / VS 生成器）
 ├── Makefile                # CMake 生成的构建入口（make / make clean）
@@ -46,7 +46,7 @@ WorldAirlinersSet/
 - 每个型号目录下包含：
   - 一个 **`型号.pnml`**：定义该飞机的精灵集（spriteset）、状态切换（switch）、属性（property）与图形（graphics）。
   - 若干 **`.png` 涂装文件**：每个 PNG 对应一种航空公司涂装（含一个 `(0)Greyscale.png` 作为灰阶基底）。
-- 当前约有 **157** 个机型 `.pnml` 文件、约 **1743** 个涂装 PNG。
+- 当前约有 **216** 个机型 `.pnml` 文件、约 **1743** 个涂装精灵 PNG（逻辑涂装数 2264）。
 
 ```text
 src/gfx/Boeing/B737/B737-800/

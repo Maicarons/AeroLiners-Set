@@ -14,7 +14,7 @@ It collects real-world airliners and freighters â€” both recent and historical â
 
 - Most original aircraft sprites were created by **PikkaBird** and originally shipped in the AV8 set; WAS added real liveries on top, and some models were drawn by the WAS team.
 - Thanks to OpenTTD's NewGRF engine pool, the set can contain up to **65535** aircraft instead of the old limit of 48.
-- It currently ships **157** aircraft models, **1957** liveries, spanning **15** manufacturers, with **15** interface language files.
+- It currently ships **216** aircraft models, **2264** liveries, spanning **30** manufacturers, with **15** interface language files.
 - It can be loaded alongside other aircraft NewGRFs without conflict.
 - The project is released under the **GNU General Public License v3.0**.
 
@@ -88,7 +88,7 @@ Brief steps (verified manual pipeline in this repo):
 ```bash
 # 1. Compute REPO_REVISION (days since 2000-01-01), preprocess to .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.0 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.1 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. Compile to .grf

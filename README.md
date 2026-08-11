@@ -14,7 +14,7 @@
 
 - 大部分原始飞机图形由 **PikkaBird** 创作，最初包含在 AV8 套装中；WAS 在此基础上加入了真实涂装，部分机型由 WAS 团队自行绘制。
 - 借助 OpenTTD 的 NewGRF 引擎池支持，本套装最多可包含 **65535** 架飞机，而不再受旧版 48 架的限制。
-- 当前收录 **157** 个机型、**1957** 种涂装，覆盖 **15** 家制造商，并提供 **15** 种界面语言文件。
+- 当前收录 **216** 个机型、**2264** 种涂装，覆盖 **30** 家制造商，并提供 **15** 种界面语言文件。
 - 可与其他飞机 NewGRF 同时加载，互不冲突。
 - 项目以 **GNU General Public License v3.0** 发布。
 
@@ -88,7 +88,7 @@
 ```bash
 # 1. 计算 REPO_REVISION（自 2000-01-01 起的天数），预处理生成 .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.0 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.1 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. 编译为 .grf
