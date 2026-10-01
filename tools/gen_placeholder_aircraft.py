@@ -343,9 +343,12 @@ def gen_pnml(tgt, d):
     mail = ov['mail'] if (ov and 'mail' in ov) else P['mail_capacity']
     range_val = ov['rng'] if (ov and 'rng' in ov) else P['range']
     cost = ov['cost'] if (ov and 'cost' in ov) else G['cost_factor']
-    # 速度缩放因子：目标巡航 / donor 巡航（18 状态）
+    # 速度缩放因子：目标巡航 / donor 巡航
+    # donor 速度块现为恒定巡航形式（return plane_speed_kmh(N)），
+    # 兼容旧版 state-18 分支写法。
     if ov and 'cruise' in ov:
-        _sp = re.search(r'18:\s*return plane_speed_kmh\((\d+)\)', d['speed'] or '')
+        _sp = (re.search(r'return plane_speed_kmh\((\d+)\)', d['speed'] or '')
+               or re.search(r'18:\s*return plane_speed_kmh\((\d+)\)', d['speed'] or ''))
         sf = ov['cruise'] / int(_sp.group(1)) if _sp else 1.0
     else:
         sf = 1.0
@@ -410,14 +413,12 @@ def gen_pnml(tgt, d):
     if speed:
         L.append(speed)
     else:
+        ps_num = re.search(r'plane_speed_kmh\((\d+)\)', purchase_speed)
+        cruise_val = int(ps_num.group(1)) if ps_num else 800
         L.append("switch (FEAT_AIRCRAFT, SELF, %s_speed, flight_state())" % ID)
         L.append("{")
-        L.append("  12..13: return plane_speed_kmh(257);")
-        L.append("  15: return plane_speed_kmh(362);")
-        L.append("  18: return plane_speed_kmh(902);")
-        L.append("  16..20: return plane_speed_kmh(467);")
-        L.append("  21..22: return plane_speed_kmh(233);")
-        L.append("          return plane_speed_kmh(201);")
+        L.append("  // [speed-constant] 巡航速度恒定；减速由游戏原生状态机处理，勿按 flight_state 改写。")
+        L.append("  return plane_speed_kmh(%d); // cruise, keep in sync with purchase_speed" % cruise_val)
         L.append("}")
     L.append("")
     L.append("switch (FEAT_AIRCRAFT, SELF, %s_sound_effect, extra_callback_info1)" % ID)

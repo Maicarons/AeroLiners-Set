@@ -111,12 +111,12 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E175STD_running_cost_factor, flight_state()
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E175STD_speed, flight_state())
 {
-  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
-      15: return plane_speed_kmh(410); // airplane climbing after take-off
-      18: return plane_speed_kmh(829); // heading for tower contact point
-  16..20: return plane_speed_kmh(418); // in flight
-  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
-          return plane_speed_kmh(201);
+  // [speed-constant] 巡航速度恒定，不随飞行状态变化。
+  // OpenTTD 将速度属性回调（CB36）的结果缓存于 cached_max_speed，仅在载具
+  // 创建、机场状态切换和读档时刷新；按 flight_state 返回不同速度会让缓存
+  // 卡在旧值上（起飞后停在跑道速度；读档后跑道速度变成巡航速度）。
+  // 滑行/进近/刹车减速由游戏原生状态机按巡航速度自动派生，无需在此压低。
+  return plane_speed_kmh(829); // cruise, keep in sync with purchase_speed
 }
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E175STD_cargo_subtype_text, cargo_subtype)

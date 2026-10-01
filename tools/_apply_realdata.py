@@ -4,7 +4,9 @@
   - 航程 (range_km)  -> 内部 range = round(km / 5.5)；同时改 main + if(Ranges==1) 标准值，
                           if(Ranges==2) 按原比例缩放（≈1.5x）。if(Ranges==0) 保持 range:0。
   - 座级 (seats)     -> property 块 passenger_capacity: N;（有逐涂装 callback 的机型该值仅作 fallback）
-  - 巡航 (cruise)    -> graphics 块 purchase_speed: plane_speed_kmh(N) 以及 speed callback 的 18: return
+  - 巡航 (cruise)    -> graphics 块 purchase_speed: plane_speed_kmh(N)，以及 speed callback 的
+                        18: return 与 16..20: return（真正的航路段，二者必须与 purchase 一致，
+                        否则游戏里只能飞到 16..20 的低速，达不到购买列表标称的最大速度）
   - 价格 (cost_factor)-> 不修改（游戏用相对系数，报告结论为现有值「合理」；缺失者保持当前估计值=我决定的合理值）
 
 对「未找到可靠来源」的字段保持当前游戏值（即我决定的合理估计值），不臆造。
@@ -306,7 +308,9 @@ def main():
                             f"purchase_speed: plane_speed_kmh({cruise})", t, count=1)
             t, n18 = re.subn(r"(18:\s*return\s*plane_speed_kmh\(\s*)(\d+)(\s*\))",
                              lambda m, c=cruise: m.group(1) + str(c) + m.group(3), t, count=1)
-            diff.append(f"cruise: {p['speed_kmh']} -> {cruise}")
+            t, n_inflight = re.subn(r"(16\.\.20:\s*return\s*plane_speed_kmh\(\s*)(\d+)(\s*\))",
+                                    lambda m, c=cruise: m.group(1) + str(c) + m.group(3), t, count=1)
+            diff.append(f"cruise: {p['speed_kmh']} -> {cruise} (purchase={nc}, s18={n18}, inflight={n_inflight})")
 
         if t != before:
             f.write_text(t, encoding="utf-8")

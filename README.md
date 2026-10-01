@@ -88,7 +88,7 @@
 ```bash
 # 1. 计算 REPO_REVISION（自 2000-01-01 起的天数），预处理生成 .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.1.1 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.2 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. 编译为 .grf

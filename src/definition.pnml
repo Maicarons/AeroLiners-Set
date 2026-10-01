@@ -35,6 +35,17 @@ retire_early_default = -8;
 // 27: helicopter preparing to land at heliport
 // 28: helicopter landing at heliport
 #define plane_speed_kmh(speed) int(speed*5/64)
+// Speed convention (IMPORTANT):
+//   purchase_speed: plane_speed_kmh(CRUISE)  -- purchase list display
+//   speed callback: return plane_speed_kmh(CRUISE) unconditionally.
+// The speed callback is compiled to callback 0x36 (modify property, var10 =
+// aircraft speed property). OpenTTD evaluates it only in UpdateAircraftCache()
+// (vehicle creation, airport state/position changes, savegame load) and
+// CACHES the result. Returning state-dependent values makes the cached speed
+// stick to a stale value (runway speed after liftoff; cruise speed on the
+// runway after save/reload). Taxi / approach / braking slowdown is derived
+// natively by the airport movement code from the cruise speed, so never
+// lower the speed per flight_state.
 #define plane_RC(RCbase)                                                                                                                                     \
    8..12: return RCbase *50/100 ;  /* leaving runway, going to the in way, entering runway, going to the out way, airplane waiting for take-off clearance */ \
   13..15: return RCbase *1      ;  /* airplane taking off, airplane preparing to take-off, airplane climbing after take-off                               */ \

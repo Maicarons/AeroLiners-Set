@@ -163,6 +163,12 @@ def clone(cfg):
     txt = re.sub(r"purchase_running_cost_factor:\s*\d+;", f"purchase_running_cost_factor: {cfg['run']};", txt, count=1)
     txt = re.sub(r"purchase_speed:\s*plane_speed_kmh\(\d+\);",
                  f"purchase_speed: plane_speed_kmh({cfg['cruise']});", txt, count=1)
+    # 8b) speed 回调（恒定巡航形式）与 purchase_speed 保持一致
+    def speed_block_repl(m):
+        return re.sub(r"plane_speed_kmh\(\d+\)",
+                      f"plane_speed_kmh({cfg['cruise']})", m.group(0), count=1)
+    txt = re.sub(r"switch \(FEAT_AIRCRAFT, SELF, \w+_speed, flight_state\(\)\)\s*\{[^}]*\}",
+                 speed_block_repl, txt, count=1)
     # 9) range：第1个为 property 默认=r1，其后三个 if 块为 0 / r1 / r2（保持 donor 设计）
     r1 = cfg["range"]
     r2 = round(r1 * 1.5)

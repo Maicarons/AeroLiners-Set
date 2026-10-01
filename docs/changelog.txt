@@ -8,6 +8,27 @@ GitHub Release notes. Counts reflect the fleet at the time of each release.
 发布时的机队规模。
 
 
+## v1.1.2 (2026-10-01)
+
+- Fixed aircraft speed handling: the per-flight-state speed callback is now a
+  constant cruise speed. OpenTTD caches the speed-property callback result and
+  only refreshes it at vehicle creation, airport state changes and savegame
+  load, so state-dependent values got stuck (planes stayed at runway speed
+  after liftoff; after save/reload the runway speed wrongly equalled the
+  cruise speed).
+- 修复飞机速度机制：速度回调改为恒定返回巡航速度。OpenTTD 会缓存速度属性回
+  调结果，仅在载具创建、机场状态切换和读档时刷新；此前按飞行状态改写速度会
+  导致缓存卡在旧值（起飞离地后仍为跑道速度；读档后跑道速度错误地等于巡航
+  速度）。现在地面滑行 / 进近 / 刹车减速由游戏原生状态机按巡航速度自动派生，
+  存档前后行为一致。
+- Added tools/fix_speed_constant.py (batch fix / realign) and rewrote
+  tools/check_speed_mismatch.py to guard the new convention; updated
+  gen_placeholder_aircraft.py and add_aircraft.py accordingly.
+- 新增 tools/fix_speed_constant.py（批量修复/对齐），重写
+  tools/check_speed_mismatch.py 守护新约定，并同步更新占位机生成器与克隆
+  脚本。
+
+
 ## v1.1.1 (2026-08-11)
 
 - Wrote back verified real-world performance data (range / seating capacity /

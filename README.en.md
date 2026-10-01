@@ -88,7 +88,7 @@ Brief steps (verified manual pipeline in this repo):
 ```bash
 # 1. Compute REPO_REVISION (days since 2000-01-01), preprocess to .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.1.1 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.2 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. Compile to .grf
