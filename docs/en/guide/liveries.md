@@ -7,7 +7,7 @@ The signature feature of AeroLiners Set is "authentic liveries". This page expla
 - Each aircraft (one `.pnml` file) defines several **spritesets**, corresponding to different flight states:
   `Flight`, `Grounded`, `Climbing`, `Touchdown`, `Landing`.
 - Each **livery** corresponds to an independent spriteset (e.g. `ATR_42_300_AerLingusRegional_Flight`), referencing its own independent PNG file.
-- Livery switching is implemented via **cargo_subtype**: the "cargo item" you choose when refitting is actually the livery number, and each livery's name comes from the `STR_VLIV_*` string defined in `cargotable.pnml`.
+- Livery switching is implemented via **cargo_subtype**: the "cargo item" you choose when refitting is actually the livery number, and each livery's name comes from the `STR_VLIV_*` string defined in `lang/*.lng`.
 
 ## File makeup of a model
 
@@ -83,7 +83,7 @@ switch (FEAT_AIRCRAFT, SELF, ATR_42_300_sprites, cargo_subtype)
 
 1. Drop a PNG into the model's directory (same dimensions as existing liveries, usually a horizontally-tiled multi-frame sprite sheet).
 2. In the `.pnml`, add a new `IMAGEFILE` + template instantiation (follow an existing livery).
-3. In `cargotable.pnml`, define a `STR_VLIV_*` string for the new livery.
+3. In `lang/english.lng`, define a `STR_VLIV_*` string for the new livery.
 4. In the model's `.pnml` `cargo_subtype` switch, assign a number to the new livery, and add the corresponding display text and (for freighters) capacity in `cargo_subtype_text` / `cargo_subtype_capacity`.
 5. In `lang/*.lng`, provide translations for the new string in every language.
 
@@ -91,4 +91,6 @@ switch (FEAT_AIRCRAFT, SELF, ATR_42_300_sprites, cargo_subtype)
 
 The `greyscales/` directory holds each model's greyscale PNG as a base appearance with no airline markings (`(0)Greyscale.png`). It is `cargo_subtype 0` for every model and a common base image when drawing new liveries.
 
-Back: [Building from Source →](/guide/building) ｜ Next: [Translating →](/guide/translating)
+> That is only an outline. **For the full step-by-step — palette setup, exact pixel dimensions, every code change, and the common pitfalls — see [Adding a Livery →](/guide/adding-liveries).**
+
+Back: [Building from Source →](/guide/building) ｜ Next: [Adding a Livery →](/guide/adding-liveries)

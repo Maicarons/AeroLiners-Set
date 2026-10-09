@@ -31,7 +31,7 @@ OpenTTD 的 **NewGRF 飞机扩充包**，由上游 **World Airliner Set（WAS / 
 - ✅ GitHub Pages 已启用并部署成功（中英文都正常访问）。
 - ✅ v1.0 Release 已发布，附件 `AeroLinersSet.grf`（约 36.5 MB）。
 - ✅ 文档 i18n 完成：root 中文 + `/en/` 英文，共 61 页（30 篇 md × 中英）。
-- ✅ README 中文 + `README.en.md` 英文。
+- ✅ README 英文（`README.md`）+ 中文（`README_zh.md`）。
 - ⚠️ GitHub 默认分支报 **4 个 Dependabot 漏洞**（1 high / 3 moderate），全在 docs 工具链（vitepress 等 devDependencies），**不影响 .grf 产物**。
 - ⚠️ 12 款占位机型仍是借 donor 像素图，**尚无独立手绘精灵**（见第 6 节）。
 
@@ -58,7 +58,7 @@ AeroLiners-Set/
 │  └─ public/logo.png
 ├─ .github/workflows/deploy-docs.yml  # Pages 部署
 ├─ bin/                     # AeroLinersSet.grf（被 .gitignore 忽略，不入库）
-├─ README.md  README.en.md
+├─ README.md  README_zh.md
 ```
 
 > 注：`bin/` 与 `docs/.vitepress/dist/` 均被 `.gitignore` 忽略。`.grf` 不进 git，只作为 Release 附件分发。
@@ -188,7 +188,7 @@ README.md 第 3 行、credits/changelog 里**有意保留** "WAS"/"世界客机�
 
 | 改什么 | 文件 |
 |---|---|
-| 品牌/显示名/URL | `src/header.pnml`、`lang/*.lng`、`README.md`、`README.en.md` |
+| 品牌/显示名/URL | `src/header.pnml`、`lang/*.lng`、`README.md`、`README_zh.md` |
 | 文档站配置/i18n | `docs/.vitepress/config.js`、`tools/gen_sitemap.py` |
 | 文档内容 | `docs/index.md`、`docs/guide/*`、`docs/aircraft/*`、`docs/en/**` |
 | 编译产物名/版本 | `CMakeLists.txt` |

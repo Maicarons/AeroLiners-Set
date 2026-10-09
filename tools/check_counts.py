@@ -33,16 +33,16 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 # Each regex must capture exactly the digit(s) that form the count.
 CHECKS: dict[str, dict[str, str]] = {
     "README.md": {
-        "aircraft": r"\*\*(\d+)\*\*\s*个机型",
-        "liveries": r"\*\*(\d+)\*\*\s*种涂装",
-        "manufacturers": r"\*\*(\d+)\*\*\s*家制造商",
-        "languages": r"\*\*(\d+)\*\*\s*种界面语言文件",
-    },
-    "README.en.md": {
         "aircraft": r"\*\*(\d+)\*\*\s*aircraft models",
         "liveries": r"\*\*(\d+)\*\*\s*liveries",
         "manufacturers": r"\*\*(\d+)\*\*\s*manufacturers",
         "languages": r"\*\*(\d+)\*\*\s*interface language files",
+    },
+    "README_zh.md": {
+        "aircraft": r"\*\*(\d+)\*\*\s*个机型",
+        "liveries": r"\*\*(\d+)\*\*\s*种涂装",
+        "manufacturers": r"\*\*(\d+)\*\*\s*家制造商",
+        "languages": r"\*\*(\d+)\*\*\s*种界面语言文件",
     },
     "docs/index.md": {
         "aircraft": r"(\d+)\s*(?:款机型|种真实世界客机)",

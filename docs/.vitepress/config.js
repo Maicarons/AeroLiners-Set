@@ -63,6 +63,7 @@ export default defineConfig({
                 { text: '项目结构', link: '/guide/project-structure' },
                 { text: '从源码构建', link: '/guide/building' },
                 { text: '涂装与图形', link: '/guide/liveries' },
+                { text: '如何添加新涂装', link: '/guide/adding-liveries' },
                 { text: '语言翻译', link: '/guide/translating' },
                 { text: '占位机型待办', link: '/guide/placeholder-aircraft-todo' }
               ]
@@ -179,6 +180,7 @@ export default defineConfig({
                 { text: 'Project Structure', link: '/guide/project-structure' },
                 { text: 'Building from Source', link: '/guide/building' },
                 { text: 'Liveries & Graphics', link: '/guide/liveries' },
+                { text: 'Adding a Livery', link: '/guide/adding-liveries' },
                 { text: 'Translating', link: '/guide/translating' },
                 { text: 'Placeholder Aircraft TODO', link: '/guide/placeholder-aircraft-todo' }
               ]
