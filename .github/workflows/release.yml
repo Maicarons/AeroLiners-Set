@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.1
       - name: Set up Python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.13"
       - name: Verify public doc counts match source of truth
@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.1
       - name: Set up Python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.13"
       - name: Install nml (provides nmlc)
