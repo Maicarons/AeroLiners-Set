@@ -89,7 +89,7 @@ switch (FEAT_AIRCRAFT, SELF, ATR_42_300_sprites, cargo_subtype)
 
 ## Greyscale
 
-The `greyscales/` directory holds each model's greyscale PNG as a base appearance with no airline markings (`(0)Greyscale.png`). It is `cargo_subtype 0` for every model and a common base image when drawing new liveries.
+Each model directory (e.g. `src/gfx/ATR/ATR42/42-300/`) contains `(0)Greyscale.png`, the base appearance with no airline markings. It is `cargo_subtype 0` for every model and a common base image when drawing new liveries; greyscale art sits alongside the livery PNGs, with no separate top-level directory.
 
 > That is only an outline. **For the full step-by-step — palette setup, exact pixel dimensions, every code change, and the common pitfalls — see [Adding a Livery →](/guide/adding-liveries).**
 

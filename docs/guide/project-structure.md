@@ -1,23 +1,25 @@
 # 项目结构
 
 寰宇飞机 是一个由 **CMake** 驱动的 NewGRF 工程，源码以 **NML** 编写，并通过 C 预处理器（`.pnml` 文件中的
-`#include` 与 `#define`）组织成上千个源文件。下面按目录梳理整个仓库的构成。
+`#include` 与 `#define`）组织成上千个源文件。发布元数据集中在根目录的 `bundle.json`，
+打包由 `scripts/bundle.py` 统一实现。下面按目录梳理整个仓库的构成。
 
 ```
 AeroLinersSet/
-├── CMakeLists.txt          # 顶层构建定义（NML / GRF / Bundles 各目标）
+├── CMakeLists.txt          # 顶层构建定义（NML / GRF / Bundles 目标）
 ├── CMakePresets.json       # CMake 预设（Ninja / Make / VS 生成器）
+├── bundle.json             # ★ 发布元数据唯一配置源（GRFID / 版本 / 文档清单 / 包名）
 ├── Makefile                # CMake 生成的构建入口（make / make clean）
 ├── WAS.pnml                # 主入口：用 #include 汇总所有飞机源文件
 ├── custom_tags.txt         # 构建期生成的版本/标识信息
-├── bin/                    # 构建输出：生成的 .grf 与 .nml
+├── bin/                    # 构建输出：.grf / .nml / 发布 tar 包（被 .gitignore 忽略）
 ├── build/                  # CMake 生成的中间目录
-├── docs/                   # 本 VitePress 文档（含原 readme.txt / license.txt / changelog.txt）
-├── documentation/          # 杂项文档、xlsx 跟踪表、Logo 等
-├── greyscales/             # 各机型的灰阶（基础）涂装 PNG，按制造商分类
+├── docs/                   # VitePress 文档站（含随包发布的 readme.txt / license.txt / changelog.txt）
 ├── lang/                   # 15 种语言文件（*.lng）
-├── scripts/                # 3 个 CMake 脚本，驱动 NML/GRF/文档处理
-├── sprites/                # 历史/辅助精灵资源（pcx / nfo / png / examplenfo）
+├── scripts/                # 构建与打包脚本
+│   ├── Compile.cmake           # 调用 nmlc 编译 .grf
+│   ├── GenerateCustomTags.cmake # 生成 custom_tags.txt
+│   └── bundle.py               # ★ 共享打包/校验脚本（build / verify / info）
 └── src/                    # 核心源码
     ├── *.pnml              # 顶层定义（header / check / basecost / cargotable ...）
     ├── gfx/                # 所有飞机，按 制造商/系列/型号 三级目录
@@ -46,7 +48,7 @@ AeroLinersSet/
 - 每个型号目录下包含：
   - 一个 **`型号.pnml`**：定义该飞机的精灵集（spriteset）、状态切换（switch）、属性（property）与图形（graphics）。
   - 若干 **`.png` 涂装文件**：每个 PNG 对应一种航空公司涂装（含一个 `(0)Greyscale.png` 作为灰阶基底）。
-- 当前约有 **216** 个机型 `.pnml` 文件、约 **1743** 个涂装精灵 PNG（逻辑涂装数 2264）。
+- 当前有 **216** 个机型 `.pnml` 文件、约 **1743** 个涂装精灵 PNG（逻辑涂装数 2264）。
 
 ```text
 src/gfx/Boeing/B737/B737-800/
@@ -59,23 +61,24 @@ src/gfx/Boeing/B737/B737-800/
 
 ## 语言文件（`lang/`）
 
-- 15 个 `.lng` 文件，覆盖 catalan、chinese_simplified、croatian、czech、dutch、english、finnish、
+- 15 种语言文件，覆盖 catalan、chinese_simplified、chinese_traditional、croatian、czech、dutch、english、finnish、
   german、indonesian、italian、korean、polish、russian、spanish。
-- 通过 `##grflangid` 声明语言 ID，提供所有 STR_* 字符串的本地化（GRF 名称、参数说明、机型名、涂装名等）。
+- 通过 `##grflangid` 声明语言 ID，提供所有 `STR_*` 字符串的本地化（GRF 名称、参数说明、机型名、涂装名等）。
+- **`.lng` 必须保持 CRLF 行尾**（NewGRF 规范）；改动翻译后需重跑 nmlc 才会进 `.grf`。
 
-## 构建脚本（`scripts/`）
+## 构建与打包脚本（`scripts/`）
 
 | 脚本 | 作用 |
 | --- | --- |
 | `Compile.cmake` | 调用 `nmlc` 把 `.nml` 编译为最终 `.grf` |
 | `GenerateCustomTags.cmake` | 生成 `custom_tags.txt`（版本号、GRF 文件名、日期等） |
-| `ProcessDocs.cmake` | 调用 `grfid` 计算 MD5，并把 `docs/` 下三个文本文件配置进发布包 |
+| `bundle.py` | 读取 `bundle.json`，文档占位符替换（${GRF_REVISION}` / ${GRF_MD5}`）、打 BaNaNa 格式的 tar / tar.gz，并自校验布局、GRF ID 与 MD5 |
 
-## 资源目录说明
+## 发布元数据（`bundle.json`）
 
-- `greyscales/`：各机型灰阶涂装的 PNG 备份/来源，按制造商分类（129 个 `.png`）。
-- `sprites/`：历史与辅助资源，包含 `pcx/`、`png/`、`nfo/`、`examplenfo/`。其中 `nfo/` 保留了旧 NFO 流程的字符串/精灵定义，
-  `examplenfo/` 含 callback 示例（`callback36.txt`、`xx.nfo`）。
-- `documentation/`：开发用的跟踪表（xlsx）、Logo 源文件、旧英文 lng 等参考资料。
+`bundle.json` 是版本、GRFID、项目名、GRF 文件名、随包文档清单与归档命名的**唯一配置源**。
+`CMakeLists.txt` 与 `.github/workflows/release.yml` 都通过 `scripts/bundle.py` 读取它，
+不再各自复制一份 GRFID / 版本 / 文档清单。发新版本时只需改这里的 `version`，再打 `v<版本>` tag。
+归档布局见 [从源码构建 →](/guide/building)；BaNaNaS 上架步骤见对应版本的 Release 说明。
 
 返回：[NewGRF 参数 →](/guide/parameters) ｜ 下一步：[从源码构建 →](/guide/building)

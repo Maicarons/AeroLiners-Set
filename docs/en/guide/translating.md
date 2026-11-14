@@ -24,7 +24,7 @@ STR_AIRV_AIRBUS_A300_600R    :Airbus A300-600R
 
 ## Adding a new language
 
-1. Copy `lang/english.lng` and name it `{lang_id}_{lang_name}.lng` (refer to the upstream legacy flow `sprites/nfo/00strings`).
+1. Copy `lang/english.lng` and name it `{lang_id}_{lang_name}.lng`.
 2. Look up your language ID at <http://wiki.ttdpatch.net/tiki-index.php?page=Action4#language_id>.
 3. Change every `english` in the file to your language name, and fill the corresponding language constant after `#define LANG .` (valid values are in `docs/readme.txt` section 6, e.g. `CHINESE_SIMPLIFIED`, `KOREAN`).
 4. Translate everything inside `"..."`; **prefix untranslated lines with `U`** to save NewGRF size and memory.

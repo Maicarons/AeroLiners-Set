@@ -91,8 +91,8 @@ switch (FEAT_AIRCRAFT, SELF, ATR_42_300_sprites, cargo_subtype)
 
 ## 灰阶（Greyscale）
 
-`greyscales/` 目录保存了各机型的灰阶 PNG，作为不带航空公司标识的基础外观（`(0)Greyscale.png`）。
-它是所有机型的 `cargo_subtype 0`，也是绘制新涂装时的常用底图。
+每个机型目录（如 `src/gfx/ATR/ATR42/42-300/`）下的 `(0)Greyscale.png` 是不带航空公司标识的基础外观。
+它是所有机型的 `cargo_subtype 0`，也是绘制新涂装时的常用底图；灰阶图与各涂装 PNG 放在同一目录，没有单独的顶层目录。
 
 > 上面只是流程提纲。**完整图文步骤（调色板设置、精确像素尺寸、全部代码改动、常见坑）见 [如何添加新涂装 →](/guide/adding-liveries)**。
 

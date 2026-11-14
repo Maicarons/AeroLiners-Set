@@ -1,6 +1,6 @@
 """从 AeroLiners-Set 的 .pnml 源文件提取全部机型与涂装数据，生成 VitePress 机队图鉴页面（简体中文 + 英文）。
 
-与旧版 tools/gen_aircraft_md.py 的区别：
+重构要点（旧版单文件生成器已移除）：
   - 路径适配 G:/GitHub/AeroLiners-Set；
   - 扩展厂商中文名映射（新增 AVIC / Cessna / 等 16 家）；
   - 双语输出：docs/aircraft/(zh) 与 docs/en/aircraft/(en)；

@@ -115,7 +115,7 @@ If your zip utility is not called "zip", you have to make a Makefile.local and s
 
 6.0) Translating:
 ---- ------------
-To Translate WAS to your language, copy the file 7F_english.nfo from sprites/nfo/00strings to {your language id}_{your language name}.nfo. To find your language id, go
+To translate AeroLiners Set, copy lang/english.lng to lang/{your language id}_{your language name}.lng. To find your language id, go
 to http://wiki.ttdpatch.net/tiki-index.php?page=Action4#language_id and select your language from the table.
 To start translating, open your newly created file, and change all occurences of "english" to your language name, and put in your language name(from the list below) after
 #define LANG .

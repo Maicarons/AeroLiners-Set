@@ -1,10 +1,11 @@
 name: Release GRF
 
-# 自动发版：推送 v* tag 时，先校验公开文档计数，再编译 bin/AeroLinersSet.grf 并作为 Release 附件上传。
-# 用法：
-#   1. （可选但推荐）先把 CMakeLists.txt 的 project(VERSION ...) 改成新版本号并提交
-#   2. git tag v1.1 && git push origin v1.1
-#   3. 本 workflow 自动校验 + 编 grf + 发 Release，无需手动跑 gcc/nmlc/gh
+# 自动发版：推送 v* tag 时，先校验公开文档计数，再从 bundle.json 读取版本 / GRFID / 产物名，
+# 编译 GRF，最后由 scripts/bundle.py 按 BaNaNa 格式打包并上传 Release 附件。
+# 发版步骤：
+#   1. 改 bundle.json 的 version，在 docs/changelog.txt 顶部加一节，提交
+#   2. git tag v<version> && git push origin main && git push origin v<version>
+#   3. 本 workflow 自动完成校验 / 编译 / 打包 / 发 Release
 on:
   push:
     tags:
@@ -19,12 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
-
       - name: Set up Python
         uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.13"
-
       - name: Verify public doc counts match source of truth
         run: python tools/check_counts.py
 
@@ -34,41 +33,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
-
       - name: Set up Python
         uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.13"
-
       - name: Install nml (provides nmlc)
         run: pip install nml
-
-      - name: Compute REPO_REVISION and version
+      - name: Resolve release metadata from bundle.json
         id: meta
         run: |
-          # grf 内部版本号 = 自 2000-01-01 起的天数
-          REPO_REVISION=$(( ( $(date -u +%s) - $(date -u -d '2000-01-01' +%s) ) / 86400 ))
-          # 版本号取自 tag（去掉前缀 v）
+          BUNDLE_VER=$(python scripts/bundle.py info --key version)
           NEWGRF_VERSION="${GITHUB_REF_NAME#v}"
-          echo "repo_revision=$REPO_REVISION" >> "$GITHUB_OUTPUT"
-          echo "newgrf_version=$NEWGRF_VERSION" >> "$GITHUB_OUTPUT"
-          echo "REPO_REVISION=$REPO_REVISION  NEWGRF_VERSION=$NEWGRF_VERSION"
-
+          if [ "$BUNDLE_VER" != "$NEWGRF_VERSION" ]; then
+            echo "::error::tag v$NEWGRF_VERSION 与 bundle.json version=$BUNDLE_VER 不一致，请先更新 bundle.json"
+            exit 1
+          fi
+          echo "version=$BUNDLE_VER" >> "$GITHUB_OUTPUT"
+          echo "repo_revision=$(python scripts/bundle.py info --key repo_revision)" >> "$GITHUB_OUTPUT"
+          echo "src_file=$(python scripts/bundle.py info --key src_path)" >> "$GITHUB_OUTPUT"
+          echo "nml_path=$(python scripts/bundle.py info --key nml_path)" >> "$GITHUB_OUTPUT"
+          echo "grf_path=$(python scripts/bundle.py info --key grf_path)" >> "$GITHUB_OUTPUT"
+          echo "archive_path=$(python scripts/bundle.py info --key archive_path)" >> "$GITHUB_OUTPUT"
+          echo "archive_gz_path=$(python scripts/bundle.py info --key archive_gz_path)" >> "$GITHUB_OUTPUT"
+          echo "changelog_path=$(python scripts/bundle.py info --key changelog_path)" >> "$GITHUB_OUTPUT"
+          echo "Resolved version=$BUNDLE_VER revision=$(python scripts/bundle.py info --key repo_revision)"
       - name: Preprocess and compile GRF
         run: |
           mkdir -p bin
-          gcc -D REPO_REVISION="${{ steps.meta.outputs.repo_revision }}" \
-              -D NEWGRF_VERSION="${{ steps.meta.outputs.newgrf_version }}" \
-              -C -E -nostdinc -x c-header \
-              -o bin/AeroLinersSet.nml WAS.pnml
-          nmlc --grf=bin/AeroLinersSet.grf -c bin/AeroLinersSet.nml
-          ls -la bin/AeroLinersSet.grf
-
+          gcc -D REPO_REVISION="${{ steps.meta.outputs.repo_revision }}" -D NEWGRF_VERSION="${{ steps.meta.outputs.version }}" -C -E -nostdinc -x c-header -o "${{ steps.meta.outputs.nml_path }}" "${{ steps.meta.outputs.src_file }}"
+          nmlc --grf="${{ steps.meta.outputs.grf_path }}" -c "${{ steps.meta.outputs.nml_path }}"
+          ls -la "${{ steps.meta.outputs.grf_path }}"
+      - name: Bundle tarball (scripts/bundle.py)
+        run: |
+          python scripts/bundle.py build
+          tar -tf "${{ steps.meta.outputs.archive_path }}"
+          ls -la bin/
+      - name: Verify bundle contents
+        run: |
+          python scripts/bundle.py verify "${{ steps.meta.outputs.archive_path }}" --ref "${{ steps.meta.outputs.grf_path }}"
+          python scripts/bundle.py verify "${{ steps.meta.outputs.archive_gz_path }}" --ref "${{ steps.meta.outputs.grf_path }}"
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "${GITHUB_REF_NAME}" bin/AeroLinersSet.grf \
+          gh release create "${GITHUB_REF_NAME}" \
+            "${{ steps.meta.outputs.archive_path }}" \
+            "${{ steps.meta.outputs.archive_gz_path }}" \
+            "${{ steps.meta.outputs.grf_path }}" \
             --repo Maicarons/AeroLiners-Set \
             --title "AeroLiners Set ${GITHUB_REF_NAME} (寰宇飞机)" \
-            --notes-file docs/changelog.txt
+            --notes-file "${{ steps.meta.outputs.changelog_path }}"

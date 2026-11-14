@@ -9,8 +9,8 @@
 | --- | --- | --- |
 | **C 编译器（GCC/clang/MSVC）** | 仅用作 C 预处理器，展开 `.pnml` 中的 `#include`/`#define` | 系统自带 / MinGW |
 | **nmlc** | 把 `.nml` 编译为 `.grf`（NML 编译器） | <https://github.com/OpenTTD/nml/releases/latest> |
-| **grfid**（grfcodec 套件） | 计算 `.grf` 的 MD5、处理文档模板 | <https://www.openttd.org/downloads/grfcodec-releases/latest> |
-| **CMake** ≥ 3.23 | 构建系统 | 系统包管理器 |
+| **Python** ≥ 3.10 | 运行 `scripts/bundle.py`：替换文档占位符、打包并自校验 | <https://www.python.org/downloads/> |
+| **CMake** ≥ 3.24 | 构建系统（解析 `bundle.json`） | 系统包管理器 |
 | **生成器**：Ninja / Make / VS | 实际执行构建 | 任选其一 |
 
 > Windows 用户：安装 **MSYS2 + MinGW** 即可一次性获得 make、gcc、sed、awk 等全部工具。
@@ -50,8 +50,9 @@ cmake --build build/vs2022 --preset vs-default
 
 1. **NML** —— 用 C 预处理器把 `WAS.pnml`（`src/header.pnml` 等汇总）展开为 `bin/AeroLinersSet.nml`。
 2. **GRF** —— 调用 `nmlc` 把 `.nml` 编译为 `bin/AeroLinersSet.grf`。
-3. **Bundles**（默认 `ALL`） —— 把 `.grf` 与文档（`readme.txt` / `license.txt` / `changelog.txt`）打包成
-   `.tar` / `.tar.bz2` / `.tar.gz` / `.tar.xz`。
+3. **Bundles**（默认 `ALL`） —— 调用 `scripts/bundle.py`，按 `bundle.json` 把 `.grf` 与文档
+   （`readme.txt` / `license.txt` / `changelog.txt`）打包成 BaNaNaS 格式的
+   `4145524f-AeroLinersSet-<版本>.tar` 与 `.tar.gz`，并自动校验布局、GRFID 与 MD5。
 
 构建产物位于 `bin/` 目录。
 
@@ -82,15 +83,18 @@ AeroLinersSet.nml
    │  nmlc -c
    ▼
 AeroLinersSet.grf
-   │  grfid -m + 文档模板
+   │  scripts/bundle.py build（占位符 / 打包 / 自校验）
    ▼
-.tar / .tar.bz2 / .tar.gz / .tar.xz  (发布包)
+4145524f-AeroLinersSet-<版本>.tar(.gz)  (BaNaNaS 发布包)
 ```
 
 ## 注意事项
 
-- **版本号 / 修订**：`CMakeLists.txt` 通过 `string(TIMESTAMP)` 计算「自 2000 年起的天数」作为 `REPO_REVISION`，
-  并写入 `custom_tags.txt`，用于 NewGRF 的 `version` 字段。
+- **版本号 / 修订**：发布版本号、GRFID、随包文档清单与包名统一写在根目录 `bundle.json`；
+  `CMakeLists.txt` 与 CI 都通过 `scripts/bundle.py` 读取它，不再各自硬编码。
+  `CMakeLists.txt` 通过 `string(TIMESTAMP)` 计算「自 2000 年起的天数」作为 `REPO_REVISION`，
+  用于 NewGRF 的 `version` 字段；`scripts/bundle.py` 用同一公式把修订号与 `.grf` 的 MD5
+  填入随包 `readme.txt`。
 - **多人游戏兼容性**：如果你**修改了源码**，编译出的 `.grf` 将无法与官方版本的 寰宇飞机 在多人游戏中兼容。
   不同的 `grfcodec`/`nmlc` 版本也会改变 GRF 校验和，导致不兼容。
 - **不要手改 `Makefile` / `CMakeCache.txt`**：它们由 CMake 生成。

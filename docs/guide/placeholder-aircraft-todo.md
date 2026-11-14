@@ -207,4 +207,4 @@ NML 编译时直接读取 donor 的真实精灵表，因此能正常编译、在
 - `tools/add_aircraft.py`：克隆 donor 机型生成占位机型 `.pnml`（生成上面第 1–12 款）。
 - `tools/gen_placeholder_aircraft.py`：本次新增第 13–54 款所用的生成器，逻辑与 `add_aircraft.py` 一致——
   克隆 donor 精灵网格宏 + 机型参数，仅换标识符 / 名称 / 引入年份，接入 donor 前 5 个涂装，零新增 livery 字符串。
-- `tools/gen_aircraft_md.py`：从 `WAS.pnml` 自动提取全部机型，生成 [机队图鉴](/aircraft/) 与涂装预览图。
+- `tools/gen_aircraft_docs.py`：从 `WAS.pnml` 自动提取全部机型，生成 [机队图鉴](/aircraft/) 与涂装预览图。

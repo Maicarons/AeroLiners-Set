@@ -8,6 +8,26 @@ GitHub Release notes. Counts reflect the fleet at the time of each release.
 发布时的机队规模。
 
 
+## v1.1.3 (2026-11-14)
+
+- Decoupled release packaging: `bundle.json` is now the single source of truth
+  for version, GRF ID, bundled docs and archive names; `CMakeLists.txt` and the
+  release workflow both call `scripts/bundle.py` instead of duplicating metadata.
+- `scripts/bundle.py` substitutes the readme placeholders (revision + GRF MD5),
+  writes LF-only docs, builds the BaNaNaS `<grfid>-<name>-<version>.tar` plus
+  `.tar.gz`, and self-verifies layout, GRF ID and MD5.
+- Removed legacy build helpers (`scripts/ProcessDocs.cmake`, one-off verification
+  scripts) and unused historical asset directories (`documentation/`, `sprites/`,
+  `greyscales/`); refreshed the docs that referenced them.
+- 解耦发布打包：`bundle.json` 成为版本、GRFID、随包文档清单与包名的唯一配置源；
+  `CMakeLists.txt` 与发版 workflow 统一调用 `scripts/bundle.py`，不再各自硬编码。
+- `scripts/bundle.py` 负责替换 readme 占位符（修订号 + GRF MD5）、把文档转为 LF、
+  生成 BaNaNaS 格式的 `<grfid>-<name>-<version>.tar` 与 `.tar.gz`，并自校验布局、
+  GRFID 与 MD5。
+- 删除旧构建辅助脚本（`scripts/ProcessDocs.cmake`、一次性核对脚本）与不再使用的
+  历史素材目录（`documentation/`、`sprites/`、`greyscales/`），并同步修正相关文档。
+
+
 ## v1.1.2 (2026-10-01)
 
 - Fixed aircraft speed handling: the per-flight-state speed callback is now a

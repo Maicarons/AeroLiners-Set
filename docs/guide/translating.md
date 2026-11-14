@@ -27,7 +27,7 @@ STR_AIRV_AIRBUS_A300_600R    :Airbus A300-600R
 ## 新增一种语言
 
 1. 从 `lang/english.lng` 复制出 `7F_english.lng` 的同类文件，命名为
-   `{语言ID}_{语言名}.lng`（参考上游旧流程 `sprites/nfo/00strings`）。
+   `{语言ID}_{语言名}.lng`。
 2. 到 <http://wiki.ttdpatch.net/tiki-index.php?page=Action4#language_id> 查找你的语言 ID。
 3. 把文件中所有 `english` 改成你的语言名称，并在 `#define LANG .` 后填入对应语言常量
    （可用值见 `docs/readme.txt` 第 6 节，例如 `CHINESE_SIMPLIFIED`、`KOREAN` 等）。

@@ -1,0 +1,20 @@
+{
+  "_comment": "Single source of truth for AeroLiners Set release metadata and the BaNaNaS bundle layout. CMakeLists.txt and .github/workflows/release.yml both consume this through scripts/bundle.py. To release: bump version here, add a changelog section, then push tag v<version>.",
+  "grfid": "4145524f",
+  "grfid_text": "AERO",
+  "name": "AeroLinersSet",
+  "brand_en": "AeroLiners Set",
+  "brand_zh": "\u5bf0\u5b87\u98de\u673a",
+  "version": "1.1.3",
+  "repo": "Maicarons/AeroLiners-Set",
+  "homepage": "https://github.com/Maicarons/AeroLiners-Set",
+  "license": "GPL-3.0",
+  "src_file": "WAS.pnml",
+  "nml_file": "AeroLinersSet.nml",
+  "grf_file": "AeroLinersSet.grf",
+  "bin_dir": "bin",
+  "docs_src_dir": "docs",
+  "docs": ["readme.txt", "license.txt", "changelog.txt"],
+  "bundle_dir": "{name}-{version}",
+  "archive": "{grfid}-{name}-{version}.tar"
+}
