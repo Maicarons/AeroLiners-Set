@@ -424,6 +424,9 @@ item (FEAT_AIRCRAFT, Airbus_A310_200)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1182;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 134;
+    speed: 870 km/h;
+    running_cost_factor: 126;
   }
   graphics {
     default: Airbus_A310_200_sprites;

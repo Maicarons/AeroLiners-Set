@@ -328,6 +328,9 @@ item (FEAT_AIRCRAFT, ATR_72_500)
     acceleration: 27;                  // in 27,75 mph/day
     range: 260;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 18;
+    speed: 510 km/h;
+    running_cost_factor: 39;
   }
   graphics {
     default: ATR_72_500_sprites;

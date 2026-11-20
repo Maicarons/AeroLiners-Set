@@ -177,6 +177,9 @@ item (FEAT_AIRCRAFT, Boeing_767_200)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1309;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 127;
+    speed: 858 km/h;
+    running_cost_factor: 121;
   }
   graphics {
     default: Boeing_767_200_sprites;

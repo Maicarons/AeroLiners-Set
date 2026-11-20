@@ -1520,6 +1520,9 @@ item (FEAT_AIRCRAFT, Airbus_A320_200)
     mail_capacity: 18;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1109;
+    cost_factor: 73;
+    speed: 828 km/h;
+    running_cost_factor: 77;
   }
   graphics {
     default: Airbus_A320_200_sprites;

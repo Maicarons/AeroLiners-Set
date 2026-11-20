@@ -181,6 +181,9 @@ item (FEAT_AIRCRAFT, GENERAL_ATOMICS_DO228)
     acceleration: 27;
     range: 430;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 413 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: GENERAL_ATOMICS_DO228_sprites;

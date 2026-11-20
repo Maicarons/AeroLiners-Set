@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, TUPOLEV_TU214)
     acceleration: 27;
     range: 789;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 79;
+    speed: 850 km/h;
+    running_cost_factor: 93;
   }
   graphics {
     default: TUPOLEV_TU214_sprites;

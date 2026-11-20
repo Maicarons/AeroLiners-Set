@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, ILYUSHIN_IL96)
     acceleration: 27;
     range: 1818;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 187;
+    speed: 870 km/h;
+    running_cost_factor: 166;
   }
   graphics {
     default: ILYUSHIN_IL96_sprites;

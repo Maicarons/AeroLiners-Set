@@ -227,6 +227,9 @@ item (FEAT_AIRCRAFT, Boeing_777_200F)
     acceleration: 27;                  // in 27,75 mph/day
     range: 3283;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 255;
+    speed: 896 km/h;
+    running_cost_factor: 255;
   }
   graphics {
     default: Boeing_777_200F_sprites;

@@ -814,6 +814,9 @@ item (FEAT_AIRCRAFT, Airbus_A319)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1262;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 57;
+    speed: 829 km/h;
+    running_cost_factor: 90;
   }
   graphics {
     default: Airbus_A319_sprites;

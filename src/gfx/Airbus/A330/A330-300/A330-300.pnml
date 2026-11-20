@@ -592,6 +592,9 @@ item (FEAT_AIRCRAFT, Airbus_A330_300)
     acceleration: 27;                  // in 27,75 mph/day
     range: 2136;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 187;
+    speed: 871 km/h;
+    running_cost_factor: 166;
   }
   graphics {
     default: Airbus_A330_300_sprites;

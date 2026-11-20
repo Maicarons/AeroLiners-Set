@@ -142,6 +142,9 @@ item (FEAT_AIRCRAFT, Boeing_737_200C)
     acceleration: 27;                  // in 27,75 mph/day
     range: 873;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 37;
+    speed: 796 km/h;
+    running_cost_factor: 60;
   }
   graphics {
     default: Boeing_737_200C_sprites;

@@ -287,6 +287,9 @@ item (FEAT_AIRCRAFT, Embraer_E195_E2)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1018;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 44;
+    speed: 833 km/h;
+    running_cost_factor: 69;
   }
   graphics {
     default: Embraer_E195_E2_sprites;

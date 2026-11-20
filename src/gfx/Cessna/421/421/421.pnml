@@ -179,6 +179,9 @@ item (FEAT_AIRCRAFT, CESSNA_421)
     acceleration: 27;
     range: 501;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 440 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: CESSNA_421_sprites;

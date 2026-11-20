@@ -596,6 +596,9 @@ item (FEAT_AIRCRAFT, Airbus_A330_900neo)
     acceleration: 27;                  // in 27,75 mph/day
     range: 2475;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 190;
+    speed: 871 km/h;
+    running_cost_factor: 168;
   }
   graphics {
     default: Airbus_A330_900neo_sprites;

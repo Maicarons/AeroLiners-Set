@@ -2,8 +2,8 @@
 
 ## 支持的版本
 
-寰宇飞机 目前**仅支持 OpenTTD > 0.7.0**，因为该版本引入了对更多车辆模型的支持，使 NewGRF 可包含多达
-65535 架飞机。寰宇飞机 **不支持 TTDPatch**（原因同上）。
+寰宇飞机 目前**需要 OpenTTD 0.7.0 及以上**——该版本引入了对更多车辆模型的支持，使 NewGRF 可包含多达
+65535 架飞机。若要在游戏内显示中文名称，请使用 OpenTTD 1.2.0 及以上并在语言设置中切换。寰宇飞机 **不支持 TTDPatch**（原因同上）。
 
 寰宇飞机 可以与其它飞机 NewGRF 同时加载，互不冲突。
 
@@ -25,13 +25,13 @@
 ### 方式二：通过 BaNaNaS 安装
 
 1. 打开 OpenTTD 的「内容下载（Content）」列表。
-2. 找到 **World Airliner Set** 条目，点击「下载（Download）」。
+2. 找到 **AeroLiners-Set** 条目，点击「下载（Download）」。上游 World Airliner Set 是另一个条目（GRFID `WAS2`），请勿混淆。
 
 ## 在游戏中启用
 
 1. 打开 **NewGRF 设置**窗口。
 2. 点击「添加（Add）」。
-3. 在列表中选择 **World Airliner Set**。
+3. 在列表中选择 **AeroLiners Set（寰宇飞机）**。
 4. 应用设置并启动或重载游戏。
 
 ## 使用 寰宇飞机

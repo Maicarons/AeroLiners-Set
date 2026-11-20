@@ -297,6 +297,9 @@ item (FEAT_AIRCRAFT, Airbus_A380_800)
     acceleration: 27;                  // in 27,75 mph/day
     range: 2855;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 255;
+    speed: 903 km/h;
+    running_cost_factor: 115;
   }
   graphics {
     default: Airbus_A380_800_sprites;

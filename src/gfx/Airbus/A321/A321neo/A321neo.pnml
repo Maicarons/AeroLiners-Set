@@ -445,6 +445,9 @@ item (FEAT_AIRCRAFT , Airbus_A321neo)
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1345;
+    cost_factor: 108;
+    speed: 833 km/h;
+    running_cost_factor: 74;
   }
   graphics {
     default: Airbus_A321neo_sprites;

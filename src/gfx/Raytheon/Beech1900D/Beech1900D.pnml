@@ -181,6 +181,9 @@ item (FEAT_AIRCRAFT, RAYTHEON_BEECH1900D)
     acceleration: 27;
     range: 419;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 518 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: RAYTHEON_BEECH1900D_sprites;

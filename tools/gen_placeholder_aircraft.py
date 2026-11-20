@@ -356,6 +356,10 @@ def gen_pnml(tgt, d):
     if sf != 1.0:
         purchase_speed = re.sub(r'plane_speed_kmh\((\d+)\)',
                                 lambda mm: 'plane_speed_kmh(%d)' % round(int(mm.group(1)) * sf), purchase_speed)
+    cruise_match = re.search(r'plane_speed_kmh\((\d+)\)', purchase_speed)
+    if cruise_match is None:
+        raise ValueError('%s: donor purchase_speed has no plane_speed_kmh() value' % ID)
+    cruise_val = int(cruise_match.group(1))
     speed = (d['speed'] or '').replace(DON, ID)
     if sf != 1.0:
         speed = re.sub(r'plane_speed_kmh\((\d+)\)',
@@ -471,6 +475,10 @@ def gen_pnml(tgt, d):
     L.append("    range: %s;" % range_val)
     # 音效取 donor 原值（多数 SOUND_TAKEOFF_JET；A330/C929 类大飞机为 SOUND_TAKEOFF_JET_BIG）
     L.append("    sound_effect: %s;" % (P['sound_effect'] or 'SOUND_TAKEOFF_JET'))
+    # 静态属性给 AI 兜底；游戏内仍由 graphics 回调覆盖。
+    L.append("    cost_factor: %s;" % min(int(cost), 255))
+    L.append("    speed: %s km/h;" % cruise_val)
+    L.append("    running_cost_factor: %s;" % min(int(G['purchase_running_cost_factor']), 255))
     L.append("  }")
     L.append("  graphics {")
     L.append("    default: %s_sprites;" % ID)

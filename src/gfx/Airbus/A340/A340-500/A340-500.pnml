@@ -178,6 +178,9 @@ item (FEAT_AIRCRAFT, Airbus_A340_500)
     acceleration: 27;                  // in 27,75 mph/day
     range: 3031;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 200;
+    speed: 871 km/h;
+    running_cost_factor: 201;
   }
   graphics {
     default: Airbus_A340_500_sprites;

@@ -179,6 +179,9 @@ item (FEAT_AIRCRAFT, VICKERS_VISCOUNT)
     acceleration: 27;
     range: 404;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 566 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: VICKERS_VISCOUNT_sprites;

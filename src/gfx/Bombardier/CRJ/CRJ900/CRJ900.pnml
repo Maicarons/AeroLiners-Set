@@ -163,6 +163,9 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ900)
     acceleration: 27;                  // in 27,75 mph/day
     range: 455;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 27;
+    speed: 829 km/h;
+    running_cost_factor: 50;
   }
   graphics {
     default: Bombardier_CRJ900_sprites;

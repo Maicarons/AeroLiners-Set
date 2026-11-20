@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, AIRBUS_A220_100)
     acceleration: 27;
     range: 1145;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 80;
+    speed: 870 km/h;
+    running_cost_factor: 71;
   }
   graphics {
     default: AIRBUS_A220_100_sprites;

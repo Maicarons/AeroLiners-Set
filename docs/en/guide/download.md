@@ -24,9 +24,9 @@ You can also go manually:
 
 After downloading, place it in OpenTTD's `newgrf` directory — see "Install into OpenTTD" below, or [Installation & Usage](/guide/installation).
 
-## Method 2: Via BaNaNaS (stable only, English)
+## Method 2: Via BaNaNaS (recommended for in-game updates)
 
-Search for **AeroLiners Set** in OpenTTD's in-game **Content** list and click **Download**. This channel provides the upstream English original and does **not** include the Chinese translation.
+Search for **AeroLiners-Set** in OpenTTD's in-game **Content** list and click **Download**. This is the same AeroLiners Set continuation (GRFID `AERO`), with the Chinese interface included. The upstream World Airliner Set is a separate entry (GRFID `WAS2`); don't confuse the two.
 
 ## Method 3: Build from source
 
@@ -50,7 +50,7 @@ Greyscale is the default greyscale base livery with no airline markings — idea
 A: You must switch OpenTTD's language setting to Simplified / Traditional Chinese for the Chinese names to take effect.
 
 **Q: It won't load because the version is too old?**
-A: AeroLiners Set requires OpenTTD 1.2.0 or newer (the version with the Chinese interface). Please upgrade OpenTTD and try again.
+A: AeroLiners Set requires OpenTTD 0.7.0 or newer; use OpenTTD 1.2.0 or newer if you want the in-game Chinese names.
 
 **Q: Can I use it alongside other aircraft NewGRFs?**
 A: Yes, AeroLiners Set does not conflict with other aircraft NewGRFs.

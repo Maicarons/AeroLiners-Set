@@ -1,21 +1,24 @@
 # Changelog
 
-The full code change history of AeroLiners Set can be found in the upstream repository:
+This page gives the release rhythm of the continuation. The full bilingual
+notes for every release live in
+[`docs/changelog.txt`](https://github.com/Maicarons/AeroLiners-Set/blob/main/docs/changelog.txt),
+and the published builds are on [GitHub Releases](https://github.com/Maicarons/AeroLiners-Set/releases).
 
-- Upstream code changes: <http://dev.openttdcoop.org/projects/worldairlinersset/repository/changes>
+## Continuation releases
 
-## This project (independent continuation) record
-
-This repository `Maicarons/AeroLiners-Set` is an independent continuation derived from the upstream World Airliner Set, carrying forward aircraft and liveries under the new identity **AeroLiners Set (寰宇飞机)**, GRFID `AERO`. Recent changes:
-
-| Change | Description |
-| --- | --- |
-| Renamed project | Chinese name **寰宇飞机**, English **AeroLiners Set**; GRFID changed to `AERO` |
-| 12 placeholder models added | COMAC C909/C919, A220-300, A319neo, A321neo, 737 MAX 9/10, 787-10, A330-900neo, A350-1000, 777X, E195-E2 (logic + liveries wired, real sprites pending) |
-| Bilingual documentation | VitePress docs now ship in Simplified Chinese and English (i18n) |
+| Version | Date | Highlights |
+| --- | --- | --- |
+| v1.1.4 | 2026-11-20 | Static cost/speed fallbacks for all 216 aircraft, fixing the AI divide-by-zero crash (issue #4); BaNaNaS/install docs refreshed; CI guard for the static properties. |
+| v1.1.3 | 2026-11-14 | Release packaging decoupled: `bundle.json` is the single source of truth; `scripts/bundle.py` owns bundling and verification. |
+| v1.1.2 | 2026-10-01 | Fixed the cached speed-property callback; cruise speed is now constant. |
+| v1.1.1 | 2026-08-11 | Verified real-world range/seating/cruise data for every aircraft. |
+| v1.1 | 2026-08-09 | Added 17 gap airliners plus the Cessna family; fixed placeholder parameters. |
+| v1.0 | 2026-08-05 | First independent continuation release under the new brand and GRFID `AERO`. |
 
 ::: tip
-This page is maintained alongside the documentation. For precise per-version model additions/removals, defer to the official release notes and the upstream repository.
+The upstream World Airliner Set history is at
+<http://dev.openttdcoop.org/projects/worldairlinersset/repository/changes>.
 :::
 
 Back: [Contributing →](/guide/contributing) ｜ Next: [Credits →](/guide/credits)

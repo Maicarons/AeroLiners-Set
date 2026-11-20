@@ -181,6 +181,9 @@ item (FEAT_AIRCRAFT, AVIC_Y7_200)
     acceleration: 27;
     range: 165;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 423 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: AVIC_Y7_200_sprites;

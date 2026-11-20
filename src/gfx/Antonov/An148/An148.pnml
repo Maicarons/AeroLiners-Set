@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, ANTONOV_AN148)
     acceleration: 27;
     range: 800;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 50;
+    speed: 870 km/h;
+    running_cost_factor: 29;
   }
   graphics {
     default: ANTONOV_AN148_sprites;

@@ -212,6 +212,9 @@ item (FEAT_AIRCRAFT, Boeing_747_400ERF)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1678;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 255;
+    speed: 899 km/h;
+    running_cost_factor: 255;
   }
   graphics {
     default: Boeing_747_400ERF_sprites;

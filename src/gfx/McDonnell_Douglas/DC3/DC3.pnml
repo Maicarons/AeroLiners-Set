@@ -179,6 +179,9 @@ item (FEAT_AIRCRAFT, DOUGLAS_DC3)
     acceleration: 27;
     range: 436;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 25;
+    speed: 333 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: DOUGLAS_DC3_sprites;

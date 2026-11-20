@@ -253,6 +253,9 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD81)
     acceleration: 27;                  // in 27,75 mph/day
     range: 527;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 46;
+    speed: 840 km/h;
+    running_cost_factor: 87;
   }
   graphics {
     default: McDonnell_Douglas_MD81_sprites;

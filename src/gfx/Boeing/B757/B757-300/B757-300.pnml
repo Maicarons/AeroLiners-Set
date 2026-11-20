@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, BOEING_757_300)
     acceleration: 27;
     range: 1143;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 79;
+    speed: 858 km/h;
+    running_cost_factor: 93;
   }
   graphics {
     default: BOEING_757_300_sprites;

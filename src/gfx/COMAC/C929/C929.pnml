@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, COMAC_C929)
     acceleration: 27;
     range: 2182;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 220;
+    speed: 908 km/h;
+    running_cost_factor: 191;
   }
   graphics {
     default: COMAC_C929_sprites;

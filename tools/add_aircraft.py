@@ -158,11 +158,18 @@ def clone(cfg):
     # 7) mail_capacity
     mail = max(9, round(cfg["capacity"] / 10))
     txt = re.sub(r"mail_capacity:\s*\d+;", f"mail_capacity: {mail};", txt, count=1)
-    # 8) cost / running / purchase_speed
+    # 8) cost / running / purchase_speed（静态兜底按 byte 上限截断，graphics 回调保留原值）
+    static_cost = min(int(cfg['cost']), 255)
+    static_run = min(int(cfg['run']), 255)
+    txt = re.sub(r"cost_factor:\s*\d+;", f"cost_factor: {static_cost};", txt, count=1)
     txt = re.sub(r"cost_factor:\s*\d+;", f"cost_factor: {cfg['cost']};", txt, count=1)
-    txt = re.sub(r"purchase_running_cost_factor:\s*\d+;", f"purchase_running_cost_factor: {cfg['run']};", txt, count=1)
+    txt = re.sub(r"purchase_running_cost_factor:\s*\d+;", f"purchase_running_cost_factor: {cfg['run']};", txt)
     txt = re.sub(r"purchase_speed:\s*plane_speed_kmh\(\d+\);",
-                 f"purchase_speed: plane_speed_kmh({cfg['cruise']});", txt, count=1)
+                 f"purchase_speed: plane_speed_kmh({cfg['cruise']});", txt)
+    txt = re.sub(r"(?m)^([ 	]*)running_cost_factor:\s*\d+;",
+                 rf"\1running_cost_factor: {static_run};", txt, count=1)
+    txt = re.sub(r"(?m)^([ 	]*)speed:\s*\d+\s*km/h\s*;",
+                 rf"\1speed: {cfg['cruise']} km/h;", txt, count=1)
     # 8b) speed 回调（恒定巡航形式）与 purchase_speed 保持一致
     def speed_block_repl(m):
         return re.sub(r"plane_speed_kmh\(\d+\)",

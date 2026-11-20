@@ -1,7 +1,7 @@
 # AeroLiners-Set（寰宇飞机）— 新会话交接手册
 
 > 给**下一个会话的 AI**看的项目速查手册。本地目录：`G:\GitHub\AeroLiners-Set`。
-> 2026-11-14 重写（v1.1.3 整理后）。更早历史见 git log 与 `.workbuddy/memory/MEMORY.md`。
+> 2026-11-20 重写（v1.1.4 静态属性热修后）。更早历史见 git log 与 `.workbuddy/memory/MEMORY.md`。
 
 ---
 
@@ -15,7 +15,7 @@ OpenTTD **NewGRF 飞机扩充包**，由上游 **World Airliner Set（WAS / 世�
 | 本地目录 | `G:\GitHub\AeroLiners-Set` |
 | 中文名 / 英文名 | **寰宇飞机** / **AeroLiners Set** |
 | GRFID | **`AERO`**（hex `4145524f`；上游 `WAS2`） |
-| 当前版本 | **v1.1.3**（tag `v1.1.3`） |
+| 当前版本 | **v1.1.4**（tag `v1.1.4`） |
 | 文档站 | `https://maicarons.github.io/AeroLiners-Set/`（root 简中，`/en/` English） |
 | 授权 | GPL-3.0；原始精灵图版权归 PikkaBird（AV8 套装）等上游作者，**署名必须保留** |
 
@@ -28,6 +28,7 @@ OpenTTD **NewGRF 飞机扩充包**，由上游 **World Airliner Set（WAS / 世�
 - **71** 款占位机型借用 donor 像素图、尚无独立手绘精灵；清单见 `docs/guide/placeholder-aircraft-todo.md`。
 - COMAC 在 `src/gfx/COMAC`，含 C909、C919。
 - 计数真源 `docs/aircraft/summary.json` + `lang/*.lng`；`python tools/check_counts.py` 在 CI 校验 README、首页、`docs/guide/project-structure.md` 的硬编码数字（只匹配「数字+单位」，1743 / 65535 / 129 之类不会被误判）。
+- 每款机型的 `property` 块都带静态 `cost_factor` / `speed km/h` / `running_cost_factor` 兜底（AI 读 Action 0 用），`python tools/static_props.py --check` 校验；新增机型务必同步。
 
 ## 3. 目录结构速览
 
@@ -45,6 +46,7 @@ AeroLiners-Set/
 │  └─ bundle.py           # ★ 共享打包/校验脚本（build / verify / info）
 ├─ tools/                 # 校验 / 文档生成 / 机型维护脚本
 │  ├─ check_counts.py     # CI 计数校验
+│  ├─ static_props.py     # 静态 cost/speed 兜底校验 / 批量写入
 │  └─ gen_aircraft_docs.py# 生成机队图鉴
 ├─ docs/                  # VitePress 文档站（i18n）
 │  ├─ .vitepress/config.js
@@ -134,9 +136,9 @@ README 第 3 行、credits/changelog 里**有意保留** "WAS"/"世界客机集"
 ## 8. 后续可做事项
 
 - 给 71 款占位机型画真实精灵图（逻辑改动为零，见第 2 节）。
-- Dependabot 的 docs 工具链告警（不影响 .grf 产物）。
+- Dependabot 的 docs 工具链告警已通过 `overrides.vite: ^6.4.4` 处理，待 CI 确认。
 - 加更多语言：i18n 接口已预留，参考 `docs/.vitepress/config.js` 的 `locales`。
-- 可考虑加根 `.gitattributes`（`* text=auto eol=lf` + `*.lng text eol=crlf`），但目前未加，别擅自改行尾。
+- 根 `.gitattributes` 已加（`* text=auto eol=lf` + `*.lng text eol=crlf`）；`.lng` 仍必须保持 CRLF，别被 Windows 写入工具改掉。
 
 ## 9. 关键文件清单（改之前先 locate）
 

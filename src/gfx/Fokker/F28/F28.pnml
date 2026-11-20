@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, FOKKER_F28)
     acceleration: 27;
     range: 303;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 27;
+    speed: 848 km/h;
+    running_cost_factor: 61;
   }
   graphics {
     default: FOKKER_F28_sprites;

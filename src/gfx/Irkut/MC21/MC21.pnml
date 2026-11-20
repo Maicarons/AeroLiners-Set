@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, IRKUT_MC21)
     acceleration: 27;
     range: 1091;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 73;
+    speed: 870 km/h;
+    running_cost_factor: 77;
   }
   graphics {
     default: IRKUT_MC21_sprites;

@@ -34,3 +34,6 @@ docs/.vitepress/cache
 
 # WorkBuddy local memory & config (not project source)
 .workbuddy/
+# Python caches
+__pycache__/
+*.pyc

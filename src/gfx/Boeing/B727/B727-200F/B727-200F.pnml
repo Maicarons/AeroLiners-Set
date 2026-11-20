@@ -167,6 +167,9 @@ item (FEAT_AIRCRAFT, Boeing_727_200F)
     acceleration: 27;                  // in 27,75 mph/day
     range: 858;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 29;
+    speed: 954 km/h;
+    running_cost_factor: 94;
   }
   graphics {
     default: Boeing_727_200F_sprites;

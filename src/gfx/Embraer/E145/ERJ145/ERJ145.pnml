@@ -156,6 +156,9 @@ item (FEAT_AIRCRAFT, Embraer_ERJ145)
     acceleration: 27;                  // in 27,75 mph/day
     range: 673;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 829 km/h;
+    running_cost_factor: 28;
   }
   graphics {
     default: Embraer_ERJ145_sprites;

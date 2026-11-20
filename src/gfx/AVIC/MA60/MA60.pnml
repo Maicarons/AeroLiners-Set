@@ -181,6 +181,9 @@ item (FEAT_AIRCRAFT, AVIC_MA60)
     acceleration: 27;
     range: 291;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 430 km/h;
+    running_cost_factor: 38;
   }
   graphics {
     default: AVIC_MA60_sprites;

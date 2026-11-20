@@ -164,6 +164,9 @@ item (FEAT_AIRCRAFT, EMBRAER_E175_E2)
     acceleration: 27;
     range: 673;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 26;
+    speed: 833 km/h;
+    running_cost_factor: 44;
   }
   graphics {
     default: EMBRAER_E175_E2_sprites;

@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, LOCKHEED_L1011)
     acceleration: 27;
     range: 1800;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 155;
+    speed: 972 km/h;
+    running_cost_factor: 196;
   }
   graphics {
     default: LOCKHEED_L1011_sprites;

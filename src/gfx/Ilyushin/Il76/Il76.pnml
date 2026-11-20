@@ -131,6 +131,9 @@ item (FEAT_AIRCRAFT, Ilyushin_76)
     acceleration: 27;                  // in 27,75 mph/day
     range: 909;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 44;
+    speed: 852 km/h;
+    running_cost_factor: 214;
   }
   graphics {
     default: Ilyushin_76_sprites;

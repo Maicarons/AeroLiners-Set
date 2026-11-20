@@ -184,6 +184,9 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD11F)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1190;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 137;
+    speed: 886 km/h;
+    running_cost_factor: 250;
   }
   graphics {
     default: McDonnell_Douglas_MD11F_sprites;

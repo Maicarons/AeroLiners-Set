@@ -65,9 +65,9 @@ Download `AeroLinersSet.grf` from the [GitHub Releases](https://github.com/Maica
 
 > The Chinese name only appears after you select **Simplified Chinese** or **Traditional Chinese** in OpenTTD's language settings.
 
-### Option 2: Download from BaNaNaS (stable only, English UI, upstream original)
+### Option 2: Download from BaNaNaS (recommended for in-game updates)
 
-Search for *World Airliner Set* in OpenTTD's in-game "Content Download" list and click "Download". This channel serves the **upstream English original** (still GRFID `WAS2`), not this continuation "AeroLiners Set". For the Chinese branding and the latest content of this continuation, use Option 1.
+Search for **AeroLiners-Set** in OpenTTD's in-game "Content Download" list and click "Download". This is the same AeroLiners Set continuation (GRFID `AERO`), with the Chinese interface included. The upstream World Airliner Set remains a separate entry (GRFID `WAS2`); don't confuse the two.
 
 ### Enable & Play
 
@@ -106,7 +106,7 @@ Brief steps (verified manual pipeline in this repo):
 ```bash
 # 1. Compute REPO_REVISION (days since 2000-01-01), preprocess to .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.1.3 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.4 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. Compile to .grf

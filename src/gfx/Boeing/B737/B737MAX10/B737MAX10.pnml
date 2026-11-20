@@ -465,6 +465,9 @@ item (FEAT_AIRCRAFT, Boeing_737_MAX10)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1036;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 112;
+    speed: 842 km/h;
+    running_cost_factor: 76;
   }
   graphics {
     default: Boeing_737_MAX10_sprites;

@@ -148,6 +148,9 @@ item (FEAT_AIRCRAFT, Bombardier_Dash_8_100)
     acceleration: 27;                  // in 27,75 mph/day
     range: 343;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 9;
+    speed: 500 km/h;
+    running_cost_factor: 26;
   }
   graphics {
     default: Bombardier_Dash_8_100_sprites;

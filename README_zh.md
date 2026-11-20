@@ -65,9 +65,9 @@
 
 > 中文名称需要你在 OpenTTD 的语言设置中选择**简体中文**或**繁体中文**后才会显示。
 
-### 方式二：从 BaNaNaS 下载（仅稳定版，英文界面，上游原版）
+### 方式二：从 BaNaNaS 下载（推荐，游戏内更新）
 
-在 OpenTTD 游戏内的「内容下载」列表中搜索 *World Airliner Set*，点击「下载」即可。该渠道提供的是**上游英文原版**（GRFID 仍为 `WAS2`），并非本续作「寰宇飞机」。如需本续作的中文品牌与最新内容，请使用方式一。
+在 OpenTTD 游戏内的「内容下载」列表中搜索 **AeroLiners-Set**，点击「下载」即可。该条目就是本续作「寰宇飞机」（GRFID `AERO`）的稳定版，包含中文界面；上游 World Airliner Set 是另一个独立条目（GRFID `WAS2`），请勿混淆。
 
 ### 启用与游玩
 
@@ -106,7 +106,7 @@
 ```bash
 # 1. 计算 REPO_REVISION（自 2000-01-01 起的天数），预处理生成 .nml
 gcc -D REPO_REVISION=$(python3 -c "import datetime;print((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime(2000,1,1,tzinfo=datetime.timezone.utc)).days)") \
-    -D NEWGRF_VERSION=1.1.3 -C -E -nostdinc -x c-header \
+    -D NEWGRF_VERSION=1.1.4 -C -E -nostdinc -x c-header \
     -o bin/AeroLinersSet.nml WAS.pnml
 
 # 2. 编译为 .grf

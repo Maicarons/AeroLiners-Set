@@ -445,6 +445,9 @@ item (FEAT_AIRCRAFT , Airbus_A220_300)
     mail_capacity: 14;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1195;
+    cost_factor: 92;
+    speed: 870 km/h;
+    running_cost_factor: 66;
   }
   graphics {
     default: Airbus_A220_300_sprites;

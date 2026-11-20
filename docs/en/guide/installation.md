@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-AeroLiners Set currently supports **OpenTTD > 0.7.0 only**, because that version introduced support for more vehicle models, allowing the NewGRF to contain up to 65535 aircraft. AeroLiners Set **does not support TTDPatch** (same reason).
+AeroLiners Set requires **OpenTTD 0.7.0 or newer** — that version introduced support for more vehicle models, allowing the NewGRF to contain up to 65535 aircraft. Use **OpenTTD 1.2.0 or newer** if you want the in-game Chinese names. AeroLiners Set **does not support TTDPatch** (same reason).
 
 AeroLiners Set can be loaded alongside other aircraft NewGRFs without conflict.
 
@@ -24,7 +24,7 @@ AeroLiners Set can be loaded alongside other aircraft NewGRFs without conflict.
 ### Method 2: Via BaNaNaS
 
 1. Open OpenTTD's **Content** list.
-2. Find the **AeroLiners Set** entry and click **Download**.
+2. Find the **AeroLiners-Set** entry and click **Download**.
 
 ## Enabling in-game
 

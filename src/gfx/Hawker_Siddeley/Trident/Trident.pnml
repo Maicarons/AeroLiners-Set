@@ -220,6 +220,9 @@ item (FEAT_AIRCRAFT, HS_TRIDENT)
     acceleration: 27;
     range: 791;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 37;
+    speed: 980 km/h;
+    running_cost_factor: 97;
   }
   graphics {
     default: HS_TRIDENT_sprites;

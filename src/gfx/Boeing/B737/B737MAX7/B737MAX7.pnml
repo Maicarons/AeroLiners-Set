@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, BOEING_737MAX7)
     acceleration: 27;
     range: 1273;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 101;
+    speed: 839 km/h;
+    running_cost_factor: 71;
   }
   graphics {
     default: BOEING_737MAX7_sprites;

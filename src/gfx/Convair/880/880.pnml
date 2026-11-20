@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, CONVAIR_880)
     acceleration: 27;
     range: 832;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 35;
+    speed: 990 km/h;
+    running_cost_factor: 64;
   }
   graphics {
     default: CONVAIR_880_sprites;

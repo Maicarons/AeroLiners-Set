@@ -457,6 +457,9 @@ item (FEAT_AIRCRAFT, Boeing_737_MAX8)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1182;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 101;
+    speed: 842 km/h;
+    running_cost_factor: 71;
   }
   graphics {
     default: Boeing_737_MAX8_sprites;

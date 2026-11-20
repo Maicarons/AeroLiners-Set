@@ -156,6 +156,9 @@ item (FEAT_AIRCRAFT, Boeing_747_300M)
     acceleration: 27;                  // in 27,75 mph/day
     range: 2255;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 255;
+    speed: 905 km/h;
+    running_cost_factor: 229;
   }
   graphics {
     default: Boeing_747_300M_sprites;

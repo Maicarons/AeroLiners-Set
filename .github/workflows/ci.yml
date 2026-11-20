@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.13"
+      - name: Verify public doc counts
+        run: python tools/check_counts.py
+      - name: Verify static Action 0 fallbacks
+        run: python tools/static_props.py --check
+      - name: Check Python tooling
+        run: python -m py_compile tools/*.py

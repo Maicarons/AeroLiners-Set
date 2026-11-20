@@ -227,6 +227,9 @@ item (FEAT_AIRCRAFT, Boeing_737_300F)
     acceleration: 27;                  // in 27,75 mph/day
     range: 759;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 45;
+    speed: 828 km/h;
+    running_cost_factor: 57;
   }
   graphics {
     default: Boeing_737_300F_sprites;

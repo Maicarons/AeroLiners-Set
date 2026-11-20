@@ -232,6 +232,9 @@ item (FEAT_AIRCRAFT, Boeing_707_420)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1627;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 41;
+    speed: 972 km/h;
+    running_cost_factor: 135;
   }
   graphics {
     default: Boeing_707_420_sprites;

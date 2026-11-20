@@ -220,6 +220,9 @@ item (FEAT_AIRCRAFT, Airbus_A350_1000)
     acceleration: 27;                  // in 27,75 mph/day
     range: 3036;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 235;
+    speed: 912 km/h;
+    running_cost_factor: 200;
   }
   graphics {
     default: Airbus_A350_1000_sprites;

@@ -346,6 +346,9 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
     acceleration: 27;                  // in 27,75 mph/day
     range: 499;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 37;
+    speed: 871 km/h;
+    running_cost_factor: 53;
   }
   graphics {
     default: BAC_1_11_500_sprites;

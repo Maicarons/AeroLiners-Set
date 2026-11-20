@@ -189,6 +189,9 @@ item (FEAT_AIRCRAFT, BAe_146_100)
     acceleration: 27;                  // in 27,75 mph/day
     range: 704;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 20;
+    speed: 789 km/h;
+    running_cost_factor: 49;
   }
   graphics {
     default: BAe_146_100_sprites;

@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, AIRBUS_A321LR)
     acceleration: 27;
     range: 1347;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 84;
+    speed: 833 km/h;
+    running_cost_factor: 87;
   }
   graphics {
     default: AIRBUS_A321LR_sprites;

@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, AIRBUS_A330_800NEO)
     acceleration: 27;
     range: 2727;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 187;
+    speed: 871 km/h;
+    running_cost_factor: 166;
   }
   graphics {
     default: AIRBUS_A330_800NEO_sprites;

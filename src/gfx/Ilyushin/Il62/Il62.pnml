@@ -230,6 +230,9 @@ item (FEAT_AIRCRAFT, Ilyushin_62)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1818;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 169;
+    speed: 900 km/h;
+    running_cost_factor: 42;
   }
   graphics {
     default: Ilyushin_62_sprites;

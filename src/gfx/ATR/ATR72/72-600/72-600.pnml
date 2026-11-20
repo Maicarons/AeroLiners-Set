@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, ATR_72_600)
     acceleration: 27;
     range: 255;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 18;
+    speed: 510 km/h;
+    running_cost_factor: 39;
   }
   graphics {
     default: ATR_72_600_sprites;

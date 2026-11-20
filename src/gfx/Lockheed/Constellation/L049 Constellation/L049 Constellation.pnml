@@ -203,6 +203,9 @@ item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1169;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 35;
+    speed: 504 km/h;
+    running_cost_factor: 7;
   }
   graphics {
     default: Lockheed_L049_Constellation_sprites;

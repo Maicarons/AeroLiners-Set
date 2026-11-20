@@ -220,6 +220,9 @@ item (FEAT_AIRCRAFT, YAKOVLEV_YAK42)
     acceleration: 27;
     range: 741;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 30;
+    speed: 740 km/h;
+    running_cost_factor: 97;
   }
   graphics {
     default: YAKOVLEV_YAK42_sprites;

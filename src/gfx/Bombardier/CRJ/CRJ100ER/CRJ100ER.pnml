@@ -193,6 +193,9 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ100ER)
     acceleration: 27;                  // in 27,75 mph/day
     range: 545;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 22;
+    speed: 786 km/h;
+    running_cost_factor: 34;
   }
   graphics {
     default: Bombardier_CRJ100ER_sprites;

@@ -345,6 +345,9 @@ item (FEAT_AIRCRAFT, Tupolev_Tu134)
     acceleration: 27;                  // in 27,75 mph/day
     range: 545;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 32;
+    speed: 850 km/h;
+    running_cost_factor: 83;
   }
   graphics {
     default: Tupolev_Tu134_sprites;

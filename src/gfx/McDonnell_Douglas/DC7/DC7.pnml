@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, DOUGLAS_DC7)
     acceleration: 27;
     range: 1649;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 35;
+    speed: 557 km/h;
+    running_cost_factor: 7;
   }
   graphics {
     default: DOUGLAS_DC7_sprites;

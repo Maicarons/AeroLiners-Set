@@ -142,6 +142,9 @@ item (FEAT_AIRCRAFT, Boeing_757_200F)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1060;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 82;
+    speed: 858 km/h;
+    running_cost_factor: 103;
   }
   graphics {
     default: Boeing_757_200F_sprites;

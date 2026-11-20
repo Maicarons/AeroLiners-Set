@@ -534,6 +534,9 @@ item (FEAT_AIRCRAFT, Boeing_737_400)
     acceleration: 27;                  // in 27,75 mph/day
     range: 695;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 49;
+    speed: 828 km/h;
+    running_cost_factor: 76;
   }
   graphics {
     default: Boeing_737_400_sprites;

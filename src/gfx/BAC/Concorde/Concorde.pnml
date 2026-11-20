@@ -184,6 +184,9 @@ item (FEAT_AIRCRAFT, BAC_CONCORDE)
     acceleration: 27;                  // in 27,75 mph/day
     range: 1196;
     sound_effect: SOUND_TAKEOFF_JET_FAST;
+    cost_factor: 160;
+    speed: 2154 km/h;
+    running_cost_factor: 198;
   }
   graphics {
     default: BAC_CONCORDE_sprites;

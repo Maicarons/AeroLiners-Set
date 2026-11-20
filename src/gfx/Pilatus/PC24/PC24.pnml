@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, PILATUS_PC24)
     acceleration: 27;
     range: 673;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 27;
+    speed: 810 km/h;
+    running_cost_factor: 61;
   }
   graphics {
     default: PILATUS_PC24_sprites;

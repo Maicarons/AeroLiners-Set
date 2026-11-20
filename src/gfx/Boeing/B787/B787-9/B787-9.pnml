@@ -397,6 +397,9 @@ item (FEAT_AIRCRAFT, Boeing_787_9)
     acceleration: 27;                  // in 27,75 mph/day
     range: 2547;
     sound_effect: SOUND_TAKEOFF_JET_BIG;
+    cost_factor: 223;
+    speed: 903 km/h;
+    running_cost_factor: 169;
   }
   graphics {
     default: Boeing_787_9_sprites;

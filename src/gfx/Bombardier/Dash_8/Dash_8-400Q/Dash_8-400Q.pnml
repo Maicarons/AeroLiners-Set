@@ -388,6 +388,9 @@ item (FEAT_AIRCRAFT, Bombardier_Dash_8_400Q)
     acceleration: 27;                  // in 27,75 mph/day
     range: 371;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 22;
+    speed: 667 km/h;
+    running_cost_factor: 35;
   }
   graphics {
     default: Bombardier_Dash_8_400Q_sprites;

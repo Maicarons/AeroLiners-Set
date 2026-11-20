@@ -355,6 +355,9 @@ item (FEAT_AIRCRAFT, Douglas_DC9_30)
     acceleration: 27;                  // in 27,75 mph/day
     range: 505;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 42;
+    speed: 898 km/h;
+    running_cost_factor: 64;
   }
   graphics {
     default: Douglas_DC9_30_sprites;

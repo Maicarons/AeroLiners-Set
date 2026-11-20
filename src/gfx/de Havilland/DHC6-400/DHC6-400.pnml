@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, DEHAVILLAND_DHC6_400)
     acceleration: 27;
     range: 269;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 22;
+    speed: 337 km/h;
+    running_cost_factor: 35;
   }
   graphics {
     default: DEHAVILLAND_DHC6_400_sprites;

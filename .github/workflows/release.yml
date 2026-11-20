@@ -26,6 +26,8 @@ jobs:
           python-version: "3.13"
       - name: Verify public doc counts match source of truth
         run: python tools/check_counts.py
+      - name: Verify static Action 0 fallbacks
+        run: python tools/static_props.py --check
 
   build:
     runs-on: ubuntu-latest

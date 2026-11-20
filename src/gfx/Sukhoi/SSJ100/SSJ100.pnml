@@ -209,6 +209,9 @@ item (FEAT_AIRCRAFT, SUKHOI_SSJ100)
     acceleration: 27;
     range: 554;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 65;
+    speed: 870 km/h;
+    running_cost_factor: 29;
   }
   graphics {
     default: SUKHOI_SSJ100_sprites;

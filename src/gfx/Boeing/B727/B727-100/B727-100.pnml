@@ -271,6 +271,9 @@ item (FEAT_AIRCRAFT, Boeing_727_100)
     acceleration: 27;                  // in 27,75 mph/day
     range: 758;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 35;
+    speed: 960 km/h;
+    running_cost_factor: 95;
   }
   graphics {
     default: Boeing_727_100_sprites;

@@ -695,6 +695,9 @@ item (FEAT_AIRCRAFT, Airbus_A321_200)
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1078;
+    cost_factor: 84;
+    speed: 828 km/h;
+    running_cost_factor: 87;
   }
   graphics {
     default: Airbus_A321_200_sprites;

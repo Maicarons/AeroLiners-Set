@@ -267,6 +267,9 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD90)
     acceleration: 27;                  // in 27,75 mph/day
     range: 689;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 59;
+    speed: 812 km/h;
+    running_cost_factor: 79;
   }
   graphics {
     default: McDonnell_Douglas_MD90_sprites;

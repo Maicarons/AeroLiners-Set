@@ -164,6 +164,9 @@ item (FEAT_AIRCRAFT, EMBRAER_ERJ135)
     acceleration: 27;
     range: 589;
     sound_effect: SOUND_TAKEOFF_JET;
+    cost_factor: 14;
+    speed: 831 km/h;
+    running_cost_factor: 28;
   }
   graphics {
     default: EMBRAER_ERJ135_sprites;
